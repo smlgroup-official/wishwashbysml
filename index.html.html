@@ -266,7 +266,7 @@ section{position:relative}
 .pillar p{color:var(--mist);font-size:.88rem}
 
 /* ---------- PAKET overview ---------- */
-.pkg-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.pkg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .pkg-card{position:relative;background:var(--ink-2);border:1px solid var(--line-soft);border-radius:20px;
   padding:34px 28px 30px;cursor:pointer;overflow:hidden;
   transition:transform .5s var(--ease),border-color .5s,background .5s}
@@ -475,7 +475,7 @@ footer{border-top:1px solid var(--line-soft);margin-top:100px;padding:60px 0 40p
 /* ---------- SIMULATOR ---------- */
 .sim-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:24px;align-items:start}
 .sim-controls,.sim-dash{background:var(--ink-2);border:1px solid var(--line-soft);border-radius:22px;padding:30px}
-.sim-pkg{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:28px}
+.sim-pkg{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:28px}
 .sim-pkg button{background:var(--ink-3);border:1px solid var(--line-soft);color:var(--mist);cursor:pointer;
   border-radius:13px;padding:13px 6px;font-family:'Roboto';font-weight:700;font-size:.82rem;
   transition:all .35s var(--ease);display:flex;flex-direction:column;gap:3px;align-items:center}
@@ -922,9 +922,9 @@ body.promo header{top:var(--promo-h)}
 
   <div class="wrap">
     <div class="stat-strip">
-      <div class="cell"><div class="num gold-text serif" data-count="4">4</div><div class="lbl">Pilihan Paket</div></div>
+      <div class="cell"><div class="num gold-text serif" data-count="3">3</div><div class="lbl">Pilihan Paket</div></div>
       <div class="cell"><div class="num gold-text serif"><span data-count="300">300</span> Jt</div><div class="lbl">Mulai Investasi</div></div>
-      <div class="cell"><div class="num gold-text serif"><span data-count="76">76</span>,6 Jt</div><div class="lbl">Est. Laba / Bulan*</div></div>
+      <div class="cell"><div class="num gold-text serif"><span data-count="56">56</span>,8 Jt</div><div class="lbl">Est. Laba / Bulan*</div></div>
       <div class="cell"><div class="num gold-text serif"><span data-count="3">3</span></div><div class="lbl">Cabang Beroperasi</div></div>
     </div>
   </div>
@@ -1038,7 +1038,7 @@ body.promo header{top:var(--promo-h)}
   <section class="sec-pad wrap" style="padding-top:40px">
     <div class="sec-head reveal">
       <div class="eyebrow">Paket & Estimasi Usaha</div>
-      <h2>Empat skala, satu <span class="gold-text serif">sistem.</span></h2>
+      <h2>Tiga skala, satu <span class="gold-text serif">sistem.</span></h2>
       <p>Semua paket sudah termasuk sistem, pelatihan, dan support penuh. Pilih satu kartu untuk melihat proyeksi laba rugi lengkapnya.</p>
     </div>
     <div class="pkg-grid reveal" data-d="1" id="pkgGrid"></div>
@@ -1264,7 +1264,6 @@ body.promo header{top:var(--promo-h)}
             <option>Prime — Rp300 Juta</option>
             <option>Gold — Rp550 Juta</option>
             <option>Platinum — Rp780 Juta</option>
-            <option>Diamond — Rp999 Juta</option>
           </select>
         </div>
         <div class="field"><label>Budget/Modal saya saat ini</label><textarea id="f-note" placeholder="mis. Rp300–500 juta, atau masih dihitung"></textarea></div>
@@ -1415,9 +1414,7 @@ const PKGS=[
   {id:"gold",tier:"Profit Bertumbuh",name:"Gold",price:"550",tag:"Untuk lokasi yang lebih ramai dan kapasitas transaksi lebih besar.",stack:"10 Stack",mesin:"20 Mesin",sewa:"Rp66 Jt/thn",net:"34,2",feat:false,
    pl:[["Pendapatan Self-Service","target omzet bulanan","Rp78,8 Jt",0],["HPP / Bahan baku & variabel","estimasi biaya langsung","-Rp15,8 Jt",1],["Laba Kotor","","Rp63,0 Jt",2],["Sewa Ruko","asumsi Rp66 jt/tahun","-Rp5,5 Jt",1],["Payroll & SDM","gaji + bonus/THR","-Rp5,4 Jt",1],["Utilitas, Marketing & Maintenance","listrik, wifi, iklan, service, IPL, pantry","-Rp10,7 Jt",1],["Total OPEX","","-Rp21,6 Jt",2],["Laba Operasional","","Rp41,4 Jt",2],["Penyusutan Mesin","simulasi aset mesin","-Rp7,2 Jt",1]]},
   {id:"platinum",tier:"Keuntungan Maksimal",name:"Platinum",price:"780",tag:"Untuk market kuat, traffic tinggi, dan kapasitas outlet lebih serius.",stack:"15 Stack",mesin:"30 Mesin",sewa:"Rp66 Jt/thn",net:"56,8",feat:true,
-   pl:[["Pendapatan Self-Service","target omzet bulanan","Rp118,1 Jt",0],["HPP / Bahan baku & variabel","estimasi biaya langsung","-Rp23,6 Jt",1],["Laba Kotor","","Rp94,5 Jt",2],["Sewa Ruko","asumsi Rp66 jt/tahun","-Rp5,5 Jt",1],["Payroll & SDM","gaji + bonus/THR","-Rp5,4 Jt",1],["Utilitas, Marketing & Maintenance","listrik, wifi, iklan, service, IPL, pantry","-Rp16,0 Jt",1],["Total OPEX","","-Rp26,9 Jt",2],["Laba Operasional","","Rp67,6 Jt",2],["Penyusutan Mesin","simulasi aset mesin","-Rp10,8 Jt",1]]},
-  {id:"diamond",tier:"Investasi Elite",name:"Diamond",price:"999",tag:"Kapasitas maksimal untuk lokasi premium dan potensi transaksi besar.",stack:"20 Stack",mesin:"40 Mesin",sewa:"Rp100 Jt/thn",net:"76,6",feat:false,
-   pl:[["Pendapatan Self-Service","target omzet bulanan","Rp162,2 Jt",0],["HPP / Bahan baku & variabel","estimasi biaya langsung","-Rp32,4 Jt",1],["Laba Kotor","","Rp129,8 Jt",2],["Sewa Ruko","asumsi Rp100 jt/tahun","-Rp8,3 Jt",1],["Payroll & SDM","gaji + bonus/THR","-Rp5,4 Jt",1],["Utilitas, Marketing & Maintenance","listrik, wifi, iklan, service, IPL, pantry","-Rp21,4 Jt",1],["Total OPEX","","-Rp35,1 Jt",2],["Laba Operasional","","Rp94,7 Jt",2],["Penyusutan Mesin","simulasi aset mesin","-Rp18,1 Jt",1]]}
+   pl:[["Pendapatan Self-Service","target omzet bulanan","Rp118,1 Jt",0],["HPP / Bahan baku & variabel","estimasi biaya langsung","-Rp23,6 Jt",1],["Laba Kotor","","Rp94,5 Jt",2],["Sewa Ruko","asumsi Rp66 jt/tahun","-Rp5,5 Jt",1],["Payroll & SDM","gaji + bonus/THR","-Rp5,4 Jt",1],["Utilitas, Marketing & Maintenance","listrik, wifi, iklan, service, IPL, pantry","-Rp16,0 Jt",1],["Total OPEX","","-Rp26,9 Jt",2],["Laba Operasional","","Rp67,6 Jt",2],["Penyusutan Mesin","simulasi aset mesin","-Rp10,8 Jt",1]]}
 ];
 const PHASES=[
   {t:"Sebelum Buka",items:[
@@ -1619,8 +1616,7 @@ if(portal && !window.matchMedia('(prefers-reduced-motion:reduce)').matches){
 const SIM_BASE={
   prime:{name:'Prime',m:10,inv:300,sewa:3.5,peny:3.6,brosur:13.6},
   gold:{name:'Gold',m:20,inv:550,sewa:5.5,peny:7.2,brosur:34.2},
-  platinum:{name:'Platinum',m:30,inv:780,sewa:5.5,peny:10.8,brosur:56.8},
-  diamond:{name:'Diamond',m:40,inv:999,sewa:8.3,peny:18.1,brosur:76.6}
+  platinum:{name:'Platinum',m:30,inv:780,sewa:5.5,peny:10.8,brosur:56.8}
 };
 const SIM={pkg:'prime',harga:22000,cyc:6,days:30,hpp:20,util:13.5,payroll:5.4,sewa:3.5,peny:3.6};
 const SLIDERS=[
