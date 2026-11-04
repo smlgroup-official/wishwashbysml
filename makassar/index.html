@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>SML Group Laundry Indonesia Timur</title>
-<meta name="description" content="Paket bisnis laundry self-service dari SML Group untuk Indonesia Timur: Prime, Gold, dan Platinum. Konsultasi lokasi, mesin, dan perhitungan usaha bersama tim kami.">
-<meta property="og:title" content="Paket Bisnis Laundry Self-Service SML Group untuk Indonesia Timur">
+<meta name="description" content="Paket usaha laundry Samsung dan Beko dari SML Group untuk Indonesia Timur, mulai Rp36,5 juta. Konsultasi gratis soal lokasi, mesin, dan perhitungan usaha.">
+<meta property="og:title" content="Paket Usaha Laundry SML Group untuk Indonesia Timur">
 <meta property="og:description" content="Pelajari pilihan paket, kebutuhan lokasi, dan perhitungan usaha sebelum memutuskan. Konsultasikan bersama tim SML Group.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#6E0E14">
@@ -54,16 +54,50 @@ window.SML_CONFIG = {
   // Ubah ke false bila promo free supply sudah berakhir.
   tampilkanBonus: true,
 
-  // Asumsi di balik angka simulasi. Tulis dasar perhitungannya di sini.
-  asumsiSimulasi: "target omzet per bulan dan sewa ruko per tahun masing-masing Rp39,4 juta dan Rp42 juta (Prime), Rp78,8 juta dan Rp66 juta (Gold), serta Rp118,1 juta dan Rp66 juta (Platinum). Perhitungan sudah memasukkan bahan baku, gaji, utilitas, pemasaran, perawatan, dan penyusutan mesin.",
-
   paket: [
-    { id: "prime",    kode: "PRM", nama: "Prime",    investasi: 300000000, stack: 5,  mesin: 10, laba: 13600000,
-      cocok: "Calon mitra yang ingin memulai dari kapasitas awal dan mempelajari operasional outlet secara bertahap." },
-    { id: "gold",     kode: "GLD", nama: "Gold",     investasi: 550000000, stack: 10, mesin: 20, laba: 34200000,
-      cocok: "Calon mitra yang sudah punya gambaran lokasi dan potensi pelanggan untuk kapasitas menengah." },
-    { id: "platinum", kode: "PLT", nama: "Platinum", investasi: 780000000, stack: 15, mesin: 30, laba: 56800000,
-      cocok: "Calon mitra dengan area yang mendukung kapasitas besar, termasuk kawasan dengan komunitas pengguna yang jelas." }
+    { id:"beko-2", kode:"B2", nama:"2 Set Beko", merek:"Beko", harga:36500000, normal:42080000, set:2, mesin:4, boiler:"Titan 10L", promoDesain:false,
+      mesinTeks:"2 mesin cuci Beko 10 kg dan 2 dryer Beko 8 kg",
+      isi:[
+        ["Mesin","2 mesin cuci Beko 10 kg","2 dryer Beko kapasitas 8 kg","1 paket boiler Titan kapasitas 10L geser"],
+        ["Perlengkapan","1 paket meja setrika besi lipat, busa rebounded","1 timbangan duduk digital 30 kg Benz","1 tabung gas LPG 3 kg dan isi","6 keranjang laundry warna","4 set botol parfum 250 ml","6 hanger kawat panjang","4 stiker mesin","1 papan lipat kayu","1 dudukan isolasi dan 1 isolasi 24 mm"],
+        ["Plastik dan chemical","10 jenis plastik kemasan dan hanger","Detergen, pewangi, softener, dan chemical pendukung","Tag gun, peluru tag, pita label, dan jepit buaya"],
+        ["Meubel","1 meja kasir","1 rak pakaian 3 kotak"]
+      ] },
+    { id:"samsung-1", kode:"S1", nama:"1 Set Samsung", merek:"Samsung Commercial", harga:44999999, normal:46682000, set:1, mesin:2, boiler:"Titan 10L", promoDesain:false,
+      mesinTeks:"1 stack Samsung Commercial (mesin cuci dan pengering)",
+      tidakTermasuk:"Tidak termasuk instalasi air, uap panas, listrik, gas, partisi, meja kasir, dan rak pakaian.",
+      isi:[
+        ["Mesin","1 stack Samsung Commercial (mesin cuci dan pengering)","1 paket boiler Titan kapasitas 10L geser"],
+        ["Perlengkapan","1 paket meja setrika besi lipat, busa rebounded","1 timbangan duduk digital 30 kg Benz","Keranjang laundry warna dan papan lipat kayu","1 dudukan isolasi dan 1 isolasi 24 mm","1 stabilizer Krisbow 1500W","2 set botol parfum 250 ml dan 2 hanger kawat panjang"],
+        ["Plastik dan chemical","7 jenis plastik kemasan dan hanger","Detergen, pewangi, softener, dan chemical pendukung"]
+      ] },
+    { id:"samsung-2", kode:"S2", nama:"2 Set Samsung", merek:"Samsung Commercial", harga:99999999, normal:106179500, set:2, mesin:4, boiler:"Titan 10L", promoDesain:true,
+      mesinTeks:"2 stack Samsung Commercial (mesin cuci dan pengering)",
+      isi:[
+        ["Mesin","2 stack Samsung Commercial (mesin cuci dan pengering)","1 paket boiler Titan kapasitas 10L geser"],
+        ["Kasir dan perlengkapan","1 printer kasir pocket Smartlink dan aplikasi Smartlink","1 paket meja setrika besi lipat, busa rebounded","1 timbangan duduk digital 30 kg Benz","6 keranjang laundry warna","2 set botol parfum dan 2 hanger kawat panjang","1 papan lipat kayu, 1 silica gel 500 gram, dan perlengkapan isolasi"],
+        ["Plastik dan chemical","10 jenis plastik kemasan dan hanger","Detergen, pewangi, softener, dan chemical pendukung"],
+        ["Instalasi","2 instalasi air bersih, 2 uap panas, 2 air kotor","4 instalasi listrik, 4 gas, 2 partisi","2 stabilizer Krisbow 1500W"],
+        ["Meubel","1 meja kasir","1 rak pakaian"]
+      ] },
+    { id:"samsung-3", kode:"S3", nama:"3 Set Samsung", merek:"Samsung Commercial", harga:140999999, normal:150259500, set:3, mesin:6, boiler:"Titan 15L", promoDesain:true,
+      mesinTeks:"3 stack Samsung Commercial (mesin cuci dan pengering)",
+      isi:[
+        ["Mesin","3 stack Samsung Commercial (mesin cuci dan pengering)","1 paket boiler Titan kapasitas 15L geser"],
+        ["Kasir dan perlengkapan","1 printer kasir pocket Smartlink dan aplikasi Smartlink","1 paket meja setrika besi lipat, busa rebounded","1 timbangan duduk digital 30 kg Benz","6 keranjang laundry warna","2 set botol parfum dan 2 hanger kawat panjang","1 papan lipat kayu, 1 silica gel 500 gram, dan perlengkapan isolasi"],
+        ["Plastik dan chemical","10 jenis plastik kemasan dan hanger","Detergen, pewangi, softener, dan chemical pendukung"],
+        ["Instalasi","3 instalasi air bersih, 3 uap panas, 3 air kotor","6 instalasi listrik, 5 gas, 3 partisi","3 stabilizer Krisbow 1500W"],
+        ["Meubel","1 meja kasir","1 rak pakaian"]
+      ] },
+    { id:"samsung-4", kode:"S4", nama:"4 Set Samsung", merek:"Samsung Commercial", harga:183999999, normal:196789500, set:4, mesin:8, boiler:"Titan 25L", promoDesain:true,
+      mesinTeks:"4 stack Samsung Commercial (mesin cuci dan pengering)",
+      isi:[
+        ["Mesin","4 stack Samsung Commercial (mesin cuci dan pengering)","1 paket boiler Titan kapasitas 25L geser"],
+        ["Kasir dan perlengkapan","1 printer kasir pocket Smartlink dan aplikasi Smartlink","2 paket meja setrika besi lipat, busa rebounded","1 timbangan duduk digital 30 kg Benz","6 keranjang laundry warna","2 set botol parfum dan 2 hanger kawat panjang","1 papan lipat kayu, 1 silica gel 500 gram, dan perlengkapan isolasi"],
+        ["Plastik dan chemical","10 jenis plastik kemasan dan hanger","Detergen, pewangi, softener, dan chemical pendukung"],
+        ["Instalasi","4 instalasi air bersih, 4 uap panas, 4 air kotor","8 instalasi listrik, 6 gas, 4 partisi","1 instalasi setrika dan 4 stabilizer Krisbow 1500W"],
+        ["Meubel","1 meja kasir","1 rak pakaian"]
+      ] }
   ],
 
   /* 5. BUKTI KEPERCAYAAN ---------------------------------------------- */
@@ -83,7 +117,7 @@ window.SML_CONFIG = {
   ],
 
   // Tiga poin singkat di bawah tombol hero.
-  trustHero: ["Berbasis di Makassar", "Usaha berdiri sejak 2013", "20+ outlet kami miliki dan kelola"],
+  trustHero: ["Produk original dan bergaransi", "After sales service dan support instalasi", "Usaha berdiri sejak 2013"],
 
   // Isi "src" dengan lokasi foto asli. Contoh: "assets/outlet-1.jpg"
   foto: [
@@ -262,7 +296,7 @@ html[data-brand="merah"] .wall-cap{color:#F5C9C9}
 .pkts{display:grid;gap:18px}
 .pkt{display:grid;grid-template-rows:auto auto 1fr auto;gap:18px;padding:22px 20px;border:1.5px solid var(--line);border-radius:16px;background:var(--paper);min-width:0}
 .pkt__name{font-size:1.65rem;font-weight:800}
-.pkt__viz{display:grid;grid-template-columns:repeat(5,34px);gap:6px;justify-content:center;align-content:end;height:100%;padding:12px;background:var(--mist);border-radius:10px}
+.pkt__viz{display:grid;grid-auto-flow:column;grid-auto-columns:34px;gap:6px;justify-content:center;align-content:end;height:100%;padding:12px;background:var(--mist);border-radius:10px}
 .pkt__viz svg{width:100%;height:auto;display:block}
 .pkt__cap{font-size:.8rem;color:var(--muted);margin-top:8px}
 .st-cab{fill:var(--brand)}
@@ -273,8 +307,16 @@ html[data-brand="merah"] .wall-cap{color:#F5C9C9}
 .pkt__row dt{color:var(--muted);font-size:.92rem;min-width:0}
 .pkt__row dd{font-weight:700;text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 .pkt__row--big{display:grid;gap:0;justify-content:stretch;padding-top:0}
-.pkt__row--big dd{font-family:var(--font-display);font-size:2rem;font-weight:800;text-align:left;color:var(--ink);line-height:1.2}
+.pkt__row--big dd{font-family:var(--font-display);font-size:1.7rem;font-weight:800;text-align:left;color:var(--ink);line-height:1.2}
 .pkt__row--sim dd{color:var(--brand)}
+.pkt__old{font-size:.88rem;color:var(--muted);text-decoration:line-through;font-variant-numeric:tabular-nums}
+.pkt__sub{font-size:.9rem;color:var(--muted);line-height:1.4}
+.pkt__row--big{border-bottom:0}
+.pkt__x{font-size:.88rem;line-height:1.45;color:var(--warn-ink);background:var(--warn-bg);padding:8px 10px;border-radius:8px;margin-top:10px}
+.pkt__more{margin-top:10px;font-size:.93rem}
+.pkt__more summary{cursor:pointer;font-weight:700;color:var(--brand);padding-block:4px}
+.pkt__more h4{font-size:.8rem;letter-spacing:.05em;text-transform:uppercase;margin:12px 0 4px}
+.pkt__more ul{list-style:disc;padding-left:1.1em;color:var(--muted);line-height:1.45}
 .pkt__fit{padding-top:12px;font-size:.93rem;color:var(--muted)}
 .pkt__fit b{display:block;color:var(--ink);font-size:.8rem;letter-spacing:.06em;text-transform:uppercase}
 .note{margin-top:22px;padding:16px 18px;border-radius:12px;background:var(--brand-soft);font-size:.95rem;line-height:1.6}
@@ -302,6 +344,21 @@ html[data-brand="merah"] .wall-cap{color:#F5C9C9}
 .supp p{font-size:.94rem;color:var(--muted)}
 .extra{margin-top:30px;padding-top:24px;border-top:1px solid var(--line);display:grid;gap:12px}
 .extra__t{font-weight:700}
+
+/* Potensi pasar */
+.mkt{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.mkt div{padding:16px;border-radius:12px;background:var(--paper);border:1px solid var(--line);min-width:0}
+.mkt b{display:block;font-family:var(--font-display);font-size:clamp(1.35rem,1rem + 1.5vw,1.9rem);font-weight:800;color:var(--brand);line-height:1.15;font-variant-numeric:tabular-nums}
+.mkt span{display:block;font-size:.88rem;line-height:1.4;color:var(--muted);margin-top:4px}
+.mkt__note{font-size:.85rem;line-height:1.5;color:var(--muted)}
+#simulasi .mkt__note{margin-block:12px 28px}
+#simulasi .sim__col .mkt__note{margin:0}
+.cap-wrap{overflow-x:auto;background:var(--paper);border:1.5px solid var(--line);border-radius:12px}
+.cap{width:100%;border-collapse:collapse;font-size:.95rem;font-variant-numeric:tabular-nums}
+.cap th,.cap td{padding:10px 14px;text-align:right;border-bottom:1px solid var(--line);white-space:nowrap}
+.cap th:first-child,.cap td:first-child{text-align:left}
+.cap th{font-size:.8rem;color:var(--muted);font-weight:700}
+.cap tr:last-child td{border-bottom:0}
 
 /* Simulasi */
 .sim{display:grid;gap:34px}
@@ -412,7 +469,14 @@ dialog::backdrop{background:rgba(6,16,34,.6)}
   .seg-btn{grid-column:1}
   .seg-panel{grid-column:2;grid-row:1 / span 5;padding:28px}
   .why{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px}
-  .pkts{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .pkts{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .pkt--wide{grid-column:1/-1;grid-row:auto;grid-template-rows:auto auto;grid-template-columns:minmax(0,1fr) minmax(0,.8fr) minmax(0,1.2fr);column-gap:28px;align-items:start}
+  .pkt--wide>:nth-child(1){grid-column:1;grid-row:1}
+  .pkt--wide>:nth-child(2){grid-column:2;grid-row:1 / span 2;align-self:stretch}
+  .pkt--wide>:nth-child(3){grid-column:3;grid-row:1 / span 2}
+  .pkt--wide>:nth-child(4){grid-column:1;grid-row:2;align-self:end}
+  .pkt--wide .pkt__viz{align-content:center}
+  .mkt{grid-template-columns:repeat(4,minmax(0,1fr))}
   .pkt{grid-row:span 4;grid-template-rows:subgrid}
   .steps{grid-template-columns:repeat(5,minmax(0,1fr));gap:20px}
   .step{grid-template-columns:1fr;padding-bottom:0;gap:14px}
@@ -473,7 +537,7 @@ dialog::backdrop{background:rgba(6,16,34,.6)}
   <section class="hero" aria-labelledby="h-hero">
     <div class="hero__in">
       <div class="hero__copy">
-        <p class="eyebrow" id="heroEyebrow">Paket bisnis laundry self-service · Indonesia Timur</p>
+        <p class="eyebrow" id="heroEyebrow">Paket usaha laundry · Indonesia Timur</p>
         <h1 id="h-hero">Saatnya memulai bisnis laundry! Mari hitung peluangnya bersama SML Group.</h1>
         <p class="hero__sub" id="heroSub">Kami di SML Group membantu Anda menyiapkan bisnis laundry self-service, mulai dari evaluasi lokasi, rekomendasi mesin, instalasi, sampai training. Tersedia tiga pilihan paket, mulai dari Rp300 juta untuk 10 mesin.</p>
         <div class="hero__cta">
@@ -512,9 +576,9 @@ dialog::backdrop{background:rgba(6,16,34,.6)}
       <div class="facts" id="facts"></div>
       <div class="why">
         <div class="why__t">
-          <h3>SML Group dan brand Wish Wash</h3>
+          <h3>Solusi lengkap usaha laundry Anda</h3>
           <p>SML Group adalah perusahaan solusi bisnis laundry. Kami menyediakan paket usaha, mesin dan perlengkapan laundry, konsultasi persiapan usaha, sampai dukungan operasional sesuai produk dan kerja sama.</p>
-          <p>Melalui brand Wish Wash, kami di SML menghadirkan konsep laundry self-service dengan pembayaran cashless. Wish Wash adalah salah satu brand laundry milik SML Group.</p>
+          <p>Pengalaman itu datang dari outlet yang kami jalankan sendiri, termasuk Wish Wash, brand laundry self-service milik SML Group.</p>
         </div>
         <ul class="why__list">
           <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span><b>Persiapan bisnis.</b> Konsultasi tujuan usaha, evaluasi lokasi, dan rekomendasi kebutuhan mesin.</span></li>
@@ -529,13 +593,13 @@ dialog::backdrop{background:rgba(6,16,34,.6)}
   <section class="band" id="paket" aria-labelledby="h-pkt">
     <div class="wrap">
       <div class="head">
-        <p class="eyebrow">Pilihan paket bisnis</p>
-        <h2 id="h-pkt">Prime, Gold, atau Platinum?</h2>
-        <p>Bandingkan nilai investasi dan kapasitasnya. Paket yang pas tergantung lokasi dan rencana Anda, bukan cuma modal.</p>
+        <p class="eyebrow">Paket usaha laundry</p>
+        <h2 id="h-pkt">Pilih paket sesuai rencana Anda</h2>
+        <p>Tersedia paket Beko dan Samsung, dari 1 sampai 4 set. Satu set terdiri dari satu mesin cuci dan satu mesin pengering. Paket yang pas tergantung lokasi dan rencana Anda, bukan cuma modal.</p>
       </div>
       <div class="pkts" id="pkts"></div>
-      <p class="note"><b>Perlu diperhitungkan:</b> selain nilai paket, siapkan juga perhitungan kebutuhan lokasi dan biaya operasional. Rincian yang termasuk dalam setiap paket kami jelaskan saat konsultasi. Untuk kota di luar Makassar, harga, sewa, dan pengiriman mesin kami hitung bersama lewat WhatsApp. Angka simulasi bukan jaminan keuntungan.</p>
-      <p class="bonus" id="bonus"><svg class="ic" aria-hidden="true"><use href="#i-gift"/></svg><span><b>Bonus free supply bahan baku selama 3 bulan.</b> Syarat dan ketentuan berlaku.</span></p>
+      <p class="note"><b>Perlu diperhitungkan:</b> siapkan juga kebutuhan lokasi dan biaya operasional. Untuk kota di luar Makassar, harga, sewa, dan pengiriman mesin kami hitung bersama lewat WhatsApp. *Kapasitas adalah simulasi operasional, bukan jaminan pendapatan.</p>
+      <p class="bonus" id="bonus"><svg class="ic" aria-hidden="true"><use href="#i-gift"/></svg><span><b>Gratis desain layout laundry 2D dan 3D</b> untuk pembelian minimal Rp70 juta.</span></p>
     </div>
   </section>
 
@@ -589,19 +653,28 @@ dialog::backdrop{background:rgba(6,16,34,.6)}
     </div>
   </section>
 
-  <!-- SECTION 7: SIMULASI -->
+  <!-- SECTION 7: POTENSI PASAR -->
   <section class="band band--mist" id="simulasi" aria-labelledby="h-sim">
     <div class="wrap">
       <div class="head">
-        <p class="eyebrow">Simulasi dan pertimbangan</p>
-        <h2 id="h-sim">Modal saja belum cukup untuk memilih paket</h2>
-        <p>Dua orang dengan modal yang sama bisa membutuhkan kapasitas yang berbeda, karena lokasi dan cara mengelolanya berbeda.</p>
+        <p class="eyebrow">Potensi pasar dan kapasitas</p>
+        <h2 id="h-sim">Kebutuhan mencuci selalu berulang, dan kapasitasnya bisa dihitung</h2>
+        <p>Simulasi 2026 ini memakai proyeksi penduduk BPS dan asumsi operasional. Angkanya membantu Anda memulai perhitungan, bukan menjadi target pasti.</p>
       </div>
+      <div class="mkt" id="mkt"></div>
+      <p class="mkt__note">Cakupan Indonesia Timur: 19 provinsi. Asumsi: 50% penduduk usia 17+ memakai jasa laundry, 50% kebutuhan belum terpenuhi, 4 load per pelanggan per bulan, dan 3 set per outlet.</p>
       <div class="sim">
         <div class="sim__col">
-          <h3>Simulasi potensi laba bersih per bulan</h3>
-          <div class="bars" id="bars"></div>
-          <div class="disc" id="disc"><b>Simulasi ini bukan jaminan keuntungan.</b> Angka di atas adalah potensi sesuai proyeksi dalam materi penawaran, dan hanya sebagai referensi. Hasil aktual dapat berbeda tergantung lokasi, biaya operasional, tingkat penggunaan mesin, kondisi pasar, dan pengelolaan outlet.</div>
+          <h3>Simulasi kapasitas per paket</h3>
+          <div class="cap-wrap"><table class="cap" id="cap"></table></div>
+          <div class="disc" id="disc"><b>Ini simulasi kapasitas, bukan jaminan pendapatan.</b> Dihitung dari 10 load per hari selama 30 hari, dan 4 load per pelanggan. Hasil aktual dipengaruhi permintaan pasar, lokasi, waktu mesin berhenti, biaya operasional, dan pengelolaan outlet.</div>
+          <h3>Kenapa banyak yang melirik self-service?</h3>
+          <ul class="why__list">
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span><b>Biaya pegawai bisa ditekan.</b> Pelanggan mencuci dan mengeringkan sendiri.</span></li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span><b>Bayar di depan.</b> Dengan sistem pembayaran terintegrasi, mesin aktif setelah pelanggan membayar.</span></li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span><b>Jam layanan bisa lebih panjang.</b> Operasional tidak bergantung pada shift pegawai tetap.</span></li>
+          </ul>
+          <p class="mkt__note">Outlet tanpa petugas tetap masih perlu pengelolaan kebersihan, keamanan, perawatan mesin, dan layanan pelanggan. Sistem pembayaran terintegrasi dibahas terpisah saat konsultasi.</p>
         </div>
         <div class="sim__col">
           <h3>Seberapa siap rencana Anda?</h3>
@@ -711,7 +784,7 @@ var SEGMEN = [
     deskripsi:"Untuk Anda yang ingin punya usaha sendiri dan belum berpengalaman di bidang laundry.",
     masalah:"Masih bingung menentukan lokasi, modal, mesin, dan operasional, dan takut salah mengambil keputusan.",
     solusi:"Kami membantu Anda memahami persiapan usaha, kebutuhan mesin, lokasi, dan pilihan paket sebelum memulai.",
-    fokus:["Edukasi bisnis laundry","Paket Prime, Gold, Platinum","Evaluasi lokasi","Training sesuai paket"],
+    fokus:["Edukasi bisnis laundry","Paket Samsung dan Beko","Evaluasi lokasi","Training sesuai paket"],
     hero:"Belum punya pengalaman bisnis laundry? Kami di SML membantu Anda memahami persiapan usaha, kebutuhan mesin, lokasi, dan pilihan paket sebelum memulai.",
     pesan:"Halo tim SML Group, saya tertarik memulai bisnis laundry di daerah saya. Saya ingin mengetahui pilihan paket, kebutuhan modal, dan persiapan lokasi." },
   { id:"pensiun", kode:"PNS", ic:"i-clock",
@@ -728,8 +801,8 @@ var SEGMEN = [
     judul:"Menilai peluang bisnis laundry",
     deskripsi:"Untuk pemilik modal yang ingin memahami model bisnis, kebutuhan modal, dan risikonya sebelum mengambil keputusan.",
     masalah:"Butuh data yang konkret: nilai investasi, kapasitas, pengelolaan, serta faktor yang memengaruhi hasil usaha.",
-    solusi:"Kami memaparkan pilihan nilai investasi, kapasitas mesin, model bisnis, simulasi keuangan, kebutuhan lokasi, dan dukungan operasional.",
-    fokus:["Nilai investasi","Kapasitas mesin","Simulasi keuangan","Risiko dan faktor hasil usaha"],
+    solusi:"Kami memaparkan pilihan paket, kapasitas mesin, model bisnis, simulasi kapasitas, kebutuhan lokasi, dan dukungan operasional.",
+    fokus:["Harga paket","Kapasitas mesin","Simulasi kapasitas","Risiko dan faktor hasil usaha"],
     hero:"Sedang mencari peluang investasi bisnis yang memiliki sistem dan perencanaan operasional yang jelas? Kenali pilihan bisnis laundry bersama SML Group.",
     pesan:"Halo tim SML Group, saya tertarik mempelajari peluang investasi bisnis laundry di daerah saya. Mohon informasi mengenai paket, simulasi usaha, dan sistem pengelolaannya." },
   { id:"diversifikasi", kode:"DIV", ic:"i-layout",
@@ -767,40 +840,38 @@ function rpFull(n){ return "Rp" + Number(n).toLocaleString("id-ID"); }
 function rpJuta(n){ return "Rp" + String(n/1e6).replace(".", ",") + " juta"; }
 
 function buildFAQ(P){
-  var a = P[0], b = P[1], c = P[2];
+  var harga = P.map(function(p){ return p.nama + " " + rpFull(p.harga); }).join(", ");
   return [
     ["Berapa modal untuk memulai bisnis laundry?",
-     "Kami punya tiga paket: Prime " + rpFull(a.investasi) + ", Gold " + rpFull(b.investasi) + ", dan Platinum " + rpFull(c.investasi) + ". Selain nilai paket, perhitungkan juga kebutuhan lokasi dan biaya operasional. Tim kami akan membantu menghitungnya sesuai rencana Anda."],
-    ["Apa perbedaan Prime, Gold, dan Platinum?",
-     "Perbedaan utamanya ada pada kapasitas. Prime berisi " + a.stack + " stack atau " + a.mesin + " mesin, Gold " + b.stack + " stack atau " + b.mesin + " mesin, dan Platinum " + c.stack + " stack atau " + c.mesin + " mesin. Satu stack terdiri dari dua mesin. Cakupan dukungan setiap paket dijelaskan saat konsultasi."],
+     "Harga paket kami saat ini: " + harga + ". Selain harga paket, siapkan juga kebutuhan lokasi dan biaya operasional. Tim kami akan membantu menghitungnya sesuai rencana Anda."],
+    ["Apa perbedaan antarpaket?",
+     "Perbedaannya ada pada merek mesin, jumlah set, kapasitas boiler, dan kelengkapan. Satu set terdiri dari satu mesin cuci dan satu mesin pengering. Isi lengkap ada di tombol Lihat isi paket pada setiap kartu."],
     ["Apakah harus memiliki pengalaman laundry?",
-     "Belum berpengalaman bukan halangan untuk berkonsultasi. Kami membantu Anda memahami persiapan usaha, dan training tersedia sesuai paket."],
+     "Belum berpengalaman bukan halangan untuk berkonsultasi. Kami bantu Anda memahami persiapan usaha, kebutuhan mesin, dan lokasi sebelum memulai."],
     ["Apakah SML membantu mencari atau mengevaluasi lokasi?",
      "Kami membantu evaluasi dan memberi rekomendasi lokasi. Penyediaan lokasi tetap perlu dibahas bersama, karena kondisinya berbeda di setiap area."],
     ["Apakah mesin sudah termasuk dalam paket?",
-     "Setiap paket mencantumkan jumlah mesin: " + a.mesin + " mesin untuk Prime, " + b.mesin + " untuk Gold, dan " + c.mesin + " untuk Platinum. Rincian tipe mesin dan isi paket dijelaskan saat konsultasi."],
-    ["Apakah ada training?",
-     "Ada. Training mencakup operasional serta penggunaan dan perawatan mesin, sesuai paket dan ketentuan kerja sama."],
-    ["Bagaimana sistem operasional self-service?",
-     "Pelanggan mencuci dan mengeringkan pakaiannya sendiri dengan mesin di outlet, lalu membayar secara cashless. Kebutuhan tenaga jaga dan pengelolaan harian kami bahas sesuai rencana outlet Anda."],
-    ["Bagaimana sistem pembayarannya?",
-     "Outlet memakai sistem pembayaran cashless melalui QRIS dan e-wallet."],
-    ["Apakah ada pendampingan setelah pembukaan?",
-     "Ada pendampingan operasional dan evaluasi performa sesuai cakupan paket. Durasi dan bentuknya mengikuti ketentuan kerja sama."],
-    ["Apakah keuntungan bulanan dijamin?",
-     "Tidak. Angka laba bersih di halaman ini adalah simulasi berdasarkan materi penawaran, bukan jaminan. Hasil aktual dapat berbeda tergantung lokasi, biaya operasional, tingkat penggunaan mesin, kondisi pasar, dan pengelolaan outlet."],
+     "Ya, setiap paket sudah mencakup mesin dan boiler. Paket Samsung memakai Samsung Commercial, sedangkan Paket Beko memakai mesin cuci Beko 10 kg dan dryer Beko 8 kg."],
+    ["Apakah instalasi sudah termasuk?",
+     "Paket 2, 3, dan 4 Set Samsung mencakup pemasangan instalasi sesuai jumlah di kartu paket. Paket 1 Set Samsung tidak termasuk instalasi, meja kasir, dan rak pakaian. Untuk Paket 2 Set Beko, tanyakan rincian support instalasinya ke tim kami."],
+    ["Apakah ada garansi dan layanan purna jual?",
+     "Produk kami original dan bergaransi, dengan after sales service dan support instalasi. Syarat garansi setiap produk akan dijelaskan tim kami."],
+    ["Apakah bisa memakai brand sendiri?",
+     "Bisa dibahas. Paket usaha ini bisa disiapkan untuk usaha dengan nama Anda sendiri. Tim kami akan menjelaskan pilihan yang sesuai, termasuk kemitraan Wish Wash bila Anda tertarik."],
+    ["Bisakah paket dipakai untuk laundry self-service?",
+     "Bisa dibahas sesuai konsep usaha Anda. Sistem pembayaran mandiri seperti QRIS tidak tercantum dalam isi paket, jadi kebutuhan dan biayanya dijelaskan saat konsultasi."],
+    ["Apakah keuntungannya dijamin?",
+     "Tidak. Angka di halaman ini adalah simulasi kapasitas dan potensi pasar, bukan jaminan pendapatan. Hasil aktual dipengaruhi permintaan pasar, lokasi, biaya operasional, dan pengelolaan outlet."],
     ["Apa saja biaya yang perlu dipersiapkan?",
-     "Selain nilai paket, siapkan perhitungan untuk lokasi atau sewa, listrik dan air, bahan baku, perawatan mesin, tenaga kerja, dan pemasaran. Rincian yang termasuk dalam paket kami jelaskan saat konsultasi."],
-    ["Apakah harus memakai brand Wish Wash?",
-     "Paket Kemitraan Laundry memakai brand Wish Wash. Jika Anda ingin memakai brand sendiri, kami punya Paket Bisnis Laundry. Tim kami akan membantu memilih yang sesuai."],
-    ["Siapa yang menjalankan outlet sehari-hari?",
-     "Ada dua model kerja sama yang bisa dibahas: outlet dijalankan oleh mitra, atau dikelola oleh SML. Ketersediaan model untuk setiap paket mengikuti ketentuan kerja sama."],
-    ["Apakah harga dan simulasi berlaku untuk kota saya?",
-     "Angka di halaman ini adalah acuan awal. Untuk kota di luar Makassar, harga, biaya sewa, dan pengiriman mesin bisa berbeda, jadi konsultasikan dulu lewat WhatsApp agar perhitungannya sesuai kota Anda."],
+     "Selain harga paket, siapkan perhitungan untuk lokasi atau sewa, listrik dan air, bahan baku lanjutan, perawatan mesin, tenaga kerja, dan pemasaran."],
+    ["Apa syarat gratis desain 2D dan 3D?",
+     "Gratis desain layout laundry berlaku untuk pembelian minimal Rp70 juta. Pada daftar saat ini, syarat itu terpenuhi oleh Paket 2, 3, dan 4 Set Samsung."],
+    ["Apakah harga berlaku untuk kota saya?",
+     "Harga di halaman ini adalah acuan awal. Untuk kota di luar Makassar, harga, biaya sewa, dan pengiriman mesin bisa berbeda, jadi konsultasikan dulu lewat WhatsApp agar perhitungannya sesuai kota Anda."],
     ["Apakah tersedia di luar Makassar?",
-     "Kami berbasis di Makassar dan fokus berkembang di Indonesia Timur. Kesesuaian setiap lokasi tetap perlu dievaluasi lebih dulu, termasuk kebutuhan pengiriman dan instalasi mesin di kota Anda. Silakan tanyakan ke tim kami."],
+     "Kami berbasis di Makassar dan fokus berkembang di Indonesia Timur. Kesesuaian setiap lokasi tetap perlu dievaluasi lebih dulu, termasuk kebutuhan pengiriman dan instalasi mesin di kota Anda."],
     ["Bisakah saya melihat outlet dan showroom secara langsung?",
-     "Bisa. Kantor dan showroom kami ada di Jl. Pengayoman No. 41, Makassar. Kunjungan ke showroom atau outlet Wish Wash bisa dijadwalkan bersama tim kami lewat WhatsApp."],
+     "Bisa. Kantor dan showroom kami ada di Jl. Pengayoman No. 41, Makassar. Kunjungan bisa dijadwalkan bersama tim kami lewat WhatsApp."],
     ["Bagaimana cara memulai konsultasi?",
      "Tekan tombol WhatsApp di halaman ini. Konsultasi gratis dan tanpa komitmen. Pesan sudah terisi otomatis, jadi Anda tinggal mengirimnya."]
   ];
@@ -893,7 +964,7 @@ function buildFAQ(P){
   function buildMessage(place, seg, pkt, jadwal){
     var m;
     if (pkt) {
-      m = "Halo tim SML Group, saya tertarik mendiskusikan Paket " + pkt.nama + " (" + pkt.stack + " stack, " + pkt.mesin + " mesin, nilai investasi " + rpJuta(pkt.investasi) + "). Mohon informasi mengenai isi paket, kebutuhan lokasi, dan perhitungan usahanya.";
+      m = "Halo tim SML Group, saya tertarik mendiskusikan Paket " + pkt.nama + " (" + pkt.set + " set, " + pkt.mesin + " mesin, harga " + rpFull(pkt.harga) + "). Mohon informasi mengenai isi paket, kebutuhan lokasi, dan perhitungan usahanya.";
       if (seg) m += "\n\n" + seg.tombol + ".";
     } else if (seg) {
       m = seg.pesan;
@@ -952,7 +1023,7 @@ function buildFAQ(P){
   }).join("");
 
   $("heroBrief").innerHTML = P.map(function(p){
-    return '<a href="#paket"><div><b>' + p.nama + '</b><small>' + p.stack + ' stack, ' + p.mesin + ' mesin</small></div><span>' + rpJuta(p.investasi) + '</span></a>';
+    return '<a href="#paket"><div><b>' + p.nama + '</b><small>' + p.mesin + ' mesin</small></div><span>' + rpFull(p.harga) + '</span></a>';
   }).join("");
 
   function wallUnit(i, spin){
@@ -974,8 +1045,8 @@ function buildFAQ(P){
     for (var i = 0; i < 18; i++) units += wallUnit(i, i % 4 === 1);
     $("heroVisual").innerHTML = '<div class="wall" aria-hidden="true">' + units + '</div><p class="wall-cap">Ilustrasi deretan mesin. 1 stack terdiri dari 2 mesin.</p>';
   }
-  var mulai = " Paket tersedia mulai dari " + rpJuta(P[0].investasi) + " untuk " + P[0].mesin + " mesin.";
-  $("heroSub").textContent = "Kami di SML Group membantu Anda menyiapkan bisnis laundry self-service, mulai dari evaluasi lokasi, rekomendasi mesin, instalasi, sampai training." + mulai;
+  var mulai = " Paket tersedia mulai dari " + rpJuta(P[0].harga) + " untuk " + P[0].set + " set mesin.";
+  $("heroSub").textContent = "Kami di SML Group menyediakan paket usaha laundry lengkap, mulai dari mesin, perlengkapan, sampai konsultasi lokasi." + mulai;
   if (state.seg) { $("heroSub").textContent = state.seg.hero + mulai; }
 
   /* --- Label CTA -------------------------------------------------------- */
@@ -1023,37 +1094,38 @@ function buildFAQ(P){
 
   /* --- Paket ------------------------------------------------------------- */
   var stackSvg = '<svg viewBox="0 0 40 72" aria-hidden="true"><rect class="st-cab" width="40" height="72" rx="4"/><circle class="st-door" cx="20" cy="19" r="12"/><circle class="st-in" cx="20" cy="19" r="7"/><circle class="st-door" cx="20" cy="53" r="12"/><circle class="st-in" cx="20" cy="53" r="7"/></svg>';
-  $("pkts").innerHTML = P.map(function(p){
+  function capacity(p){ return p.set * 300; }
+  $("pkts").innerHTML = P.map(function(p, n){
     var viz = "";
-    for (var i = 0; i < p.stack; i++) viz += stackSvg;
-    return '<article class="pkt" aria-labelledby="pk-' + p.id + '">' +
-      '<h3 class="pkt__name" id="pk-' + p.id + '">' + p.nama + '</h3>' +
-      '<div><div class="pkt__viz" role="img" aria-label="' + p.stack + ' stack mesin">' + viz + '</div></div>' +
+    for (var i = 0; i < p.set; i++) viz += stackSvg;
+    var isi = p.isi.map(function(g){
+      return '<h4>' + g[0] + '</h4><ul>' + g.slice(1).map(function(x){ return '<li>' + x + '</li>'; }).join("") + '</ul>';
+    }).join("");
+    return '<article class="pkt' + (n === 0 ? ' pkt--wide' : '') + '" aria-labelledby="pk-' + p.id + '">' +
+      '<div><h3 class="pkt__name" id="pk-' + p.id + '">Paket ' + p.nama + '</h3><p class="pkt__sub">' + p.mesinTeks + '</p></div>' +
+      '<div><div class="pkt__viz" role="img" aria-label="' + p.set + ' set mesin">' + viz + '</div></div>' +
       '<div><dl class="pkt__dl">' +
-        '<div class="pkt__row pkt__row--big"><dt>Nilai investasi</dt><dd>' + rpFull(p.investasi) + '</dd></div>' +
-        '<div class="pkt__row"><dt>Kapasitas</dt><dd>' + p.stack + ' stack</dd></div>' +
+        '<div class="pkt__row pkt__row--big"><dt>Harga paket</dt><dd>' + rpFull(p.harga) + '</dd></div>' +
+        '<div class="pkt__row"><dt>Harga normal</dt><dd class="pkt__old">' + rpFull(p.normal) + '</dd></div>' +
         '<div class="pkt__row"><dt>Jumlah mesin</dt><dd>' + p.mesin + ' mesin</dd></div>' +
-        '<div class="pkt__row pkt__row--sim"><dt>Simulasi potensi laba bersih*</dt><dd>' + rpFull(p.laba) + '/bln</dd></div>' +
-      '</dl><p class="pkt__fit"><b>Sesuai untuk</b>' + p.cocok + '</p></div>' +
+        '<div class="pkt__row"><dt>Boiler</dt><dd>' + p.boiler + '</dd></div>' +
+        '<div class="pkt__row"><dt>Kapasitas simulasi*</dt><dd>' + capacity(p).toLocaleString("id-ID") + ' load/bln</dd></div>' +
+      '</dl>' + (p.tidakTermasuk ? '<p class="pkt__x">' + p.tidakTermasuk + '</p>' : '') +
+      '<details class="pkt__more"><summary>Lihat isi paket</summary>' + isi + '</details></div>' +
       '<a class="btn btn--wa btn--block" href="#" data-wa data-place="PKT" data-pkt="' + p.id + '"><svg aria-hidden="true"><use href="#i-wa"/></svg><span>Diskusikan Paket Ini</span></a>' +
       '</article>';
   }).join("");
   $("bonus").hidden = !C.tampilkanBonus;
 
-  /* --- Simulasi ---------------------------------------------------------- */
-  var maxLaba = Math.max.apply(null, P.map(function(p){ return p.laba; }));
-  $("bars").innerHTML = P.map(function(p){
-    return '<div><div class="bar__top"><b>' + p.nama + '</b><span>Nilai investasi ' + rpJuta(p.investasi) + '</span></div>' +
-      '<div class="bar__track"><div class="bar__fill" style="width:' + (p.laba / maxLaba * 100).toFixed(1) + '%"></div></div>' +
-      '<div class="bar__val">' + rpFull(p.laba) + ' per bulan</div></div>';
-  }).join("");
-  if (C.asumsiSimulasi) {
-    var as = document.createElement("span"); as.className = "ph-inline"; as.textContent = "Dasar perhitungan: " + C.asumsiSimulasi;
-    $("disc").appendChild(as);
-  } else if (preview) {
-    var ph = document.createElement("span"); ph.className = "ph-inline"; ph.textContent = "[ISI ASUMSI SIMULASI: tingkat penggunaan mesin, harga per siklus, dan biaya yang dihitung]";
-    $("disc").appendChild(ph);
-  }
+  /* --- Potensi pasar dan kapasitas -------------------------------------- */
+  $("mkt").innerHTML = [
+    ["36,97 juta","Penduduk usia 17+ di Indonesia Timur"],
+    ["9,24 juta","Simulasi pelanggan yang kebutuhannya belum terpenuhi"],
+    ["36,97 juta","Setara load per bulan"],
+    ["41.081","Simulasi peluang outlet"]
+  ].map(function(m){ return '<div><b>' + m[0] + '</b><span>' + m[1] + '</span></div>'; }).join("");
+  $("cap").innerHTML = '<thead><tr><th scope="col">Jumlah set</th><th scope="col">Load per bulan</th><th scope="col">Pelanggan aktif</th></tr></thead><tbody>' +
+    [1,2,3,4].map(function(n){ return '<tr><td>' + n + ' set</td><td>' + (n*300).toLocaleString("id-ID") + '</td><td>' + (n*75) + '</td></tr>'; }).join("") + '</tbody>';
 
   $("chk").innerHTML = FAKTOR.map(function(f){
     return '<label for="f-' + f.id + '"><input type="checkbox" id="f-' + f.id + '"><span><b>' + f.n + '</b><small>' + f.q + '</small></span></label>';
@@ -1122,7 +1194,6 @@ function buildFAQ(P){
     if (!C.logo) miss.push("logo");
     if (!C.alamatJakarta) miss.push("alamat Jakarta");
     if (!filled.length) miss.push("foto");
-    if (!C.asumsiSimulasi) miss.push("asumsi simulasi");
     $("previewBar").hidden = false;
     $("previewBar").textContent = "Mode pratinjau. Belum diisi: " + (miss.join(", ") || "tidak ada") + ". Bar ini hilang saat modePratinjau diubah ke false.";
   }
