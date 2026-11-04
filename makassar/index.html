@@ -474,7 +474,7 @@ dialog::backdrop{background:rgba(6,16,34,.6)}
     <div class="hero__in">
       <div class="hero__copy">
         <p class="eyebrow" id="heroEyebrow">Paket bisnis laundry self-service · Indonesia Timur</p>
-        <h1 id="h-hero">Mau punya usaha laundry di Indonesia Timur? Yuk, hitung bareng tim kami</h1>
+        <h1 id="h-hero">Saatnya memulai bisnis laundry! Mari hitung peluangnya bersama SML Group.</h1>
         <p class="hero__sub" id="heroSub">Kami di SML Group membantu Anda menyiapkan bisnis laundry self-service, mulai dari evaluasi lokasi, rekomendasi mesin, instalasi, sampai training. Tersedia tiga pilihan paket, mulai dari Rp300 juta untuk 10 mesin.</p>
         <div class="hero__cta">
           <a class="btn btn--wa" href="#" data-wa data-place="HERO" data-label-konsultasi>
@@ -534,7 +534,7 @@ dialog::backdrop{background:rgba(6,16,34,.6)}
         <p>Bandingkan nilai investasi dan kapasitasnya. Paket yang pas tergantung lokasi dan rencana Anda, bukan cuma modal.</p>
       </div>
       <div class="pkts" id="pkts"></div>
-      <p class="note"><b>Perlu diperhitungkan:</b> selain nilai paket, siapkan juga perhitungan kebutuhan lokasi dan biaya operasional. Rincian yang termasuk dalam setiap paket kami jelaskan saat konsultasi. Angka simulasi bukan jaminan keuntungan.</p>
+      <p class="note"><b>Perlu diperhitungkan:</b> selain nilai paket, siapkan juga perhitungan kebutuhan lokasi dan biaya operasional. Rincian yang termasuk dalam setiap paket kami jelaskan saat konsultasi. Untuk kota di luar Makassar, harga, sewa, dan pengiriman mesin kami hitung bersama lewat WhatsApp. Angka simulasi bukan jaminan keuntungan.</p>
       <p class="bonus" id="bonus"><svg class="ic" aria-hidden="true"><use href="#i-gift"/></svg><span><b>Bonus free supply bahan baku selama 3 bulan.</b> Syarat dan ketentuan berlaku.</span></p>
     </div>
   </section>
@@ -795,6 +795,8 @@ function buildFAQ(P){
      "Paket Kemitraan Laundry memakai brand Wish Wash. Jika Anda ingin memakai brand sendiri, kami punya Paket Bisnis Laundry. Tim kami akan membantu memilih yang sesuai."],
     ["Siapa yang menjalankan outlet sehari-hari?",
      "Ada dua model kerja sama yang bisa dibahas: outlet dijalankan oleh mitra, atau dikelola oleh SML. Ketersediaan model untuk setiap paket mengikuti ketentuan kerja sama."],
+    ["Apakah harga dan simulasi berlaku untuk kota saya?",
+     "Angka di halaman ini adalah acuan awal. Untuk kota di luar Makassar, harga, biaya sewa, dan pengiriman mesin bisa berbeda, jadi konsultasikan dulu lewat WhatsApp agar perhitungannya sesuai kota Anda."],
     ["Apakah tersedia di luar Makassar?",
      "Kami berbasis di Makassar dan fokus berkembang di Indonesia Timur. Kesesuaian setiap lokasi tetap perlu dievaluasi lebih dulu, termasuk kebutuhan pengiriman dan instalasi mesin di kota Anda. Silakan tanyakan ke tim kami."],
     ["Bisakah saya melihat outlet dan showroom secara langsung?",
@@ -920,6 +922,7 @@ function buildFAQ(P){
 
     eventLog = [];
     track("Contact", data);
+    if (waList.length > 1) track("KlikWA_" + waLine, data, true);
     var isLead = state.segDeclared || state.pktDeclared || place === "VISIT";
     var leadKey = "lead-" + ref;
     if (isLead && !sent[leadKey]) { sent[leadKey] = 1; track("Lead", data); }
