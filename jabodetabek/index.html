@@ -456,7 +456,7 @@ dialog::backdrop{background:rgba(6,16,34,.6)}
     <div class="hero__in">
       <div class="hero__copy">
         <p class="eyebrow" id="heroEyebrow">Paket bisnis laundry self-service · JABODETABEK</p>
-        <h1 id="h-hero">Bangun usaha laundry dengan perhitungan yang jelas sejak awal</h1>
+        <h1 id="h-hero">Saatnya memulai bisnis laundry! Mari hitung peluangnya bersama SML Group.</h1>
         <p class="hero__sub" id="heroSub">Kami di SML Group membantu Anda menyiapkan bisnis laundry self-service, mulai dari evaluasi lokasi, rekomendasi mesin, instalasi, sampai training. Tersedia tiga pilihan paket, mulai dari Rp300 juta untuk 10 mesin.</p>
         <div class="hero__cta">
           <a class="btn btn--wa" href="#" data-wa data-place="HERO" data-label-konsultasi>
@@ -865,7 +865,6 @@ function buildFAQ(P){
     if (jadwal) m += "\n\nSaya ingin menjadwalkan konsultasi.";
     var c = checked();
     if (c.length) m += "\n\nYang sudah saya pikirkan (" + c.length + " dari " + FAKTOR.length + "): " + c.map(function(f){ return f.n.toLowerCase(); }).join(", ") + ".";
-    m += "\n\nKode: " + refCode(place, seg, pkt);
     return m;
   }
 
