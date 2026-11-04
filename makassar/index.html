@@ -55,7 +55,7 @@ window.SML_CONFIG = {
   tampilkanBonus: true,
 
   paket: [
-    { id:"beko-2", kode:"B2", nama:"2 Set Beko", merek:"Beko", harga:36500000, normal:42080000, set:2, mesin:4, boiler:"Titan 10L", promoDesain:false,
+    { id:"beko-2", gambar:"assets/paket-beko-2.webp", gambarW:732, gambarH:1167, kode:"B2", nama:"2 Set Beko", merek:"Beko", harga:36500000, normal:42080000, set:2, mesin:4, boiler:"Titan 10L", promoDesain:false,
       mesinTeks:"2 mesin cuci Beko 10 kg dan 2 dryer Beko 8 kg",
       isi:[
         ["Mesin","2 mesin cuci Beko 10 kg","2 dryer Beko kapasitas 8 kg","1 paket boiler Titan kapasitas 10L geser"],
@@ -63,7 +63,7 @@ window.SML_CONFIG = {
         ["Plastik dan chemical","10 jenis plastik kemasan dan hanger","Detergen, pewangi, softener, dan chemical pendukung","Tag gun, peluru tag, pita label, dan jepit buaya"],
         ["Meubel","1 meja kasir","1 rak pakaian 3 kotak"]
       ] },
-    { id:"samsung-1", kode:"S1", nama:"1 Set Samsung", merek:"Samsung Commercial", harga:44999999, normal:46682000, set:1, mesin:2, boiler:"Titan 10L", promoDesain:false,
+    { id:"samsung-1", gambar:"assets/paket-samsung-1.webp", gambarW:398, gambarH:556, kode:"S1", nama:"1 Set Samsung", merek:"Samsung Commercial", harga:44999999, normal:46682000, set:1, mesin:2, boiler:"Titan 10L", promoDesain:false,
       mesinTeks:"1 stack Samsung Commercial (mesin cuci dan pengering)",
       tidakTermasuk:"Tidak termasuk instalasi air, uap panas, listrik, gas, partisi, meja kasir, dan rak pakaian.",
       isi:[
@@ -71,7 +71,7 @@ window.SML_CONFIG = {
         ["Perlengkapan","1 paket meja setrika besi lipat, busa rebounded","1 timbangan duduk digital 30 kg Benz","Keranjang laundry warna dan papan lipat kayu","1 dudukan isolasi dan 1 isolasi 24 mm","1 stabilizer Krisbow 1500W","2 set botol parfum 250 ml dan 2 hanger kawat panjang"],
         ["Plastik dan chemical","7 jenis plastik kemasan dan hanger","Detergen, pewangi, softener, dan chemical pendukung"]
       ] },
-    { id:"samsung-2", kode:"S2", nama:"2 Set Samsung", merek:"Samsung Commercial", harga:99999999, normal:106179500, set:2, mesin:4, boiler:"Titan 10L", promoDesain:true,
+    { id:"samsung-2", gambar:"assets/paket-samsung-2.webp", gambarW:628, gambarH:556, kode:"S2", nama:"2 Set Samsung", merek:"Samsung Commercial", harga:99999999, normal:106179500, set:2, mesin:4, boiler:"Titan 10L", promoDesain:true,
       mesinTeks:"2 stack Samsung Commercial (mesin cuci dan pengering)",
       isi:[
         ["Mesin","2 stack Samsung Commercial (mesin cuci dan pengering)","1 paket boiler Titan kapasitas 10L geser"],
@@ -80,7 +80,7 @@ window.SML_CONFIG = {
         ["Instalasi","2 instalasi air bersih, 2 uap panas, 2 air kotor","4 instalasi listrik, 4 gas, 2 partisi","2 stabilizer Krisbow 1500W"],
         ["Meubel","1 meja kasir","1 rak pakaian"]
       ] },
-    { id:"samsung-3", kode:"S3", nama:"3 Set Samsung", merek:"Samsung Commercial", harga:140999999, normal:150259500, set:3, mesin:6, boiler:"Titan 15L", promoDesain:true,
+    { id:"samsung-3", gambar:"assets/paket-samsung-3.webp", gambarW:858, gambarH:556, kode:"S3", nama:"3 Set Samsung", merek:"Samsung Commercial", harga:140999999, normal:150259500, set:3, mesin:6, boiler:"Titan 15L", promoDesain:true,
       mesinTeks:"3 stack Samsung Commercial (mesin cuci dan pengering)",
       isi:[
         ["Mesin","3 stack Samsung Commercial (mesin cuci dan pengering)","1 paket boiler Titan kapasitas 15L geser"],
@@ -89,7 +89,7 @@ window.SML_CONFIG = {
         ["Instalasi","3 instalasi air bersih, 3 uap panas, 3 air kotor","6 instalasi listrik, 5 gas, 3 partisi","3 stabilizer Krisbow 1500W"],
         ["Meubel","1 meja kasir","1 rak pakaian"]
       ] },
-    { id:"samsung-4", kode:"S4", nama:"4 Set Samsung", merek:"Samsung Commercial", harga:183999999, normal:196789500, set:4, mesin:8, boiler:"Titan 25L", promoDesain:true,
+    { id:"samsung-4", gambar:"assets/paket-samsung-4.webp", gambarW:1088, gambarH:556, kode:"S4", nama:"4 Set Samsung", merek:"Samsung Commercial", harga:183999999, normal:196789500, set:4, mesin:8, boiler:"Titan 25L", promoDesain:true,
       mesinTeks:"4 stack Samsung Commercial (mesin cuci dan pengering)",
       isi:[
         ["Mesin","4 stack Samsung Commercial (mesin cuci dan pengering)","1 paket boiler Titan kapasitas 25L geser"],
@@ -296,12 +296,9 @@ html[data-brand="merah"] .wall-cap{color:#F5C9C9}
 .pkts{display:grid;gap:18px}
 .pkt{display:grid;grid-template-rows:auto auto 1fr auto;gap:18px;padding:22px 20px;border:1.5px solid var(--line);border-radius:16px;background:var(--paper);min-width:0}
 .pkt__name{font-size:1.65rem;font-weight:800}
-.pkt__viz{display:grid;grid-auto-flow:column;grid-auto-columns:34px;gap:6px;justify-content:center;align-content:end;height:100%;padding:12px;background:var(--mist);border-radius:10px}
-.pkt__viz svg{width:100%;height:auto;display:block}
+.pkt__media{display:flex;align-items:flex-end;justify-content:center;height:190px;padding:12px;background:var(--mist);border-radius:12px}
+.pkt__media img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
 .pkt__cap{font-size:.8rem;color:var(--muted);margin-top:8px}
-.st-cab{fill:var(--brand)}
-.st-door{fill:var(--paper)}
-.st-in{fill:var(--brand-soft)}
 .pkt__dl{display:grid;gap:0;align-content:start}
 .pkt__row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding-block:9px;border-bottom:1px solid var(--line)}
 .pkt__row dt{color:var(--muted);font-size:.92rem;min-width:0}
@@ -475,7 +472,7 @@ dialog::backdrop{background:rgba(6,16,34,.6)}
   .pkt--wide>:nth-child(2){grid-column:2;grid-row:1 / span 2;align-self:stretch}
   .pkt--wide>:nth-child(3){grid-column:3;grid-row:1 / span 2}
   .pkt--wide>:nth-child(4){grid-column:1;grid-row:2;align-self:end}
-  .pkt--wide .pkt__viz{align-content:center}
+  .pkt--wide .pkt__media{height:100%;min-height:280px;max-height:340px}
   .mkt{grid-template-columns:repeat(4,minmax(0,1fr))}
   .pkt{grid-row:span 4;grid-template-rows:subgrid}
   .steps{grid-template-columns:repeat(5,minmax(0,1fr));gap:20px}
@@ -1093,17 +1090,14 @@ function buildFAQ(P){
   });
 
   /* --- Paket ------------------------------------------------------------- */
-  var stackSvg = '<svg viewBox="0 0 40 72" aria-hidden="true"><rect class="st-cab" width="40" height="72" rx="4"/><circle class="st-door" cx="20" cy="19" r="12"/><circle class="st-in" cx="20" cy="19" r="7"/><circle class="st-door" cx="20" cy="53" r="12"/><circle class="st-in" cx="20" cy="53" r="7"/></svg>';
   function capacity(p){ return p.set * 300; }
   $("pkts").innerHTML = P.map(function(p, n){
-    var viz = "";
-    for (var i = 0; i < p.set; i++) viz += stackSvg;
     var isi = p.isi.map(function(g){
       return '<h4>' + g[0] + '</h4><ul>' + g.slice(1).map(function(x){ return '<li>' + x + '</li>'; }).join("") + '</ul>';
     }).join("");
     return '<article class="pkt' + (n === 0 ? ' pkt--wide' : '') + '" aria-labelledby="pk-' + p.id + '">' +
       '<div><h3 class="pkt__name" id="pk-' + p.id + '">Paket ' + p.nama + '</h3><p class="pkt__sub">' + p.mesinTeks + '</p></div>' +
-      '<div><div class="pkt__viz" role="img" aria-label="' + p.set + ' set mesin">' + viz + '</div></div>' +
+      '<div class="pkt__media"><img src="' + p.gambar + '" width="' + p.gambarW + '" height="' + p.gambarH + '" alt="Mesin laundry Paket ' + p.nama + '" loading="lazy" decoding="async"></div>' +
       '<div><dl class="pkt__dl">' +
         '<div class="pkt__row pkt__row--big"><dt>Harga paket</dt><dd>' + rpFull(p.harga) + '</dd></div>' +
         '<div class="pkt__row"><dt>Harga normal</dt><dd class="pkt__old">' + rpFull(p.normal) + '</dd></div>' +
