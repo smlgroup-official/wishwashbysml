@@ -433,6 +433,73 @@ footer{background:#1B1718;color:#D9D0D0;padding:64px 0 28px;margin-top:96px}
   .stage-nav a{padding:8px 12px;font-size:.84rem}
 }
 
+/* tier strip */
+.tier-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}
+.tier{position:relative;background:#fff;border:1.5px solid var(--line);border-radius:26px;padding:28px;display:flex;flex-direction:column;transition:transform .3s var(--ease),box-shadow .3s,border-color .3s}
+.tier:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg);border-color:#F0C4C4}
+.tier.feat{background:linear-gradient(160deg,var(--red),var(--red-deep));color:#fff;border-color:transparent;box-shadow:var(--shadow-lg)}
+.tier-badge{position:absolute;top:-13px;right:24px;background:#FFD23F;color:var(--ink);font-size:.76rem;font-weight:800;padding:6px 13px;border-radius:99px}
+.tier-top{display:flex;flex-direction:column;gap:2px;margin-bottom:18px}
+.tier-k{font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--red)}
+.tier.feat .tier-k{color:#FFD9D9}
+.tier-who{font-size:.9rem;color:var(--muted);font-weight:600}
+.tier.feat .tier-who{color:rgba(255,255,255,.8)}
+.tier-from{font-size:.82rem;font-weight:700;color:var(--muted)}
+.tier.feat .tier-from{color:rgba(255,255,255,.75)}
+.tier-price{font-size:clamp(2.2rem,4vw,2.9rem);font-weight:800;letter-spacing:-.04em;line-height:1.05;margin-bottom:18px}
+.tier-price small{font-size:1.05rem;letter-spacing:0;font-weight:700}
+.tier-list{list-style:none;display:grid;gap:9px;padding:16px 0 20px;border-top:1px dashed var(--line);margin-bottom:auto}
+.tier.feat .tier-list{border-color:rgba(255,255,255,.25)}
+.tier-list li{position:relative;padding-left:18px;font-size:.9rem;color:var(--ink-2)}
+.tier.feat .tier-list li{color:rgba(255,255,255,.92)}
+.tier-list li::before{content:"";position:absolute;left:0;top:8px;width:7px;height:7px;border-radius:2px;background:var(--red);transform:rotate(45deg)}
+.tier.feat .tier-list li::before{background:#fff}
+.tier-btn{justify-content:center;width:100%;padding:12px 16px;font-size:.9rem;white-space:normal;text-align:center}
+.tier-btns{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.tier-note{text-align:center;font-size:.86rem;color:var(--muted);margin-top:22px}
+.tier-note a{color:var(--red);font-weight:700}
+/* mesin */
+.mc-grid{display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:20px;align-items:stretch}
+.mc-learn{background:#fff;border:1px solid var(--line);border-radius:26px;padding:26px;display:flex;flex-direction:column}
+.mc-tabs{display:flex;gap:6px;background:var(--soft);padding:5px;border-radius:14px;margin-bottom:20px}
+.mc-tabs button{flex:1;padding:10px 8px;border-radius:10px;font-weight:700;font-size:.88rem;color:var(--muted)}
+.mc-tabs button.cur{background:var(--red);color:#fff;box-shadow:0 6px 14px -8px rgba(211,20,28,.7)}
+.mc-panel{display:none}
+.mc-panel.cur{display:block;animation:fade .4s var(--ease)}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.mc-panel h4{font-size:1.2rem;margin-bottom:8px}
+.mc-panel p{color:var(--muted);font-size:.95rem}
+.mc-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.mc-tags span{font-size:.8rem;font-weight:700;padding:6px 12px;border-radius:99px;background:var(--rose);color:var(--red)}
+.mc-tip{margin-top:auto;padding-top:20px}
+.mc-tip{font-size:.88rem;color:var(--muted)}
+.mc-tip b{display:block;color:var(--ink);margin-bottom:4px}
+.mc-tip{border-top:1px dashed var(--line);margin-top:22px}
+.mc-brand{border-radius:26px;overflow:hidden;display:flex;flex-direction:column;border:1px solid var(--line);transition:transform .3s var(--ease),box-shadow .3s}
+.mc-brand:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.mc-brand.light{background:#fff}
+.mc-brand.dark{background:#0E0C0C;color:#fff;border-color:#0E0C0C}
+.mc-img{height:260px;display:flex;align-items:center;justify-content:center;padding:18px}
+.mc-brand.light .mc-img{background:linear-gradient(180deg,#F6F3F2,#fff)}
+.mc-img img{max-height:100%;width:auto;object-fit:contain}
+.mc-body{padding:22px 24px 24px}
+.mc-name{font-size:1.35rem;font-weight:800;letter-spacing:-.02em;margin-bottom:6px}
+.mc-body p{font-size:.92rem;color:var(--muted)}
+.mc-brand.dark .mc-body p{color:rgba(255,255,255,.72)}
+.mc-body a{display:inline-flex;align-items:center;gap:6px;margin-top:14px;font-weight:700;font-size:.9rem;color:var(--red)}
+.mc-brand.dark .mc-body a{color:#FF6A70}
+.mc-body a svg{width:15px;height:15px}
+@media (max-width:980px){
+  .tier-grid{grid-template-columns:1fr;max-width:520px;margin-inline:auto}
+  .mc-grid{grid-template-columns:1fr 1fr}
+  .mc-learn{grid-column:span 2}
+}
+@media (max-width:640px){
+  .mc-grid{grid-template-columns:1fr}
+  .mc-learn{grid-column:span 1}
+  .mc-img{height:220px}
+}
+
 .wa-float{position:fixed;right:20px;bottom:20px;z-index:90;display:flex;align-items:center;gap:10px;background:var(--wa);color:#fff;font-weight:700;padding:13px 20px 13px 16px;border-radius:999px;box-shadow:0 12px 30px -10px rgba(18,161,80,.7);transition:transform .25s var(--ease);cursor:pointer}
 .wa-float:hover{transform:translateY(-3px)}
 .wa-float svg{width:24px;height:24px}
@@ -506,11 +573,11 @@ footer{background:#1B1718;color:#D9D0D0;padding:64px 0 28px;margin-top:96px}
     <button class="menu-toggle" id="menuToggle" aria-label="Menu"><span></span><span></span><span></span></button>
     <nav id="nav">
       <a class="nav-link" data-v="keunggulan" href="#keunggulan">Keunggulan</a>
+      <a class="nav-link" data-v="modal" href="#modal">Paket</a>
       <a class="nav-link" data-v="layanan" href="#layanan">Layanan</a>
-      <a class="nav-link" data-v="jalur" href="#jalur">Paket</a>
-      <a class="nav-link" data-v="tentang" href="#tentang">Tentang</a>
+      <a class="nav-link" data-v="mesin" href="#mesin">Mesin</a>
       <a class="nav-link" data-v="cara" href="#cara">Cara Mulai</a>
-            <a class="nav-link ww" href="kemitraan/">Kemitraan Wish Wash</a>
+      <a class="nav-link ww" href="kemitraan/">Kemitraan Wish Wash</a>
       <a class="btn solid" href="#konsultasi">Konsultasi Gratis</a>
     </nav>
   </div>
@@ -527,7 +594,7 @@ footer{background:#1B1718;color:#D9D0D0;padding:64px 0 28px;margin-top:96px}
         <p class="lede">Mau buka laundry, tambah mesin, atau bikin outlet yang sudah ada lebih lancar? SML Group menemani Anda <b>memulai, menjalankan, merawat, sampai mengembangkan</b> bisnis laundry. Mesin, bahan baku, teknisi, dan pelatihan cukup lewat satu pintu.</p>
         <div class="cta-row">
           <a class="btn solid" href="#konsultasi">Konsultasi Gratis <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2"/></svg></a>
-          <a class="btn ghost" href="#keunggulan">Kenapa SML Group?</a>
+          <a class="btn ghost" href="#modal">Lihat Pilihan Modal</a>
         </div>
         <div class="checks">
           <span><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="currentColor" opacity=".12"/><path d="M7.5 12.5l3 3 6-6.5" stroke="currentColor" stroke-width="2"/></svg>Berpengalaman di lapangan</span>
@@ -547,8 +614,56 @@ footer{background:#1B1718;color:#D9D0D0;padding:64px 0 28px;margin-top:96px}
   </div>
 </section>
 
+<!-- MODAL / PAKET STRIP -->
+<section class="view sec" id="modal" style="padding-bottom:40px">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <div class="eyebrow">Mulai dari modal berapa?</div>
+      <h2>Ada jalur untuk <span class="red">setiap skala modal.</span></h2>
+      <p>Mulai kecil lalu bertumbuh, atau langsung skala besar. Pilih yang paling sesuai dengan kondisi Anda, semua tetap didampingi SML Group.</p>
+    </div>
+    <div class="tier-grid">
+      <div class="tier reveal">
+        <div class="tier-top"><span class="tier-k">01 · Mulai</span><span class="tier-who">Untuk pemula &amp; ruko kecil</span></div>
+        <div class="tier-from">Mulai</div>
+        <div class="tier-price">Rp36,5<small> juta</small></div>
+        <ul class="tier-list">
+          <li><b>2 Set Beko</b> · 2 mesin cuci 10 kg + 2 dryer 8 kg</li>
+          <li><b>1 Set Samsung Commercial</b> · Rp45 juta</li>
+          <li>Sudah termasuk boiler, perlengkapan, dan bahan baku awal</li>
+        </ul>
+        <a class="btn ghost tier-btn" href="makassar/">Lihat Paket Indonesia Timur <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2"/></svg></a>
+      </div>
+      <div class="tier feat reveal" data-d="1">
+        <div class="tier-badge">Bertumbuh</div>
+        <div class="tier-top"><span class="tier-k">02 · Berkembang</span><span class="tier-who">Kapasitas menengah</span></div>
+        <div class="tier-from">Rentang</div>
+        <div class="tier-price">Rp99,9<small> – 184 juta</small></div>
+        <ul class="tier-list">
+          <li><b>2–4 Set Samsung Commercial</b> · 4–8 mesin</li>
+          <li>Mesin cuci &amp; pengering bertumpuk, hemat tempat</li>
+          <li>Cocok untuk lokasi ramai atau menambah kapasitas</li>
+        </ul>
+        <a class="btn white tier-btn" href="makassar/">Lihat Paket Samsung <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2"/></svg></a>
+      </div>
+      <div class="tier reveal" data-d="2">
+        <div class="tier-top"><span class="tier-k">03 · Skala Besar</span><span class="tier-who">Investor &amp; pemilik modal</span></div>
+        <div class="tier-from">Mulai</div>
+        <div class="tier-price">Rp300<small> juta</small></div>
+        <ul class="tier-list">
+          <li><b>Prime · Gold · Platinum</b> · 5–15 stack (10–30 mesin)</li>
+          <li>Tersedia untuk Jabodetabek dan Kemitraan Wish Wash</li>
+          <li>Bisa dikelola SML (Managed Laundry)</li>
+        </ul>
+        <div class="tier-btns"><a class="btn ghost tier-btn" href="kemitraan/">Kemitraan Wish Wash</a><a class="btn ghost tier-btn" href="jabodetabek/">Jabodetabek</a></div>
+      </div>
+    </div>
+    <p class="tier-note reveal">Harga mengikuti halaman paket SML Group dan dapat berubah sewaktu-waktu. Rincian isi paket ada di halaman masing-masing. Belum yakin skala yang pas? <a href="#konsultasi">Konsultasikan gratis</a>.</p>
+  </div>
+</section>
+
 <!-- KEUNGGULAN -->
-<section class="view sec" id="keunggulan">
+<section class="view sec soft" id="keunggulan">
   <div class="wrap">
     <div class="sec-head reveal">
       <div class="eyebrow">Keunggulan SML Group</div>
@@ -591,7 +706,7 @@ footer{background:#1B1718;color:#D9D0D0;padding:64px 0 28px;margin-top:96px}
 </section>
 
 <!-- LAYANAN -->
-<section class="view sec soft" id="layanan">
+<section class="view sec" id="layanan">
   <div class="wrap">
     <div class="sec-head center reveal">
       <div class="eyebrow">11 Layanan dalam 4 Tahap</div>
@@ -690,7 +805,7 @@ footer{background:#1B1718;color:#D9D0D0;padding:64px 0 28px;margin-top:96px}
 </section>
 
 <!-- BANDINGKAN -->
-<section class="view sec" id="kenapa-satu-pintu">
+<section class="view sec soft" id="kenapa-satu-pintu">
   <div class="wrap">
     <div class="sec-head center reveal">
       <div class="eyebrow">Kenapa satu ekosistem?</div>
@@ -726,7 +841,7 @@ footer{background:#1B1718;color:#D9D0D0;padding:64px 0 28px;margin-top:96px}
 </section>
 
 <!-- JALUR / PAKET -->
-<section class="view sec soft" id="jalur">
+<section class="view sec" id="jalur">
   <div class="wrap">
     <div class="sec-head reveal">
       <div class="eyebrow">Dua jalur memulai</div>
@@ -770,8 +885,58 @@ footer{background:#1B1718;color:#D9D0D0;padding:64px 0 28px;margin-top:96px}
   </div>
 </section>
 
+<!-- KENALI MESIN -->
+<section class="view sec soft" id="mesin">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Kenali mesinnya</div>
+      <h2>Mesin yang tepat, <span class="red">operasional yang lancar.</span></h2>
+      <p>Memilih mesin bukan soal paling besar atau paling mahal, tapi soal yang paling pas dengan jumlah cucian, luas ruang, dan rencana usaha Anda.</p>
+    </div>
+    <div class="mc-grid">
+      <div class="mc-learn reveal">
+        <div class="mc-tabs" id="mcTabs">
+          <button class="cur" data-t="0">Mesin Cuci</button><button data-t="1">Pengering</button><button data-t="2">Boiler</button>
+        </div>
+        <div class="mc-panel cur" data-p="0">
+          <h4>Jantung outlet laundry</h4>
+          <p>Mesin cuci komersial dibuat untuk dipakai berkali-kali dalam sehari. Kapasitasnya sebaiknya dihitung dari perkiraan jumlah cucian per hari, bukan sekadar memilih yang paling besar.</p>
+          <div class="mc-tags"><span>Beko 10 kg</span><span>Samsung Commercial</span></div>
+        </div>
+        <div class="mc-panel" data-p="1">
+          <h4>Pakaian siap dilipat di hari yang sama</h4>
+          <p>Pengering mempercepat proses sehingga cucian tidak menumpuk. Di paket SML, jumlah pengering disamakan dengan jumlah mesin cuci agar alur kerja seimbang.</p>
+          <div class="mc-tags"><span>Dryer Beko 8 kg</span><span>Stack Samsung Commercial</span></div>
+        </div>
+        <div class="mc-panel" data-p="2">
+          <h4>Uap untuk hasil setrika lebih rapi</h4>
+          <p>Boiler menghasilkan uap untuk setrika uap. Setiap paket Indonesia Timur sudah termasuk boiler Titan, dengan kapasitas yang menyesuaikan jumlah mesin.</p>
+          <div class="mc-tags"><span>Titan 10L</span><span>Titan 15L</span><span>Titan 25L</span></div>
+        </div>
+        <div class="mc-tip"><b>Tips memilih mesin</b>Hitung perkiraan cucian per hari, ukur luas ruang, dan cek daya listrik. Tim SML membantu menghitungnya saat konsultasi.</div>
+      </div>
+      <div class="mc-brand light reveal" data-d="1">
+        <div class="mc-img"><img src="assets/mesin-beko.webp" alt="Mesin cuci dan dryer Beko di Paket Bisnis SML Group" loading="lazy"></div>
+        <div class="mc-body">
+          <div class="mc-name">Beko</div>
+          <p>Pilihan awal yang efisien untuk mulai usaha. Paket 2 set berisi 2 mesin cuci 10 kg dan 2 dryer 8 kg.</p>
+          <a href="makassar/">Lihat paket Beko <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2"/></svg></a>
+        </div>
+      </div>
+      <div class="mc-brand dark reveal" data-d="2">
+        <div class="mc-img"><img src="assets/mesin-samsung.webp" alt="Mesin Samsung Commercial stack di Paket Bisnis SML Group" loading="lazy"></div>
+        <div class="mc-body">
+          <div class="mc-name">Samsung Commercial</div>
+          <p>Mesin cuci dan pengering bertumpuk dalam satu stack, hemat tempat. Tersedia 1 sampai 4 set.</p>
+          <a href="makassar/">Lihat paket Samsung <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- SIAPA -->
-<section class="view sec" id="siapa">
+<section class="view sec soft" id="siapa">
   <div class="wrap">
     <div class="sec-head reveal">
       <div class="eyebrow">Untuk siapa</div>
@@ -782,7 +947,7 @@ footer{background:#1B1718;color:#D9D0D0;padding:64px 0 28px;margin-top:96px}
 </section>
 
 <!-- TENTANG -->
-<section class="view sec soft" id="tentang">
+<section class="view sec" id="tentang">
   <div class="wrap why">
     <div class="reveal">
       <div class="eyebrow">Tentang SML Group</div>
@@ -810,7 +975,7 @@ footer{background:#1B1718;color:#D9D0D0;padding:64px 0 28px;margin-top:96px}
 </section>
 
 <!-- BUKTI: BU LAUNDRY -->
-<section class="view sec" id="bukti">
+<section class="view sec soft" id="bukti">
   <div class="wrap proof">
     <div class="proof-photos reveal">
       <div class="ph"><img src="assets/interior-1.jpg" alt="Outlet laundry self-service yang dikelola SML Group" loading="lazy"><span class="cap">Laundry self-service</span></div>
@@ -832,7 +997,7 @@ footer{background:#1B1718;color:#D9D0D0;padding:64px 0 28px;margin-top:96px}
 </section>
 
 <!-- CARA MULAI -->
-<section class="view sec soft" id="cara">
+<section class="view sec" id="cara">
   <div class="wrap">
     <div class="sec-head center reveal">
       <div class="eyebrow">Cara mulai</div>
@@ -845,7 +1010,7 @@ footer{background:#1B1718;color:#D9D0D0;padding:64px 0 28px;margin-top:96px}
 </section>
 
 <!-- FORM KONSULTASI -->
-<section class="view sec" id="konsultasi">
+<section class="view sec soft" id="konsultasi">
   <div class="wrap form-wrap">
     <div class="reveal">
       <div class="eyebrow">Konsultasi gratis</div>
@@ -879,7 +1044,7 @@ footer{background:#1B1718;color:#D9D0D0;padding:64px 0 28px;margin-top:96px}
 </section>
 
 <!-- FAQ -->
-<section class="view sec soft" id="faq">
+<section class="view sec" id="faq">
   <div class="wrap faq-wrap">
     <div class="reveal">
       <div class="eyebrow">Pertanyaan umum</div>
@@ -960,7 +1125,8 @@ footer{background:#1B1718;color:#D9D0D0;padding:64px 0 28px;margin-top:96px}
           <h5>Jelajahi</h5>
           <a href="#keunggulan">Keunggulan</a>
           <a href="#layanan">Layanan</a>
-          <a href="#jalur">Paket</a>
+          <a href="#modal">Paket</a>
+          <a href="#mesin">Mesin</a>
           <a href="#tentang">Tentang</a>
           <a href="#cara">Cara Mulai</a>
           <a href="#konsultasi">Konsultasi</a>
@@ -1103,6 +1269,9 @@ function renderFaq(){
     <div class="faq-a"><p>${f[1]}</p></div></div>`).join('');
 }
 function toggleFaq(b){const it=b.parentElement;it.classList.toggle('open');const a=b.nextElementSibling;a.style.maxHeight=it.classList.contains('open')?a.scrollHeight+'px':0;}
+
+
+
 /* ---------- NAV & EFFECTS ---------- */
 function go(id){const t=document.getElementById(id);if(t)t.scrollIntoView({behavior:'smooth',block:'start'});closeMenu();}
 function closeMenu(){document.getElementById('nav').classList.remove('open');document.getElementById('menuToggle').classList.remove('open');}
@@ -1126,6 +1295,10 @@ function initCounters(){
   document.querySelectorAll('[data-count]').forEach(e=>o.observe(e));
 }
 renderAud();renderSteps();renderFaq();fillNeeds();segInit('f-wil');segInit('f-kond');
+
+document.getElementById('mcTabs').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;
+  document.querySelectorAll('#mcTabs button').forEach(x=>x.classList.toggle('cur',x===b));
+  document.querySelectorAll('.mc-panel').forEach(p=>p.classList.toggle('cur',p.dataset.p===b.dataset.t));});
 initSpy();initReveals();initCounters();
 </script>
 </body>
