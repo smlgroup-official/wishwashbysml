@@ -195,6 +195,44 @@ footer{background:#1B1718;color:#D9D0D0;padding:40px 0 24px;margin-top:0}
 .foot-links a:hover{opacity:1;color:#FF8A8F}
 .foot-bottom{font-size:.8rem;opacity:.55;margin-top:24px;padding-top:18px;border-top:1px solid rgba(255,255,255,.1)}
 
+/* promo */
+.promo-sec{padding-top:56px}
+.promo-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:22px}
+.promo-head h2{font-size:clamp(1.7rem,3.4vw,2.4rem);margin:12px 0 6px}
+.promo-head p{color:var(--muted)}
+.promo-nav{display:flex;gap:8px}
+.promo-nav button{width:44px;height:44px;border-radius:12px;border:1.5px solid var(--line);font-size:1.5rem;line-height:1;color:var(--red);background:#fff}
+.promo-nav button:hover{border-color:var(--red)}
+.promo-track{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 48px)/4);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px;scrollbar-width:thin}
+.pcard{scroll-snap-align:start;background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;transition:transform .25s var(--ease),box-shadow .25s}
+.pcard:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.pcard .pimg{position:relative;aspect-ratio:4/5;background:var(--soft);cursor:zoom-in;overflow:hidden}
+.pcard .pimg img{width:100%;height:100%;object-fit:cover}
+.pcard .ptag{position:absolute;left:10px;top:10px;background:#FFD23F;color:var(--ink);font-size:.72rem;font-weight:800;padding:4px 10px;border-radius:99px}
+.pcard .pb{padding:14px 14px 16px;display:flex;flex-direction:column;gap:4px;flex:1}
+.pcard b{font-size:.95rem;line-height:1.3}
+.pcard small{font-size:.82rem;color:var(--muted)}
+.pcard .price{font-size:1.15rem;font-weight:800;color:var(--red);margin-top:2px}
+.pcard .price s{font-size:.8rem;color:var(--muted);font-weight:600;margin-right:6px}
+.pcard .pact{display:flex;gap:8px;margin-top:auto;padding-top:10px}
+.pcard .pact a{flex:1;text-align:center;padding:10px 8px;border-radius:11px;font-weight:700;font-size:.84rem}
+.pcard .pact .w{background:var(--wa);color:#fff}
+.pcard .pact .d{border:1.5px solid var(--line);color:var(--red)}
+.lb{position:fixed;inset:0;z-index:200;background:rgba(20,16,17,.82);display:none;align-items:center;justify-content:center;padding:16px}
+.lb.open{display:flex}
+.lb-box{background:#fff;border-radius:18px;max-width:560px;width:100%;max-height:94vh;display:flex;flex-direction:column;overflow:hidden;position:relative}
+.lb-img{overflow:auto;flex:1;background:#111}
+.lb-img img{width:100%;display:block}
+.lb-bar{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 14px;flex-wrap:wrap}
+.lb-bar b{font-size:.95rem}
+.lb-acts{display:flex;gap:8px}
+.lb-acts a{padding:10px 14px;border-radius:11px;font-weight:700;font-size:.86rem}
+.lb-acts .w{background:var(--wa);color:#fff}
+.lb-acts .d{border:1.5px solid var(--line);color:var(--red)}
+.lb-x{position:absolute;right:10px;top:10px;width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.95);font-size:1.4rem;z-index:2}
+@media (max-width:980px){.promo-track{grid-auto-columns:calc((100% - 32px)/3)}}
+@media (max-width:640px){.promo-track{grid-auto-columns:78%}.promo-nav{display:none}}
+
 .wa-float{position:fixed;right:18px;bottom:18px;z-index:90;display:flex;align-items:center;gap:9px;background:var(--wa);color:#fff;font-weight:700;padding:12px 18px 12px 14px;border-radius:999px;box-shadow:0 12px 30px -10px rgba(18,161,80,.7)}
 .wa-float svg{width:22px;height:22px}
 
@@ -240,6 +278,7 @@ footer{background:#1B1718;color:#D9D0D0;padding:40px 0 24px;margin-top:0}
     <a class="brand" href="#top"><img src="assets/logo-sml.png" alt="SML Group"><div><b>SML Group</b><span>Teman Tumbuh Laundrymu</span></div></a>
     <button class="menu-toggle" id="menuToggle" aria-label="Menu"><span></span><span></span><span></span></button>
     <nav id="nav">
+      <a class="nav-link" data-v="promo" href="#promo" id="navPromo">Promo</a>
       <a class="nav-link" data-v="paket" href="#paket">Paket</a>
       <a class="nav-link" data-v="layanan" href="#layanan">Layanan</a>
       <a class="nav-link" data-v="kenapa" href="#kenapa">Kenapa SML</a>
@@ -283,6 +322,26 @@ footer{background:#1B1718;color:#D9D0D0;padding:40px 0 24px;margin-top:0}
   </div>
 </section>
 
+<!-- PROMO -->
+<section class="sec promo-sec view" id="promo">
+  <div class="wrap">
+    <div class="promo-head reveal">
+      <div><div class="eyebrow">Promo bulan ini</div><h2>Lagi ada <span class="red">promo mesin &amp; paket.</span></h2><p>Klik gambar untuk melihat lebih jelas, lalu tanya langsung ke tim kami.</p></div>
+      <div class="promo-nav"><button onclick="promoScroll(-1)" aria-label="Sebelumnya">‹</button><button onclick="promoScroll(1)" aria-label="Berikutnya">›</button></div>
+    </div>
+    <div class="promo-track reveal" id="promoTrack"></div>
+    <p class="note">Harga dan stok promo dapat berubah sewaktu-waktu. Pastikan detailnya dengan tim kami sebelum membeli.</p>
+  </div>
+</section>
+
+<div class="lb" id="lb" onclick="if(event.target===this)closeLb()">
+  <div class="lb-box">
+    <button class="lb-x" onclick="closeLb()" aria-label="Tutup">×</button>
+    <div class="lb-img" id="lbImg"></div>
+    <div class="lb-bar"><b id="lbTitle"></b><div class="lb-acts" id="lbActs"></div></div>
+  </div>
+</div>
+
 <!-- 2. PAKET -->
 <section class="sec soft view" id="paket">
   <div class="wrap">
@@ -311,14 +370,6 @@ footer{background:#1B1718;color:#D9D0D0;padding:40px 0 24px;margin-top:0}
         <a class="btn solid" href="kemitraan/">Lihat harga</a>
         <a class="alt" href="jabodetabek/">Di Jabodetabek? Lihat di sini</a>
       </div>
-    </div>
-    <div class="machines reveal">
-      <div class="ml">Merek mesin yang tersedia<small>Pilih sesuai kebutuhan &amp; modal</small></div>
-      <div class="mc"><img src="assets/mesin-beko-washer.webp" alt="Mesin cuci Beko" loading="lazy"><b>Beko</b></div>
-      <div class="mc"><img src="assets/mesin-azalea.webp" alt="Pengering Azalea" loading="lazy"><b>Azalea</b></div>
-      <div class="mc dark"><img src="assets/mesin-samsung.webp" alt="Samsung Commercial" loading="lazy"><b>Samsung</b></div>
-      <div class="mc"><span class="ph"><svg viewBox="0 0 24 24" fill="none" width="22" height="22"><rect x="4" y="3" width="16" height="18" rx="2.5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="13" r="4.2" stroke="currentColor" stroke-width="1.8"/><path d="M7 6.5h2" stroke="currentColor" stroke-width="1.8"/></svg></span><b>LG</b></div>
-      <div class="mc"><span class="ph"><svg viewBox="0 0 24 24" fill="none" width="22" height="22"><rect x="4" y="3" width="16" height="18" rx="2.5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="13" r="4.2" stroke="currentColor" stroke-width="1.8"/><path d="M7 6.5h2" stroke="currentColor" stroke-width="1.8"/></svg></span><b>Maytag</b></div>
     </div>
     <p class="note">Mau pakai nama usaha sendiri? Bisa. Mau pakai nama Wish Wash? Pilih <a href="kemitraan/">Kemitraan</a>.</p>
   </div>
@@ -495,6 +546,33 @@ function sendForm(){
   const isJkt=JKT_WORDS.some(w=>kota.toLowerCase().includes(w));
   openWA('Halo SML Group, saya '+nama+' dari '+kota+'. Saya ingin '+mau+'. Mohon infonya.',isJkt?WA_JKT:WA_MKS);
 }
+
+
+/* ---------- PROMO (ubah di sini; 'until' = promo otomatis hilang mulai tanggal itu) ---------- */
+const PROMOS=[
+  {img:'assets/promo/brosur-1',pages:['assets/promo/brosur-1.webp','assets/promo/brosur-2.webp'],tag:'Paket usaha',title:'Paket 2 Set Mesin + Perlengkapan Usaha',sub:'Mesin, perlengkapan, chemical, meja kasir & rak',was:'Rp42.080.000',price:'Rp36,5 juta',pdf:'assets/promo/brosur-paket-usaha-2-set.pdf'},
+  {img:'assets/promo/azalea-diskon-800k',tag:'Now-Vember',title:'Dryer Azalea 10,5 kg (Gas) ADJ9FB',sub:'Diskon hingga Rp800 ribu',was:'Rp6.300.000',price:'Rp5.500.000',until:'2026-12-01T00:00:00+08:00'},
+  {img:'assets/promo/azalea-free-chemical',tag:'Now-Vember',title:'Dryer Azalea 10,5 kg + bonus',sub:'Gratis keranjang & 2 chemical 5 liter',was:'Rp7.100.000',price:'Rp6.300.000',until:'2026-12-01T00:00:00+08:00'},
+  {img:'assets/promo/samsung-lg',tag:'Now-Vember',title:'Dryer Samsung + Mesin Cuci LG 20 kg',sub:'Termasuk rangka mesin',was:'Rp32.450.000',price:'Rp31.900.000',until:'2026-12-01T00:00:00+08:00'},
+  {img:'assets/promo/samsung-dryer',tag:'Now-Vember',title:'Dryer Samsung Commercial',sub:'Harga promo November',was:'Rp16.500.000',price:'Rp16.050.000',until:'2026-12-01T00:00:00+08:00'}
+];
+const ACTIVE=PROMOS.filter(p=>!p.until||new Date()<new Date(p.until));
+function promoWA(i){const p=ACTIVE[i];openWA('Halo SML Group, saya tertarik dengan promo "'+p.title+'" ('+p.price+'). Apakah masih tersedia?');}
+if(!ACTIVE.length){document.getElementById('promo').remove();const n=document.getElementById('navPromo');if(n)n.remove();}
+else document.getElementById('promoTrack').innerHTML=ACTIVE.map((p,i)=>`
+  <div class="pcard">
+    <div class="pimg" onclick="openLb(${i})"><img src="${p.img}-thumb.webp" alt="${p.title}" loading="lazy"><span class="ptag">${p.tag}</span></div>
+    <div class="pb"><b>${p.title}</b><small>${p.sub}</small><div class="price"><s>${p.was}</s>${p.price}</div>
+      <div class="pact"><a class="w" onclick="promoWA(${i})">Tanya promo</a>${p.pdf?`<a class="d" href="${p.pdf}" download>Brosur PDF</a>`:''}</div></div>
+  </div>`).join('');
+function promoScroll(d){const t=document.getElementById('promoTrack');t.scrollBy({left:d*t.clientWidth*0.75,behavior:'smooth'});}
+function openLb(i){const p=ACTIVE[i];const pages=p.pages||[p.img+'.webp'];
+  document.getElementById('lbImg').innerHTML=pages.map(u=>`<img src="${u}" alt="${p.title}">`).join('');
+  document.getElementById('lbTitle').textContent=p.title;
+  document.getElementById('lbActs').innerHTML=`<a class="w" onclick="promoWA(${i})">Tanya via WhatsApp</a>`+(p.pdf?`<a class="d" href="${p.pdf}" download>Unduh PDF</a>`:'');
+  document.getElementById('lb').classList.add('open');document.body.style.overflow='hidden';}
+function closeLb(){document.getElementById('lb').classList.remove('open');document.body.style.overflow='';}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLb();});
 
 /* ---------- NAV ---------- */
 document.getElementById('menuToggle').addEventListener('click',()=>document.getElementById('nav').classList.toggle('open'));
