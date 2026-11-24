@@ -1090,18 +1090,18 @@ footer{background:#1B1718;color:#D9D0D0;padding:64px 0 28px;margin-top:96px}
         <div class="office">
           <div class="ol">Kantor Pusat</div>
           <div class="ov">Makassar</div>
-          <div class="oa">Jl. Pengayoman No. 41, Makassar</div>
+          <div class="oa">Jl. Pengayoman No. 41, Makassar<br><b>CS: 0821-8863-3388</b></div>
           <div class="oacts">
-            <a onclick="openWA(MSG.umum)"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1012 2z"/></svg>WhatsApp Indonesia Timur</a>
+            <a onclick="openWA(MSG.umum)"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1012 2z"/></svg>WhatsApp CS Makassar</a>
             <a href="https://www.google.com/maps/search/?api=1&query=Jl.%20Pengayoman%20No.%2041%2C%20Makassar" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7v8" stroke="currentColor" stroke-width="2"/></svg>Google Maps</a>
           </div>
         </div>
         <div class="office">
           <div class="ol">Kantor Cabang</div>
           <div class="ov">Jakarta</div>
-          <div class="oa">Jl. H. Batong Raya No. 33, Cilandak Barat, Jakarta</div>
+          <div class="oa">Jl. H. Batong Raya No. 33, Cilandak Barat, Jakarta<br><b>CS: 0811-801-197</b></div>
           <div class="oacts">
-            <a onclick="openWA(MSG.umum,WA_JKT)"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1012 2z"/></svg>WhatsApp Jabodetabek</a>
+            <a onclick="openWA(MSG.umum,WA_JKT)"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1012 2z"/></svg>WhatsApp CS Jakarta</a>
             <a href="https://www.google.com/maps/search/?api=1&query=Jl.%20H.%20Batong%20Raya%20No.%2033%2C%20Cilandak%20Barat%2C%20Jakarta" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7v8" stroke="currentColor" stroke-width="2"/></svg>Google Maps</a>
           </div>
         </div>
@@ -1158,6 +1158,8 @@ footer{background:#1B1718;color:#D9D0D0;padding:64px 0 28px;margin-top:96px}
         <div class="foot-col">
           <h5>Kontak</h5>
           <span>Jl. Pengayoman No. 41, Makassar</span>
+          <a onclick="openWA(MSG.umum)">CS Makassar: 0821-8863-3388</a>
+          <a onclick="openWA(MSG.umum,WA_JKT)">CS Jakarta: 0811-801-197</a>
           <a href="mailto:supermarketlaundrymakassar@gmail.com">Email</a>
           <a href="https://www.instagram.com/smlgroup.official/" target="_blank" rel="noopener">@smlgroup.official</a>
         </div>
@@ -1177,8 +1179,8 @@ footer{background:#1B1718;color:#D9D0D0;padding:64px 0 28px;margin-top:96px}
 
 <script>
 /* ---------- KONTAK (ubah di sini) ---------- */
-/* Nomor Indonesia Timur sama dengan halaman /makassar: pengunjung dibagi acak ke salah satu nomor dan tetap ke nomor yang sama saat kembali. */
-const WA_ITM=["6281128013801","6282188633388"];
+/* CS Makassar / Kantor Pusat dan CS Jakarta / Kantor Cabang */
+const WA_ITM=["6282188633388"];
 const WA_JKT="62811801197";
 function waItm(){
   let n=null;
