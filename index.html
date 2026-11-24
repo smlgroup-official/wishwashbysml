@@ -103,13 +103,15 @@ nav .btn{margin-left:8px;padding:10px 16px;font-size:.9rem}
 .tier.feat li::before{background:#fff}
 .tier .btn{margin-top:auto;width:100%}
 .tier .alt{display:block;text-align:center;margin-top:8px;font-size:.82rem;font-weight:700;color:var(--red)}
-.machines{display:grid;grid-template-columns:auto repeat(3,1fr);gap:12px;align-items:center;margin-top:22px;background:var(--soft);border-radius:18px;padding:14px 16px}
-.machines .ml{font-weight:800;font-size:.9rem;padding-right:6px}
-.mc{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:8px 12px 8px 8px}
-.mc img{width:52px;height:52px;object-fit:contain;border-radius:8px;background:#F6F3F2}
+.machines{display:grid;grid-template-columns:auto repeat(5,1fr);gap:10px;align-items:center;margin-top:22px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px 16px}
+.machines .ml{font-weight:800;font-size:.92rem;padding-right:8px;line-height:1.3}
+.machines .ml small{display:block;font-weight:600;font-size:.76rem;color:var(--muted)}
+.mc{display:flex;align-items:center;gap:10px;background:var(--soft);border-radius:14px;padding:7px 10px 7px 7px}
+.mc img,.mc .ph{width:44px;height:44px;object-fit:contain;border-radius:9px;background:#fff;flex:none}
+.mc .ph{display:grid;place-items:center;font-weight:800;font-size:.9rem;color:var(--red);border:1px solid var(--line)}
 .mc.dark img{background:#0E0C0C}
 .mc b{display:block;font-size:.92rem}
-.mc small{font-size:.78rem;color:var(--muted)}
+
 .note{text-align:center;font-size:.84rem;color:var(--muted);margin-top:14px}
 .note a{color:var(--red);font-weight:700}
 
@@ -207,7 +209,11 @@ footer{background:#1B1718;color:#D9D0D0;padding:40px 0 24px;margin-top:0}
   nav .btn{margin:8px 0 0}
   .ask-grid{grid-template-columns:1fr 1fr}
   .tier-grid{grid-template-columns:1fr;max-width:480px;margin-inline:auto}
-  .machines{grid-template-columns:1fr}
+  .machines{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:640px){
+  .machines{grid-template-columns:1fr 1fr}
+  .machines .ml{grid-column:1/-1;margin-bottom:2px}
   .svc-grid{grid-template-columns:repeat(2,1fr)}
   .why,.ask2{grid-template-columns:1fr}
   .steps{grid-template-columns:1fr 1fr}
@@ -307,10 +313,12 @@ footer{background:#1B1718;color:#D9D0D0;padding:40px 0 24px;margin-top:0}
       </div>
     </div>
     <div class="machines reveal">
-      <div class="ml">Mesin yang kami pakai</div>
-      <div class="mc"><img src="assets/mesin-beko-washer.webp" alt="Mesin cuci Beko" loading="lazy"><div><b>Beko</b><small>Mesin cuci 10 kg</small></div></div>
-      <div class="mc"><img src="assets/mesin-azalea.webp" alt="Pengering Azalea" loading="lazy"><div><b>Azalea</b><small>Pengering 10,5 kg</small></div></div>
-      <div class="mc dark"><img src="assets/mesin-samsung.webp" alt="Samsung Commercial" loading="lazy"><div><b>Samsung Commercial</b><small>Cuci + kering, ditumpuk</small></div></div>
+      <div class="ml">Merek mesin yang tersedia<small>Pilih sesuai kebutuhan &amp; modal</small></div>
+      <div class="mc"><img src="assets/mesin-beko-washer.webp" alt="Mesin cuci Beko" loading="lazy"><b>Beko</b></div>
+      <div class="mc"><img src="assets/mesin-azalea.webp" alt="Pengering Azalea" loading="lazy"><b>Azalea</b></div>
+      <div class="mc dark"><img src="assets/mesin-samsung.webp" alt="Samsung Commercial" loading="lazy"><b>Samsung</b></div>
+      <div class="mc"><span class="ph"><svg viewBox="0 0 24 24" fill="none" width="22" height="22"><rect x="4" y="3" width="16" height="18" rx="2.5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="13" r="4.2" stroke="currentColor" stroke-width="1.8"/><path d="M7 6.5h2" stroke="currentColor" stroke-width="1.8"/></svg></span><b>LG</b></div>
+      <div class="mc"><span class="ph"><svg viewBox="0 0 24 24" fill="none" width="22" height="22"><rect x="4" y="3" width="16" height="18" rx="2.5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="13" r="4.2" stroke="currentColor" stroke-width="1.8"/><path d="M7 6.5h2" stroke="currentColor" stroke-width="1.8"/></svg></span><b>Maytag</b></div>
     </div>
     <p class="note">Mau pakai nama usaha sendiri? Bisa. Mau pakai nama Wish Wash? Pilih <a href="kemitraan/">Kemitraan</a>.</p>
   </div>
@@ -449,7 +457,7 @@ const SERVICES=[
   ['Paket Bisnis Laundry','paket','Buka laundry dengan nama usaha sendiri','#paket'],
   ['Paket Kemitraan Laundry','mitra','Buka laundry dengan nama Wish Wash','kemitraan/'],
   ['Konsultasi Bisnis Laundry','konsul','Tanya apa saja soal usaha laundry'],
-  ['Mesin Laundry','mesin','Mesin cuci dan pengering'],
+  ['Mesin Laundry','mesin','Beko, Azalea, Samsung, LG, Maytag'],
   ['Instalasi','instal','Pemasangan mesin sampai siap pakai'],
   ['Furniture & Fabrication','furni','Meja lipat, rak, dan perabot outlet'],
   ['Chemical & Bahan Baku','chem','Deterjen, pewangi, dan bahan lainnya'],
@@ -468,7 +476,7 @@ const FAQS=[
   ['Saya belum pernah punya usaha laundry. Bisa?','Bisa. Kami bantu dari awal: memilih paket, memasang mesin, sampai melatih Anda dan tim sebelum outlet buka.'],
   ['Berapa modal yang dibutuhkan?','Tergantung besar outlet dan jumlah mesin. Rincian harga bisa dilihat di <a href="makassar/">Paket Indonesia Timur</a>, <a href="jabodetabek/">Paket Jabodetabek</a>, atau <a href="kemitraan/">Kemitraan Wish Wash</a>. Atau tanya langsung, kami bantu hitungkan.'],
   ['Bisa pakai nama usaha sendiri?','Bisa, pilih Paket Bisnis Laundry. Kalau ingin memakai nama dan sistem Wish Wash, pilih Paket Kemitraan.'],
-  ['Saya sudah punya laundry. Bisa beli mesin atau sparepart saja?','Bisa. Mesin, sparepart, deterjen, teknisi, dan furniture bisa dipesan sesuai kebutuhan.'],
+  ['Saya sudah punya laundry. Bisa beli mesin atau sparepart saja?','Bisa. Mesin (Beko, Azalea, Samsung, LG, Maytag), sparepart, deterjen, teknisi, dan furniture bisa dipesan sesuai kebutuhan.'],
   ['Kalau mesin rusak setelah buka?','Hubungi tim kami. Kami punya teknisi dan sparepart untuk membantu perbaikan dan perawatan mesin.'],
   ['Melayani di luar Makassar?','Kantor pusat kami di Makassar dan kantor cabang di Jakarta. Untuk kota lain, sampaikan lokasi Anda saat konsultasi.']
 ];
