@@ -440,15 +440,16 @@ footer{background:#1B1718;color:#D9D0D0;padding:64px 0 28px;margin-top:96px}
 .tier.feat{background:linear-gradient(160deg,var(--red),var(--red-deep));color:#fff;border-color:transparent;box-shadow:var(--shadow-lg)}
 .tier-badge{position:absolute;top:-13px;right:24px;background:#FFD23F;color:var(--ink);font-size:.76rem;font-weight:800;padding:6px 13px;border-radius:99px}
 .tier-top{display:flex;flex-direction:column;gap:2px;margin-bottom:18px}
-.tier-k{font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--red)}
-.tier.feat .tier-k{color:#FFD9D9}
+.tier-k{font-size:2rem;font-weight:800;letter-spacing:-.03em;line-height:1.1;color:var(--ink)}
+.tier-k i{font-style:normal;display:block;font-size:.78rem;letter-spacing:.08em;color:var(--red);margin-bottom:6px}
+.tier.feat .tier-k{color:#fff}.tier.feat .tier-k i{color:#FFD9D9}
 .tier-who{font-size:.9rem;color:var(--muted);font-weight:600}
 .tier.feat .tier-who{color:rgba(255,255,255,.8)}
 .tier-from{font-size:.82rem;font-weight:700;color:var(--muted)}
 .tier.feat .tier-from{color:rgba(255,255,255,.75)}
 .tier-price{font-size:clamp(2.2rem,4vw,2.9rem);font-weight:800;letter-spacing:-.04em;line-height:1.05;margin-bottom:18px}
 .tier-price small{font-size:1.05rem;letter-spacing:0;font-weight:700}
-.tier-list{list-style:none;display:grid;gap:9px;padding:16px 0 20px;border-top:1px dashed var(--line);margin-bottom:auto}
+.tier-list{list-style:none;display:grid;gap:9px;padding:18px 0 22px;border-top:1px dashed var(--line);margin-bottom:auto}
 .tier.feat .tier-list{border-color:rgba(255,255,255,.25)}
 .tier-list li{position:relative;padding-left:18px;font-size:.9rem;color:var(--ink-2)}
 .tier.feat .tier-list li{color:rgba(255,255,255,.92)}
@@ -456,6 +457,8 @@ footer{background:#1B1718;color:#D9D0D0;padding:64px 0 28px;margin-top:96px}
 .tier.feat .tier-list li::before{background:#fff}
 .tier-btn{justify-content:center;width:100%;padding:12px 16px;font-size:.9rem;white-space:normal;text-align:center}
 .tier-btns{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.tier-top{margin-bottom:6px}
+.tier-alt{display:block;text-align:center;margin-top:10px;font-size:.84rem;font-weight:700;color:var(--red)}
 .tier-note{text-align:center;font-size:.86rem;color:var(--muted);margin-top:22px}
 .tier-note a{color:var(--red);font-weight:700}
 /* mesin */
@@ -594,7 +597,7 @@ footer{background:#1B1718;color:#D9D0D0;padding:64px 0 28px;margin-top:96px}
         <p class="lede">Mau buka laundry, tambah mesin, atau bikin outlet yang sudah ada lebih lancar? SML Group menemani Anda <b>memulai, menjalankan, merawat, sampai mengembangkan</b> bisnis laundry. Mesin, bahan baku, teknisi, dan pelatihan cukup lewat satu pintu.</p>
         <div class="cta-row">
           <a class="btn solid" href="#konsultasi">Konsultasi Gratis <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2"/></svg></a>
-          <a class="btn ghost" href="#modal">Lihat Pilihan Modal</a>
+          <a class="btn ghost" href="#modal">Lihat Pilihan Paket</a>
         </div>
         <div class="checks">
           <span><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="currentColor" opacity=".12"/><path d="M7.5 12.5l3 3 6-6.5" stroke="currentColor" stroke-width="2"/></svg>Berpengalaman di lapangan</span>
@@ -618,47 +621,42 @@ footer{background:#1B1718;color:#D9D0D0;padding:64px 0 28px;margin-top:96px}
 <section class="view sec" id="modal" style="padding-bottom:40px">
   <div class="wrap">
     <div class="sec-head center reveal">
-      <div class="eyebrow">Mulai dari modal berapa?</div>
-      <h2>Ada jalur untuk <span class="red">setiap skala modal.</span></h2>
+      <div class="eyebrow">Pilih skala usaha</div>
+      <h2>Mulai dari mana pun, <span class="red">ada jalurnya.</span></h2>
       <p>Mulai kecil lalu bertumbuh, atau langsung skala besar. Pilih yang paling sesuai dengan kondisi Anda, semua tetap didampingi SML Group.</p>
     </div>
     <div class="tier-grid">
       <div class="tier reveal">
-        <div class="tier-top"><span class="tier-k">01 · Mulai</span><span class="tier-who">Untuk pemula &amp; ruko kecil</span></div>
-        <div class="tier-from">Mulai</div>
-        <div class="tier-price">Rp36,5<small> juta</small></div>
+        <div class="tier-top"><span class="tier-k"><i>TAHAP 01</i>Mulai</span><span class="tier-who">Untuk pemula &amp; ruko kecil</span></div>
         <ul class="tier-list">
           <li><b>2 Set Beko</b> · 2 mesin cuci 10 kg + 2 dryer 8 kg</li>
-          <li><b>1 Set Samsung Commercial</b> · Rp45 juta</li>
+          <li>Atau <b>1 Set Samsung Commercial</b> · 2 mesin</li>
           <li>Sudah termasuk boiler, perlengkapan, dan bahan baku awal</li>
         </ul>
-        <a class="btn ghost tier-btn" href="makassar/">Lihat Paket Indonesia Timur <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2"/></svg></a>
+        <a class="btn solid tier-btn" href="makassar/">Lihat harga <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2"/></svg></a>
       </div>
       <div class="tier feat reveal" data-d="1">
         <div class="tier-badge">Bertumbuh</div>
-        <div class="tier-top"><span class="tier-k">02 · Berkembang</span><span class="tier-who">Kapasitas menengah</span></div>
-        <div class="tier-from">Rentang</div>
-        <div class="tier-price">Rp99,9<small> – 184 juta</small></div>
+        <div class="tier-top"><span class="tier-k"><i>TAHAP 02</i>Berkembang</span><span class="tier-who">Kapasitas menengah</span></div>
         <ul class="tier-list">
           <li><b>2–4 Set Samsung Commercial</b> · 4–8 mesin</li>
           <li>Mesin cuci &amp; pengering bertumpuk, hemat tempat</li>
           <li>Cocok untuk lokasi ramai atau menambah kapasitas</li>
         </ul>
-        <a class="btn white tier-btn" href="makassar/">Lihat Paket Samsung <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2"/></svg></a>
+        <a class="btn white tier-btn" href="makassar/">Lihat harga <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2"/></svg></a>
       </div>
       <div class="tier reveal" data-d="2">
-        <div class="tier-top"><span class="tier-k">03 · Skala Besar</span><span class="tier-who">Investor &amp; pemilik modal</span></div>
-        <div class="tier-from">Mulai</div>
-        <div class="tier-price">Rp300<small> juta</small></div>
+        <div class="tier-top"><span class="tier-k"><i>TAHAP 03</i>Skala Besar</span><span class="tier-who">Investor &amp; pemilik modal</span></div>
         <ul class="tier-list">
           <li><b>Prime · Gold · Platinum</b> · 5–15 stack (10–30 mesin)</li>
           <li>Tersedia untuk Jabodetabek dan Kemitraan Wish Wash</li>
           <li>Bisa dikelola SML (Managed Laundry)</li>
         </ul>
-        <div class="tier-btns"><a class="btn ghost tier-btn" href="kemitraan/">Kemitraan Wish Wash</a><a class="btn ghost tier-btn" href="jabodetabek/">Jabodetabek</a></div>
+        <a class="btn solid tier-btn" href="kemitraan/">Lihat harga <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2"/></svg></a>
+        <a class="tier-alt" href="jabodetabek/">Area Jabodetabek? Lihat paketnya di sini</a>
       </div>
     </div>
-    <p class="tier-note reveal">Harga mengikuti halaman paket SML Group dan dapat berubah sewaktu-waktu. Rincian isi paket ada di halaman masing-masing. Belum yakin skala yang pas? <a href="#konsultasi">Konsultasikan gratis</a>.</p>
+    <p class="tier-note reveal">Rincian isi paket dan harga ada di halaman masing-masing. Belum yakin skala yang pas? <a href="#konsultasi">Konsultasikan gratis</a>.</p>
   </div>
 </section>
 
