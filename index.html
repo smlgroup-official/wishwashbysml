@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SML Group | Teman Tumbuh Laundrymu: Ekosistem Solusi Bisnis Laundry</title>
-<meta name="description" content="SML Group (PT Sahabat Mandiri Laundry) membantu Anda memulai, menjalankan, memperbaiki, dan mengembangkan bisnis laundry: paket usaha, kemitraan Wish Wash, mesin, chemical, sparepart, teknisi, instalasi, furniture, training, dan konsultasi.">
+<title>SML Group | Teman Tumbuh Laundrymu: Paket Usaha, Mesin & Pendampingan Laundry</title>
+<meta name="description" content="Mau buka usaha laundry atau mengembangkan yang sudah ada? SML Group membantu dari pilih paket, mesin, pemasangan, pelatihan, sampai perawatan. Konsultasi gratis via WhatsApp.">
 <link rel="canonical" href="https://punyalaundry.com/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://punyalaundry.com/">
 <meta property="og:title" content="SML Group | Teman Tumbuh Laundrymu">
-<meta property="og:description" content="Ekosistem solusi bisnis laundry dari Makassar sejak 2013. Konsultasi gratis untuk memulai atau mengembangkan laundry Anda.">
+<meta property="og:description" content="Buka atau kembangkan usaha laundry bersama SML Group. Konsultasi gratis via WhatsApp.">
 <meta property="og:image" content="https://punyalaundry.com/assets/interior-1.jpg">
 <meta name="theme-color" content="#D3141C">
 <link rel="icon" type="image/png" href="assets/favicon.png">
@@ -20,1109 +20,385 @@
   --red:#D3141C;--red-2:#B3111A;--red-deep:#7E0F15;--red-ink:#4A0A0E;
   --rose:#FDEDED;--rose-2:#FFF7F7;
   --ink:#231F20;--ink-2:#3A3435;--muted:#6E6465;--line:#EFE4E4;
-  --bg:#FFFFFF;--soft:#F8F5F4;--wa:#12A150;
-  --radius:22px;
+  --soft:#F8F5F4;--wa:#12A150;
   --shadow:0 1px 2px rgba(74,10,14,.04),0 10px 30px -12px rgba(74,10,14,.14);
   --shadow-lg:0 2px 4px rgba(74,10,14,.05),0 24px 60px -20px rgba(74,10,14,.28);
   --ease:cubic-bezier(.22,1,.36,1);
 }
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:84px}
-body{background:var(--bg);color:var(--ink);font-family:'Plus Jakarta Sans',Inter,system-ui,-apple-system,'Segoe UI',sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{background:#fff;color:var(--ink);font-family:'Plus Jakarta Sans',Inter,system-ui,-apple-system,'Segoe UI',sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 img{display:block;max-width:100%}
 button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
-a{color:inherit;text-decoration:none}
-.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
-.sec{padding:96px 0}
+a{color:inherit;text-decoration:none;cursor:pointer}
+.wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+.sec{padding:76px 0}
 .sec.soft{background:var(--soft)}
 .red{color:var(--red)}
-.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--red);background:var(--rose);padding:7px 14px;border-radius:999px}
-.eyebrow::before{content:"";width:7px;height:7px;border-radius:2px;background:var(--red);transform:rotate(45deg)}
-.eyebrow.on-dark{background:rgba(255,255,255,.12);color:#fff}
-.eyebrow.on-dark::before{background:#fff}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.76rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--red);background:var(--rose);padding:6px 13px;border-radius:999px}
 h1,h2,h3,h4{line-height:1.15;letter-spacing:-.02em;font-weight:800}
-.sec-head{max-width:740px;margin-bottom:48px}
-.sec-head.center{margin-inline:auto;text-align:center}
-.sec-head h2{font-size:clamp(1.9rem,3.8vw,2.8rem);margin:16px 0 14px}
-.sec-head p{color:var(--muted);font-size:1.05rem}
-
-.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 24px;border-radius:14px;font-weight:700;font-size:.98rem;transition:transform .25s var(--ease),box-shadow .25s,background .25s,border-color .25s,color .25s;white-space:nowrap;cursor:pointer}
+.head{text-align:center;max-width:640px;margin:0 auto 36px}
+.head h2{font-size:clamp(1.7rem,3.4vw,2.4rem);margin:12px 0 8px}
+.head p{color:var(--muted);font-size:1.02rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 22px;border-radius:14px;font-weight:700;font-size:.98rem;transition:transform .25s var(--ease),background .25s,border-color .25s,color .25s;white-space:nowrap}
 .btn svg{width:18px;height:18px;flex:none}
 .btn.solid{background:var(--red);color:#fff;box-shadow:0 10px 24px -10px rgba(211,20,28,.6)}
 .btn.solid:hover{background:var(--red-2);transform:translateY(-2px)}
-.btn.ghost{background:#fff;color:var(--ink);border:1.5px solid var(--line)}
+.btn.wa{background:var(--wa);color:#fff;box-shadow:0 10px 24px -10px rgba(18,161,80,.6)}
+.btn.wa:hover{transform:translateY(-2px)}
+.btn.ghost{background:#fff;border:1.5px solid var(--line)}
 .btn.ghost:hover{border-color:var(--red);color:var(--red)}
 .btn.white{background:#fff;color:var(--red)}
-.btn.white:hover{transform:translateY(-2px)}
-.btn.outline-w{border:1.5px solid rgba(255,255,255,.5);color:#fff}
-.btn.outline-w:hover{background:rgba(255,255,255,.1)}
 
 /* header */
-header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.9);backdrop-filter:saturate(1.6) blur(14px);-webkit-backdrop-filter:saturate(1.6) blur(14px);border-bottom:1px solid transparent;transition:border-color .3s,box-shadow .3s}
-header.scrolled{border-color:var(--line);box-shadow:0 6px 24px -16px rgba(74,10,14,.25)}
-.hdr{display:flex;align-items:center;justify-content:space-between;height:74px;gap:20px}
-.brand{display:flex;align-items:center;gap:12px}
-.brand img{height:42px;width:auto}
-.brand .bt{display:flex;flex-direction:column;line-height:1.1}
-.brand .bt b{font-size:1.05rem;letter-spacing:-.01em}
-.brand .bt span{font-size:.74rem;color:var(--muted);font-weight:600}
+header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.hdr{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.brand{display:flex;align-items:center;gap:10px}
+.brand img{height:38px;width:auto}
+.brand b{font-size:1.02rem;line-height:1.1;display:block}
+.brand span{font-size:.72rem;color:var(--muted);font-weight:600}
 nav{display:flex;align-items:center;gap:2px}
-.nav-link{padding:9px 12px;border-radius:10px;font-size:.92rem;font-weight:600;color:var(--ink-2);transition:color .2s,background .2s}
+.nav-link{padding:8px 12px;border-radius:10px;font-size:.92rem;font-weight:600;color:var(--ink-2)}
 .nav-link:hover{color:var(--red)}
 .nav-link.active{color:var(--red);background:var(--rose)}
-.nav-link.ww{color:var(--red)}
-nav .btn{margin-left:10px;padding:11px 18px;font-size:.92rem}
-.menu-toggle{display:none;width:44px;height:44px;border-radius:12px;border:1.5px solid var(--line);flex-direction:column;align-items:center;justify-content:center;gap:5px}
-.menu-toggle span{width:18px;height:2px;background:var(--ink);border-radius:2px;transition:.3s}
-.menu-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
-.menu-toggle.open span:nth-child(2){opacity:0}
-.menu-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+nav .btn{margin-left:8px;padding:10px 16px;font-size:.9rem}
+.menu-toggle{display:none;width:42px;height:42px;border-radius:12px;border:1.5px solid var(--line);flex-direction:column;align-items:center;justify-content:center;gap:5px}
+.menu-toggle span{width:18px;height:2px;background:var(--ink);border-radius:2px}
 
 /* hero */
-.hero{position:relative;padding:96px 0 150px;overflow:hidden;background:
-  radial-gradient(700px 420px at 50% 0%,var(--rose) 0%,rgba(253,237,237,0) 70%),
-  radial-gradient(500px 360px at 0% 100%,var(--rose-2) 0%,rgba(255,247,247,0) 70%),
-  radial-gradient(500px 360px at 100% 100%,var(--rose-2) 0%,rgba(255,247,247,0) 70%)}
-.hero::before,.hero::after{content:"";position:absolute;width:280px;height:280px;border:32px solid rgba(211,20,28,.05);border-radius:64px;transform:rotate(45deg);pointer-events:none}
-.hero::before{left:-140px;top:60px}
-.hero::after{right:-140px;top:180px}
-.hero-grid{display:block;position:relative}
-.hero-center{max-width:860px;margin:0 auto;text-align:center;display:flex;flex-direction:column;align-items:center}
-.hero-center .lede{margin-inline:auto;max-width:680px}
-.hero-center .cta-row,.hero-center .checks{justify-content:center}
-.hero h1{font-size:clamp(2.8rem,7vw,5.6rem);line-height:1.03;letter-spacing:-.035em;margin:22px 0 20px}
+.hero{padding:64px 0 56px;text-align:center;background:radial-gradient(700px 380px at 50% 0%,var(--rose) 0%,rgba(253,237,237,0) 72%)}
+.hero h1{font-size:clamp(2.5rem,6.4vw,4.8rem);line-height:1.02;letter-spacing:-.035em;margin:16px 0 14px}
 .hero h1 .hl{color:var(--red)}
-.lede{font-size:1.12rem;color:var(--muted);max-width:540px}
-.lede b{color:var(--ink);font-weight:700}
-.cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
-.checks{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:26px;font-size:.9rem;font-weight:600;color:var(--ink-2)}
-.checks span{display:inline-flex;align-items:center;gap:7px}
-.checks svg{width:18px;height:18px;color:var(--red)}
+.hero .sub{font-size:1.12rem;color:var(--muted);max-width:560px;margin:0 auto}
+.hero .sub b{color:var(--ink)}
+.ask{margin:34px auto 0;max-width:900px}
+.ask-q{font-weight:800;font-size:1.02rem;margin-bottom:14px}
+.ask-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.ask-card{background:#fff;border:1.5px solid var(--line);border-radius:18px;padding:18px 16px;text-align:left;display:flex;flex-direction:column;gap:6px;transition:transform .25s var(--ease),border-color .25s,box-shadow .25s}
+.ask-card:hover{transform:translateY(-3px);border-color:var(--red);box-shadow:var(--shadow)}
+.ask-card .ic{width:40px;height:40px;border-radius:12px;background:var(--rose);color:var(--red);display:grid;place-items:center;margin-bottom:4px}
+.ask-card .ic svg{width:21px;height:21px}
+.ask-card b{font-size:.98rem;line-height:1.3}
+.ask-card small{font-size:.82rem;color:var(--muted);line-height:1.4}
+.ask-card .go{margin-top:auto;padding-top:6px;font-size:.82rem;font-weight:700;color:var(--red)}
+.ask-card.wa-card{background:var(--wa);border-color:var(--wa);color:#fff}
+.ask-card.wa-card .ic{background:rgba(255,255,255,.18);color:#fff}
+.ask-card.wa-card small,.ask-card.wa-card .go{color:rgba(255,255,255,.92)}
+.trust{display:flex;justify-content:center;flex-wrap:wrap;gap:8px 28px;margin-top:26px;font-size:.9rem;color:var(--muted);font-weight:600}
+.trust b{color:var(--red);font-size:1.05rem;margin-right:4px}
 
-/* ecosystem orbit visual */
-.eco{position:relative;aspect-ratio:1;max-width:520px;margin-inline:auto;width:100%}
-.eco-ring{position:absolute;inset:8%;border-radius:50%;border:1.5px dashed #EBC9C9}
-.eco-ring.r2{inset:26%;border-style:solid;border-color:#F4DADA}
-.eco-core{position:absolute;inset:34%;border-radius:50%;background:#fff;box-shadow:var(--shadow-lg);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:10px}
-.eco-core img{width:46%;height:auto}
-.eco-core b{font-size:.82rem;margin-top:6px;letter-spacing:-.01em}
-.eco-core small{font-size:.66rem;color:var(--muted);font-weight:600}
-.eco-node{position:absolute;width:31%;transform:translate(-50%,-50%);background:#fff;border:1px solid var(--line);border-radius:18px;padding:12px 12px 12px;box-shadow:var(--shadow);text-align:center}
-.eco-node .ic{width:40px;height:40px;border-radius:12px;background:var(--red);color:#fff;display:grid;place-items:center;margin:0 auto 8px}
-.eco-node .ic svg{width:21px;height:21px}
-.eco-node b{display:block;font-size:.95rem}
-.eco-node small{display:block;font-size:.72rem;color:var(--muted);line-height:1.35;margin-top:2px}
-.n1{left:50%;top:11%}.n2{left:86%;top:50%}.n3{left:50%;top:89%}.n4{left:14%;top:50%}
-.eco-orbit{position:absolute;inset:8%;border-radius:50%;animation:orbit 18s linear infinite}
-.eco-orbit i{position:absolute;left:50%;top:-6px;width:12px;height:12px;border-radius:50%;background:var(--red);box-shadow:0 0 0 6px rgba(211,20,28,.12)}
-@keyframes orbit{to{transform:rotate(360deg)}}
+/* paket */
+.tier-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.tier{position:relative;background:#fff;border:1.5px solid var(--line);border-radius:22px;padding:24px;display:flex;flex-direction:column}
+.tier.feat{background:linear-gradient(160deg,var(--red),var(--red-deep));color:#fff;border-color:transparent;box-shadow:var(--shadow-lg)}
+.tier small{font-size:.76rem;font-weight:800;letter-spacing:.07em;color:var(--red)}
+.tier.feat small{color:#FFD9D9}
+.tier h3{font-size:1.6rem;margin:2px 0 4px}
+.tier .for{font-size:.92rem;color:var(--muted);margin-bottom:14px}
+.tier.feat .for{color:rgba(255,255,255,.82)}
+.tier ul{list-style:none;display:grid;gap:7px;padding-top:14px;border-top:1px dashed var(--line);margin-bottom:18px}
+.tier.feat ul{border-color:rgba(255,255,255,.25)}
+.tier li{position:relative;padding-left:16px;font-size:.9rem}
+.tier li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:2px;background:var(--red);transform:rotate(45deg)}
+.tier.feat li::before{background:#fff}
+.tier .btn{margin-top:auto;width:100%}
+.tier .alt{display:block;text-align:center;margin-top:8px;font-size:.82rem;font-weight:700;color:var(--red)}
+.machines{display:grid;grid-template-columns:auto repeat(3,1fr);gap:12px;align-items:center;margin-top:22px;background:var(--soft);border-radius:18px;padding:14px 16px}
+.machines .ml{font-weight:800;font-size:.9rem;padding-right:6px}
+.mc{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:8px 12px 8px 8px}
+.mc img{width:52px;height:52px;object-fit:contain;border-radius:8px;background:#F6F3F2}
+.mc.dark img{background:#0E0C0C}
+.mc b{display:block;font-size:.92rem}
+.mc small{font-size:.78rem;color:var(--muted)}
+.note{text-align:center;font-size:.84rem;color:var(--muted);margin-top:14px}
+.note a{color:var(--red);font-weight:700}
 
-/* stats */
-.stats{display:grid;grid-template-columns:repeat(4,1fr);background:#fff;border-radius:var(--radius);box-shadow:var(--shadow-lg);margin-top:-66px;position:relative;z-index:2;border:1px solid var(--line)}
-.stat{padding:26px 26px;border-right:1px solid var(--line)}
-.stat:last-child{border-right:0}
-.stat .num{font-size:clamp(1.9rem,3.4vw,2.5rem);font-weight:800;color:var(--red);letter-spacing:-.03em;line-height:1.1}
-.stat .lbl{font-size:.95rem;font-weight:700;margin-top:4px}
-.stat .sub{font-size:.82rem;color:var(--muted)}
+/* layanan */
+.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.svc{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px;text-align:left;transition:border-color .2s,transform .2s var(--ease)}
+.svc:hover{border-color:var(--red);transform:translateY(-2px)}
+.svc .ic{width:40px;height:40px;border-radius:12px;background:var(--rose);color:var(--red);display:grid;place-items:center;flex:none}
+.svc .ic svg{width:20px;height:20px}
+.svc b{display:block;font-size:.92rem;line-height:1.25}
+.svc small{display:block;font-size:.78rem;color:var(--muted);line-height:1.35;margin-top:2px}
+.svc.more{background:var(--red);border-color:var(--red);color:#fff}
+.svc.more .ic{background:rgba(255,255,255,.18);color:#fff}
+.svc.more small{color:rgba(255,255,255,.85)}
 
-/* services */
-.svc-tabs{display:flex;gap:6px;background:#fff;border:1px solid var(--line);padding:6px;border-radius:16px;margin-bottom:28px;flex-wrap:wrap;width:max-content;max-width:100%}
-.svc-tabs button{padding:10px 18px;border-radius:12px;font-weight:700;font-size:.9rem;color:var(--muted);transition:.2s}
-.svc-tabs button.cur{background:var(--red);color:#fff;box-shadow:0 6px 16px -8px rgba(211,20,28,.7)}
-.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.svc{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px;display:flex;flex-direction:column;cursor:pointer;transition:transform .3s var(--ease),box-shadow .3s,border-color .3s,opacity .3s;position:relative}
-.svc:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:#F0C4C4}
-.svc.dim{opacity:.28;transform:none;box-shadow:none}
-.svc .ic{width:50px;height:50px;border-radius:15px;background:var(--rose);color:var(--red);display:grid;place-items:center;margin-bottom:16px;transition:background .3s,color .3s}
-.svc:hover .ic{background:var(--red);color:#fff}
-.svc .ic svg{width:25px;height:25px}
-.svc .stage{position:absolute;right:18px;top:20px;font-size:.68rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#C9A9A9}
-.svc h4{font-size:1.04rem;margin-bottom:6px}
-.svc p{font-size:.88rem;color:var(--muted);flex:1}
-.svc .go{display:inline-flex;align-items:center;gap:6px;font-size:.84rem;font-weight:700;color:var(--red);margin-top:14px}
-.svc .go svg{width:14px;height:14px}
-.svc.count{background:linear-gradient(150deg,var(--red),var(--red-deep));color:#fff;border-color:transparent;cursor:default;justify-content:center}
-.svc.count:hover{transform:none;box-shadow:none}
-.svc.count .big{font-size:3.2rem;font-weight:800;letter-spacing:-.04em;line-height:1}
-.svc.count p{color:rgba(255,255,255,.85);flex:0;margin-top:6px;font-size:.95rem}
-.svc.count .btn{margin-top:18px;align-self:flex-start;padding:10px 16px;font-size:.86rem}
+/* kenapa */
+.why{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.why h2{font-size:clamp(1.7rem,3.4vw,2.4rem);margin:12px 0 10px}
+.why .lead{color:var(--muted);margin-bottom:22px}
+.why-pts{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.pt{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px}
+.pt b{display:block;font-size:1.9rem;color:var(--red);letter-spacing:-.03em;line-height:1.05}
+.pt span{display:block;font-weight:700;font-size:.95rem;margin-top:4px}
+.pt small{display:block;font-size:.82rem;color:var(--muted);margin-top:2px}
+.why-photo{position:relative;border-radius:22px;overflow:hidden;aspect-ratio:4/3.6;box-shadow:var(--shadow)}
+.why-photo img{width:100%;height:100%;object-fit:cover}
+.why-photo .tag{position:absolute;left:14px;bottom:14px;right:14px;background:rgba(255,255,255,.95);border-radius:14px;padding:12px 14px;font-size:.86rem}
+.why-photo .tag b{display:block;font-size:.95rem}
+.brands{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.brands i{font-style:normal;font-size:.72rem;font-weight:800;letter-spacing:.05em;padding:4px 9px;border-radius:8px;background:var(--ink);color:#fff}
 
-/* compare */
-.cmp{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-.cmp-card{border-radius:26px;padding:32px;border:1px solid var(--line);background:#fff}
-.cmp-card.good{background:linear-gradient(160deg,var(--red) 0%,var(--red-deep) 100%);color:#fff;border-color:transparent;box-shadow:var(--shadow-lg);position:relative;overflow:hidden}
-.cmp-card.good::after{content:"";position:absolute;right:-70px;bottom:-70px;width:230px;height:230px;border:30px solid rgba(255,255,255,.07);border-radius:50px;transform:rotate(45deg)}
-.cmp-card h3{font-size:1.35rem;margin-bottom:6px}
-.cmp-card .cs{font-size:.92rem;color:var(--muted);margin-bottom:22px}
-.cmp-card.good .cs{color:rgba(255,255,255,.8)}
-.cmp-list{display:grid;gap:12px;position:relative;z-index:1}
-.cmp-list div{display:flex;gap:12px;align-items:flex-start;font-size:.95rem}
-.cmp-list .mk{width:26px;height:26px;border-radius:8px;flex:none;display:grid;place-items:center;font-size:.85rem;font-weight:800;margin-top:1px}
-.cmp-card.bad .mk{background:var(--soft);color:var(--muted)}
-.cmp-card.good .mk{background:#fff;color:var(--red)}
-.cmp-note{margin-top:22px;font-size:.92rem;color:var(--muted);text-align:center}
+/* langkah */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;counter-reset:s}
+.step{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px}
+.step .n{width:36px;height:36px;border-radius:11px;background:var(--red);color:#fff;font-weight:800;display:grid;place-items:center;margin-bottom:12px}
+.step b{display:block;font-size:1rem;margin-bottom:4px}
+.step small{font-size:.88rem;color:var(--muted);line-height:1.5;display:block}
 
-/* paths */
-.path-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-.path{background:#fff;border:1.5px solid var(--line);border-radius:26px;padding:34px;display:flex;flex-direction:column;transition:transform .3s var(--ease),box-shadow .3s,border-color .3s}
-.path:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:#F0C4C4}
-.path .pt{font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--red)}
-.path h3{font-size:1.75rem;margin:8px 0 10px}
-.path>p{color:var(--muted)}
-.path .q{margin:20px 0 6px;font-size:.82rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
-.path ul{list-style:none;display:grid;gap:9px;margin-bottom:8px}
-.path li{display:flex;gap:10px;font-size:.93rem;color:var(--ink-2)}
-.path li::before{content:"";width:8px;height:8px;border-radius:2px;background:var(--red);transform:rotate(45deg);margin-top:8px;flex:none}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 6px}
-.chips span{font-size:.8rem;font-weight:700;padding:6px 12px;border-radius:99px;background:var(--soft);border:1px solid var(--line)}
-.models{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:6px 0}
-.model{background:var(--rose-2);border:1px solid #F5DADA;border-radius:16px;padding:16px}
-.model small{font-size:.7rem;font-weight:800;letter-spacing:.07em;color:var(--red)}
-.model b{display:block;font-size:1rem;margin:2px 0 4px}
-.model p{font-size:.84rem;color:var(--muted)}
-.path .note{font-size:.84rem;color:var(--muted);background:var(--soft);border-radius:12px;padding:12px 14px;margin-top:14px}
-.path .acts{display:flex;gap:10px;flex-wrap:wrap;margin-top:auto;padding-top:24px}
-.ww-logo{display:inline-block;background:#151213;border-radius:12px;padding:8px 12px;margin-bottom:12px}
-.ww-logo img{height:28px}
-
-/* audience */
-.aud-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.aud{background:#fff;border:1px solid var(--line);border-radius:22px;padding:26px}
-.aud .n{font-size:.8rem;font-weight:800;color:var(--red);background:var(--rose);width:40px;height:40px;border-radius:12px;display:grid;place-items:center;margin-bottom:18px}
-.aud h4{font-size:1.08rem;margin-bottom:8px}
-.aud p{font-size:.9rem;color:var(--muted)}
-.aud .tip{display:inline-flex;align-items:center;gap:6px;margin-top:14px;font-size:.82rem;font-weight:700;color:var(--red);cursor:pointer}
-.aud .tip svg{width:14px;height:14px}
-
-/* why */
-.why{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:start}
-.why h2{font-size:clamp(1.9rem,3.8vw,2.8rem);margin:16px 0 14px}
-.why .lead{color:var(--muted);font-size:1.05rem}
-.why-list{display:grid;gap:12px}
-.why-item{display:flex;gap:18px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px 22px;transition:border-color .3s,box-shadow .3s}
-.why-item:hover{border-color:#F0C4C4;box-shadow:var(--shadow)}
-.why-item .wn{font-size:1.6rem;font-weight:800;color:var(--rose);-webkit-text-stroke:1.5px var(--red);line-height:1;min-width:44px}
-.why-item h4{font-size:1.05rem;margin-bottom:3px}
-.why-item p{font-size:.92rem;color:var(--muted)}
-.vision{margin-top:28px;border-radius:22px;padding:24px;background:var(--soft);border:1px solid var(--line)}
-.vision small{font-size:.74rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--red)}
-.vision p{font-weight:700;font-size:1.1rem;margin:6px 0 4px;line-height:1.4}
-.vision span{font-size:.8rem;color:var(--muted)}
-
-/* proof (BU laundry) */
-.proof{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
-.proof-photos{display:grid;grid-template-columns:1.2fr 1fr;grid-template-rows:1fr 1fr;gap:12px;height:460px}
-.proof-photos .ph{border-radius:20px;overflow:hidden;position:relative}
-.proof-photos .ph:first-child{grid-row:span 2}
-.proof-photos img{width:100%;height:100%;object-fit:cover}
-.proof-photos .cap{position:absolute;left:12px;bottom:12px;background:rgba(255,255,255,.95);font-size:.76rem;font-weight:700;padding:5px 11px;border-radius:99px}
-.proof h2{font-size:clamp(1.9rem,3.8vw,2.7rem);margin:16px 0 14px}
-.proof .lead{color:var(--muted);font-size:1.03rem}
-.big-n{display:flex;align-items:center;gap:18px;margin:26px 0 18px}
-.big-n b{font-size:3.6rem;font-weight:800;color:var(--red);letter-spacing:-.04em;line-height:1}
-.big-n span{font-weight:700;line-height:1.35}
-.big-n small{display:block;font-weight:500;color:var(--muted);font-size:.86rem}
-.concepts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:18px}
-.concept{border:1px solid var(--line);border-radius:16px;padding:14px 16px;background:#fff}
-.concept b{display:block;font-size:.95rem}
-.concept small{color:var(--muted);font-size:.84rem}
-.brands{display:flex;flex-wrap:wrap;gap:8px}
-.brands span{font-weight:800;font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;padding:9px 16px;border-radius:12px;background:var(--ink);color:#fff}
-
-/* steps */
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;position:relative}
-.step{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px;position:relative}
-.step .sn{display:flex;align-items:center;gap:10px;margin-bottom:14px}
-.step .sn b{width:40px;height:40px;border-radius:12px;background:var(--red);color:#fff;font-weight:800;display:grid;place-items:center}
-.step .sn i{flex:1;height:2px;background:repeating-linear-gradient(90deg,#EBC9C9 0 6px,transparent 6px 12px)}
-.step:nth-child(4n) .sn i{display:none}
-.step h4{font-size:1rem;margin-bottom:5px}
-.step p{font-size:.88rem;color:var(--muted)}
-.steps-note{text-align:center;font-size:.9rem;color:var(--muted);margin-top:22px}
-
-/* faq + area */
-.faq-wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:48px;align-items:start}
-.faq-wrap h2{font-size:clamp(1.9rem,3.8vw,2.6rem);margin:16px 0 14px}
-.faq-wrap .lead{color:var(--muted)}
+/* tanya: faq + form */
+.ask2{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:start}
 .faq{display:grid;gap:10px}
-.faq-item{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}
-.faq-q{width:100%;text-align:left;display:flex;justify-content:space-between;align-items:center;gap:14px;padding:17px 20px;font-weight:700;font-size:.97rem}
-.faq-q .qi{width:28px;height:28px;border-radius:9px;background:var(--rose);color:var(--red);display:grid;place-items:center;flex:none;font-size:1.1rem;transition:transform .3s}
+.faq-item{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.faq-q{width:100%;text-align:left;display:flex;justify-content:space-between;align-items:center;gap:14px;padding:15px 18px;font-weight:700;font-size:.96rem}
+.faq-q .qi{width:26px;height:26px;border-radius:8px;background:var(--rose);color:var(--red);display:grid;place-items:center;flex:none;transition:transform .3s}
 .faq-item.open .qi{transform:rotate(45deg)}
 .faq-a{max-height:0;overflow:hidden;transition:max-height .35s var(--ease)}
-.faq-a p{padding:0 20px 18px;font-size:.93rem;color:var(--muted)}
+.faq-a p{padding:0 18px 16px;font-size:.92rem;color:var(--muted)}
 .faq-a a{color:var(--red);font-weight:700}
-
-.area{display:grid;grid-template-columns:1.1fr .9fr;gap:22px}
-.area-map{border-radius:26px;background:linear-gradient(160deg,var(--red-deep),var(--red-ink));color:#fff;padding:34px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:center}
-.area-map h3{font-size:clamp(1.6rem,3vw,2.2rem);margin:16px 0 10px;max-width:420px;position:relative;z-index:1}
-.area-map p{opacity:.85;max-width:420px;position:relative;z-index:1}
-.area-map::before,.area-map::after{content:"";position:absolute;border:28px solid rgba(255,255,255,.06);border-radius:56px;transform:rotate(45deg)}
-.area-map::before{width:260px;height:260px;right:-80px;top:-90px}
-.area-map::after{width:160px;height:160px;right:120px;bottom:-110px}
-.area-map .eyebrow{align-self:flex-start}
-.pins{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px;position:relative;z-index:1}
-.pin-chip{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:12px 16px}
-.pin-chip.main{background:#fff;color:var(--ink)}
-.pin-chip b{display:block;font-size:1rem}
-.pin-chip small{display:block;font-size:.78rem;opacity:.8}
-.pin-chip .pd{width:12px;height:12px;border-radius:50%;background:#FFD9D9;flex:none}
-.pin-chip.main .pd{background:var(--red);box-shadow:0 0 0 0 rgba(211,20,28,.5);animation:ping 1.8s infinite}
-@keyframes ping{0%{box-shadow:0 0 0 0 rgba(211,20,28,.5)}70%{box-shadow:0 0 0 9px rgba(211,20,28,0)}100%{box-shadow:0 0 0 0 rgba(211,20,28,0)}}
-.offices{display:grid;gap:14px}
-.office{background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px 24px}
-.office .ol{font-size:.76rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--red)}
-.office .ov{font-weight:800;font-size:1.1rem;margin:6px 0 4px}
-.office .oa{font-size:.9rem;color:var(--muted);margin-bottom:14px}
-.office .oacts{display:flex;gap:16px;flex-wrap:wrap}
-.office a{display:inline-flex;align-items:center;gap:6px;font-size:.86rem;font-weight:700;color:var(--red);cursor:pointer}
-.office a svg{width:15px;height:15px}
-
-/* band */
-.band{border-radius:30px;padding:60px 40px;text-align:center;color:#fff;background:linear-gradient(135deg,var(--red) 0%,var(--red-deep) 100%);position:relative;overflow:hidden}
-.band::before,.band::after{content:"";position:absolute;width:240px;height:240px;border:30px solid rgba(255,255,255,.07);border-radius:56px;transform:rotate(45deg)}
-.band::before{left:-90px;top:-90px}
-.band::after{right:-90px;bottom:-90px}
-.band h2{font-size:clamp(1.9rem,4vw,2.9rem);margin:16px auto 12px;max-width:760px;position:relative}
-.band p{opacity:.9;max-width:600px;margin:0 auto 28px;position:relative}
-.band .cta-row{justify-content:center;position:relative}
-
-/* footer */
-footer{background:#1B1718;color:#D9D0D0;padding:64px 0 28px;margin-top:96px}
-.foot-grid{display:grid;grid-template-columns:1.3fr 2fr;gap:48px}
-.foot-brand .sml{display:inline-block;background:#fff;border-radius:14px;padding:8px 10px;margin-bottom:16px}
-.foot-brand .sml img{height:42px}
-.foot-brand .tag{color:#fff;font-weight:800;font-size:1.15rem}
-.foot-brand p{font-size:.9rem;opacity:.75;margin-top:8px;max-width:340px}
-.foot-links{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.foot-col h5{font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:#fff;margin-bottom:14px}
-.foot-col a,.foot-col span{display:block;font-size:.92rem;opacity:.75;padding:4px 0;transition:opacity .2s,color .2s;cursor:pointer}
-.foot-col a:hover{opacity:1;color:#FF8A8F}
-.foot-bottom{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:.82rem;opacity:.6;margin-top:40px;padding-top:22px;border-top:1px solid rgba(255,255,255,.1)}
-
-
-/* bento keunggulan */
-.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
-.bx{position:relative;border-radius:24px;padding:28px;background:#fff;border:1px solid var(--line);overflow:hidden;transition:transform .3s var(--ease),box-shadow .3s}
-.bx:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
-.bx .bn{position:absolute;right:22px;top:20px;font-size:.8rem;font-weight:800;color:#E3BDBD}
-.bx h4{font-size:1.15rem;margin-bottom:6px}
-.bx p{font-size:.93rem;color:var(--muted)}
-.bbig{font-size:clamp(3rem,6vw,4.4rem);font-weight:800;letter-spacing:-.05em;line-height:1;margin-bottom:14px}
-.bx-a{grid-column:span 3;background:linear-gradient(150deg,var(--red),var(--red-deep));color:#fff;border-color:transparent}
-.bx-a p{color:rgba(255,255,255,.85)}.bx-a .bn{color:rgba(255,255,255,.5)}
-.bx-a::after{content:"";position:absolute;right:-60px;bottom:-60px;width:200px;height:200px;border:26px solid rgba(255,255,255,.08);border-radius:44px;transform:rotate(45deg)}
-.bx-b{grid-column:span 3;background:var(--ink);color:#fff;border-color:transparent}
-.bx-b p{color:rgba(255,255,255,.75)}.bx-b .bn{color:rgba(255,255,255,.4)}
-.bx-b .bbig{color:#FF5A60}
-.bx-c,.bx-d,.bx-e{grid-column:span 2}
-.mini-chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
-.mini-chips span{font-size:.74rem;font-weight:700;padding:5px 10px;border-radius:99px;background:var(--rose);color:var(--red)}
-.flow{display:flex;align-items:center;gap:6px;margin-top:18px;flex-wrap:wrap}
-.flow span{font-size:.76rem;font-weight:700;padding:6px 10px;border-radius:10px;background:var(--soft);border:1px solid var(--line)}
-.flow i{width:12px;height:2px;background:var(--red)}
-.loc{display:inline-flex;align-items:center;gap:10px;margin-top:18px;font-size:.84rem;font-weight:700;padding:8px 14px;border-radius:12px;background:var(--rose)}
-.loc .pd{width:10px;height:10px;border-radius:50%;background:var(--red);animation:ping 1.8s infinite}
-
-/* stage rows (gaya Qiscus) */
-.stage-nav{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:-16px 0 56px}
-.stage-nav a{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:99px;background:#fff;border:1px solid var(--line);font-weight:700;font-size:.92rem;transition:.2s}
-.stage-nav a b{color:var(--red);font-size:.8rem}
-.stage-nav a:hover{border-color:var(--red);color:var(--red)}
-.row{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;padding:36px 0}
-.row+.row{border-top:1px dashed #E8D6D6}
-.row.rev .row-txt{order:2}
-.row-k{font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--red)}
-.row h3{font-size:clamp(1.6rem,3vw,2.2rem);margin:10px 0 14px}
-.row-txt>p{color:var(--muted);font-size:1.02rem}
-.schips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
-.schip{display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border-radius:12px;background:#fff;border:1.5px solid var(--line);font-weight:700;font-size:.88rem;transition:.2s}
-.schip::before{content:"";width:7px;height:7px;border-radius:2px;background:var(--red);transform:rotate(45deg)}
-.schip:hover{border-color:var(--red);color:var(--red);background:var(--rose-2)}
-.row-go{display:inline-flex;align-items:center;gap:8px;margin-top:20px;font-weight:700;color:var(--red);font-size:.95rem}
-.row-go svg{width:16px;height:16px}
-.mock{position:relative;padding:28px;border-radius:28px;background:linear-gradient(150deg,var(--rose) 0%,#fff 70%);border:1px solid var(--line)}
-.mk-card{background:#fff;border-radius:20px;box-shadow:var(--shadow-lg);padding:22px;border:1px solid var(--line)}
-.mk-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;gap:10px}
-.mk-head b{font-size:1rem}
-.mk-tag{font-size:.72rem;font-weight:800;padding:5px 10px;border-radius:99px;background:var(--rose);color:var(--red);white-space:nowrap}
-.mk-tag.ok{background:#E3F7EB;color:#0E7A3E}
-.mk-list,.mk-steps{display:grid;gap:10px}
-.mk-steps{grid-template-columns:1fr 1fr}
-.mk-list div,.mk-steps div{display:flex;align-items:center;gap:10px;font-size:.9rem;font-weight:600;color:var(--muted)}
-.mk-list i,.mk-steps i{width:22px;height:22px;border-radius:7px;border:1.5px solid #E5D3D3;display:grid;place-items:center;flex:none}
-.mk-list .done,.mk-steps .done{color:var(--ink)}
-.mk-list .done i,.mk-steps .done i{background:var(--red);border-color:var(--red);color:#fff}
-.mk-list i svg,.mk-steps i svg{width:13px;height:13px}
-.mk-toggle{display:flex;background:var(--soft);border-radius:12px;padding:4px;margin:18px 0 14px}
-.mk-toggle span{flex:1;text-align:center;font-size:.82rem;font-weight:700;padding:8px;border-radius:9px;color:var(--muted)}
-.mk-toggle .on{background:#fff;color:var(--red);box-shadow:0 2px 6px rgba(0,0,0,.08)}
-.mk-bar{height:8px;border-radius:99px;background:#F1E4E4;overflow:hidden}
-.mk-bar span{display:block;height:100%;background:var(--red);border-radius:99px}
-.mk-cap{display:block;margin-top:8px;font-size:.78rem;color:var(--muted);font-weight:600}
-.mk-machines{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-bottom:18px}
-.mk-machines span{aspect-ratio:.8;border-radius:10px;border:1.5px solid #EADADA;background:#fff;position:relative}
-.mk-machines span::after{content:"";position:absolute;left:18%;right:18%;top:32%;aspect-ratio:1;border-radius:50%;border:3px solid var(--red);background:radial-gradient(circle,#EAF4FF 50%,#CFE6FF 51%)}
-.mk-table{display:grid;gap:0;font-size:.88rem}
-.mk-table div{display:flex;justify-content:space-between;align-items:center;padding:11px 4px;border-bottom:1px solid var(--line)}
-.mk-table div:last-child{border-bottom:0}
-.mk-table .th{font-size:.74rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding-top:0}
-.mk-table em{font-style:normal;font-size:.74rem;font-weight:800;padding:4px 10px;border-radius:99px}
-.mk-table .g{background:#E3F7EB;color:#0E7A3E}.mk-table .r{background:var(--rose);color:var(--red)}.mk-table .y{background:#FFF4D6;color:#8A6200}
-.mk-grow{display:flex;align-items:flex-end;gap:12px;height:190px;padding-top:10px}
-.mk-grow div{flex:1;border-radius:12px 12px 6px 6px;background:var(--rose);position:relative;display:flex;align-items:flex-end;justify-content:center}
-.mk-grow div.hl{background:linear-gradient(180deg,var(--red),var(--red-deep))}
-.mk-grow span{font-size:.72rem;font-weight:700;text-align:center;padding:8px 4px;line-height:1.2;color:var(--red-deep)}
-.mk-grow .hl span{color:#fff}
-.mk-float{position:absolute;right:-14px;bottom:-18px;background:var(--ink);color:#fff;border-radius:16px;padding:12px 16px;box-shadow:var(--shadow-lg)}
-.mk-float b{display:block;font-size:.95rem}
-.mk-float small{font-size:.74rem;opacity:.75}
-.row.rev .mk-float{right:auto;left:-14px}
-
-/* tentang timeline */
-.tl{display:grid;gap:0;position:relative;padding-left:34px}
-.tl::before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:repeating-linear-gradient(180deg,#E8C4C4 0 6px,transparent 6px 12px)}
-.tl-item{position:relative;padding:0 0 22px}
-.tl-item::before{content:"";position:absolute;left:-34px;top:6px;width:16px;height:16px;border-radius:50%;background:#fff;border:3px solid var(--red)}
-.tl-item.now::before{background:var(--red)}
-.tl-item b{font-size:1.4rem;color:var(--red);letter-spacing:-.02em}
-.tl-item h4{font-size:1.05rem;margin:2px 0 2px}
-.tl-item p{font-size:.92rem;color:var(--muted)}
-.tagline-card{margin-top:10px;border-radius:22px;padding:24px;background:#fff;border:1px solid var(--line)}
-.tagline-card small{font-size:.74rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--red)}
-.tagline-card>b{display:block;font-size:1.5rem;letter-spacing:-.02em;margin:4px 0 14px}
-.tg{display:grid;gap:8px}
-.tg div{font-size:.9rem;color:var(--muted)}
-.tg span{display:inline-block;min-width:96px;font-weight:800;color:var(--ink)}
-
-/* form */
-.form-wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:start}
-.form-wrap h2{font-size:clamp(1.9rem,3.8vw,2.7rem);margin:16px 0 14px}
-.form-wrap .lead{color:var(--muted);font-size:1.04rem}
-.form-points{display:grid;gap:12px;margin-top:26px}
-.form-points div{display:flex;align-items:center;gap:12px;font-weight:600}
-.form-points i{font-style:normal;width:32px;height:32px;border-radius:10px;background:var(--red);color:#fff;display:grid;place-items:center;font-weight:800;font-size:.9rem;flex:none}
-.fcard{background:#fff;border:1px solid var(--line);border-radius:26px;padding:28px;box-shadow:var(--shadow-lg)}
-.frow{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.field{margin-bottom:16px}
-.field label{display:block;font-size:.88rem;font-weight:700;margin-bottom:7px}
-.field input,.field select,.field textarea{width:100%;padding:13px 15px;border-radius:13px;border:1.5px solid var(--line);font:inherit;font-size:.95rem;background:#fff;color:var(--ink);outline:none;transition:border-color .2s,box-shadow .2s}
-.field textarea{min-height:84px;resize:vertical}
-.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--red);box-shadow:0 0 0 4px var(--rose)}
-.seg{display:flex;gap:6px;background:var(--soft);padding:5px;border-radius:14px}
-.seg button{flex:1;padding:10px 8px;border-radius:10px;font-weight:700;font-size:.86rem;color:var(--muted)}
+.fcard{background:#fff;border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:var(--shadow-lg)}
+.fcard h3{font-size:1.3rem;margin-bottom:4px}
+.fcard>p{font-size:.9rem;color:var(--muted);margin-bottom:16px}
+.field{margin-bottom:12px}
+.field label{display:block;font-size:.86rem;font-weight:700;margin-bottom:6px}
+.field input,.field select{width:100%;padding:12px 14px;border-radius:12px;border:1.5px solid var(--line);font:inherit;font-size:.95rem;background:#fff;color:var(--ink);outline:none}
+.field input:focus,.field select:focus{border-color:var(--red);box-shadow:0 0 0 4px var(--rose)}
+.seg{display:flex;gap:6px;background:var(--soft);padding:4px;border-radius:12px}
+.seg button{flex:1;padding:9px 6px;border-radius:9px;font-weight:700;font-size:.86rem;color:var(--muted)}
 .seg button.cur{background:#fff;color:var(--red);box-shadow:0 2px 8px rgba(74,10,14,.1)}
-.fnote{display:block;text-align:center;font-size:.78rem;color:var(--muted);margin-top:10px}
-@media (max-width:980px){
-  .bento{grid-template-columns:1fr 1fr}
-  .bx-a,.bx-b,.bx-c,.bx-d{grid-column:span 1}
-  .bx-e{grid-column:span 2}
-  .row,.form-wrap{grid-template-columns:1fr;gap:28px}
-  .row.rev .row-txt{order:0}
-  .mk-float{right:12px}.row.rev .mk-float{left:12px}
-}
-@media (max-width:640px){
-  .bento{grid-template-columns:1fr}
-  .bx-a,.bx-b,.bx-c,.bx-d,.bx-e{grid-column:span 1}
-  .mock{padding:16px}
-  .mk-float{display:none}
-  .mk-steps{grid-template-columns:1fr}
-  .frow{grid-template-columns:1fr}
-  .seg{flex-direction:column}
-  .stage-nav{margin:-10px 0 30px}
-  .stage-nav a{padding:8px 12px;font-size:.84rem}
-}
+.fcard .btn{width:100%;margin-top:4px}
 
-/* tier strip */
-.tier-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}
-.tier{position:relative;background:#fff;border:1.5px solid var(--line);border-radius:26px;padding:28px;display:flex;flex-direction:column;transition:transform .3s var(--ease),box-shadow .3s,border-color .3s}
-.tier:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg);border-color:#F0C4C4}
-.tier.feat{background:linear-gradient(160deg,var(--red),var(--red-deep));color:#fff;border-color:transparent;box-shadow:var(--shadow-lg)}
-.tier-badge{position:absolute;top:-13px;right:24px;background:#FFD23F;color:var(--ink);font-size:.76rem;font-weight:800;padding:6px 13px;border-radius:99px}
-.tier-top{display:flex;flex-direction:column;gap:2px;margin-bottom:18px}
-.tier-k{font-size:2rem;font-weight:800;letter-spacing:-.03em;line-height:1.1;color:var(--ink)}
-.tier-k i{font-style:normal;display:block;font-size:.78rem;letter-spacing:.08em;color:var(--red);margin-bottom:6px}
-.tier.feat .tier-k{color:#fff}.tier.feat .tier-k i{color:#FFD9D9}
-.tier-who{font-size:.9rem;color:var(--muted);font-weight:600}
-.tier.feat .tier-who{color:rgba(255,255,255,.8)}
-.tier-from{font-size:.82rem;font-weight:700;color:var(--muted)}
-.tier.feat .tier-from{color:rgba(255,255,255,.75)}
-.tier-price{font-size:clamp(2.2rem,4vw,2.9rem);font-weight:800;letter-spacing:-.04em;line-height:1.05;margin-bottom:18px}
-.tier-price small{font-size:1.05rem;letter-spacing:0;font-weight:700}
-.tier-list{list-style:none;display:grid;gap:9px;padding:18px 0 22px;border-top:1px dashed var(--line);margin-bottom:auto}
-.tier.feat .tier-list{border-color:rgba(255,255,255,.25)}
-.tier-list li{position:relative;padding-left:18px;font-size:.9rem;color:var(--ink-2)}
-.tier.feat .tier-list li{color:rgba(255,255,255,.92)}
-.tier-list li::before{content:"";position:absolute;left:0;top:8px;width:7px;height:7px;border-radius:2px;background:var(--red);transform:rotate(45deg)}
-.tier.feat .tier-list li::before{background:#fff}
-.tier-btn{justify-content:center;width:100%;padding:12px 16px;font-size:.9rem;white-space:normal;text-align:center}
-.tier-btns{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.tier-top{margin-bottom:6px}
-.tier-alt{display:block;text-align:center;margin-top:10px;font-size:.84rem;font-weight:700;color:var(--red)}
-.tier-note{text-align:center;font-size:.86rem;color:var(--muted);margin-top:22px}
-.tier-note a{color:var(--red);font-weight:700}
-/* mesin */
-.mc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}
-.mc-grid .mc-learn{grid-column:1/-1;display:grid;grid-template-columns:1.3fr 1fr;column-gap:40px;align-items:start}
-.mc-learn .mc-tabs{grid-column:1}
-.mc-learn .mc-panel{grid-column:1}
-.mc-learn .mc-tip{grid-column:2;grid-row:1/span 4;border-top:0;border-left:1px dashed var(--line);padding:6px 0 6px 28px;margin:0}
-.mc-role{font-size:.74rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--red);margin-bottom:2px}
-.mc-brand.dark .mc-role{color:#FF8A8F}
-.mc-icon svg{height:100%;width:auto}
-.mc-learn{background:#fff;border:1px solid var(--line);border-radius:26px;padding:26px;display:flex;flex-direction:column}
-.mc-tabs{display:flex;gap:6px;background:var(--soft);padding:5px;border-radius:14px;margin-bottom:20px}
-.mc-tabs button{flex:1;padding:10px 8px;border-radius:10px;font-weight:700;font-size:.88rem;color:var(--muted)}
-.mc-tabs button.cur{background:var(--red);color:#fff;box-shadow:0 6px 14px -8px rgba(211,20,28,.7)}
-.mc-panel{display:none}
-.mc-panel.cur{display:block;animation:fade .4s var(--ease)}
-@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
-.mc-panel h4{font-size:1.2rem;margin-bottom:8px}
-.mc-panel p{color:var(--muted);font-size:.95rem}
-.mc-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
-.mc-tags span{font-size:.8rem;font-weight:700;padding:6px 12px;border-radius:99px;background:var(--rose);color:var(--red)}
-.mc-tip{margin-top:auto;padding-top:20px}
-.mc-tip{font-size:.88rem;color:var(--muted)}
-.mc-tip b{display:block;color:var(--ink);margin-bottom:4px}
-.mc-tip{border-top:1px dashed var(--line);margin-top:22px}
-.mc-brand{border-radius:26px;overflow:hidden;display:flex;flex-direction:column;border:1px solid var(--line);transition:transform .3s var(--ease),box-shadow .3s}
-.mc-brand:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
-.mc-brand.light{background:#fff}
-.mc-brand.dark{background:#0E0C0C;color:#fff;border-color:#0E0C0C}
-.mc-img{height:260px;display:flex;align-items:center;justify-content:center;padding:18px}
-.mc-brand.light .mc-img{background:linear-gradient(180deg,#F6F3F2,#fff)}
-.mc-img img{border-radius:6px}
-.mc-img img{max-height:100%;width:auto;object-fit:contain}
-.mc-body{padding:22px 24px 24px}
-.mc-name{font-size:1.35rem;font-weight:800;letter-spacing:-.02em;margin-bottom:6px}
-.mc-body p{font-size:.92rem;color:var(--muted)}
-.mc-brand.dark .mc-body p{color:rgba(255,255,255,.72)}
-.mc-body a{display:inline-flex;align-items:center;gap:6px;margin-top:14px;font-weight:700;font-size:.9rem;color:var(--red)}
-.mc-brand.dark .mc-body a{color:#FF6A70}
-.mc-body a svg{width:15px;height:15px}
-@media (max-width:980px){
-  .tier-grid{grid-template-columns:1fr;max-width:520px;margin-inline:auto}
-  .mc-grid{grid-template-columns:1fr 1fr}
-  .mc-grid .mc-learn{grid-template-columns:1fr}
-  .mc-learn .mc-tip{grid-column:1;grid-row:auto;border-left:0;border-top:1px dashed var(--line);padding:18px 0 0;margin-top:20px}
-}
-@media (max-width:640px){
-  .mc-grid{grid-template-columns:1fr}
-  .mc-img{height:220px}
-}
+/* kontak */
+.contact{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:28px}
+.office{display:flex;justify-content:space-between;align-items:center;gap:14px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px 20px}
+.office small{font-size:.74rem;font-weight:800;letter-spacing:.07em;color:var(--red)}
+.office b{display:block;font-size:1.05rem}
+.office span{display:block;font-size:.86rem;color:var(--muted)}
+.office .acts{display:flex;gap:8px;flex:none}
+.office .acts a{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;border:1.5px solid var(--line);color:var(--red)}
+.office .acts a.w{background:var(--wa);border-color:var(--wa);color:#fff}
+.office .acts svg{width:20px;height:20px}
 
-.wa-float{position:fixed;right:20px;bottom:20px;z-index:90;display:flex;align-items:center;gap:10px;background:var(--wa);color:#fff;font-weight:700;padding:13px 20px 13px 16px;border-radius:999px;box-shadow:0 12px 30px -10px rgba(18,161,80,.7);transition:transform .25s var(--ease);cursor:pointer}
-.wa-float:hover{transform:translateY(-3px)}
-.wa-float svg{width:24px;height:24px}
+footer{background:#1B1718;color:#D9D0D0;padding:40px 0 24px;margin-top:0}
+.foot{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:flex-start}
+.foot .fb{display:flex;align-items:center;gap:14px}
+.foot .fb .logo{background:#fff;border-radius:12px;padding:6px 8px}
+.foot .fb img{height:34px}
+.foot .fb b{color:#fff;display:block}
+.foot .fb span{font-size:.84rem;opacity:.7}
+.foot-links{display:flex;flex-wrap:wrap;gap:6px 22px;font-size:.9rem}
+.foot-links a{opacity:.75}
+.foot-links a:hover{opacity:1;color:#FF8A8F}
+.foot-bottom{font-size:.8rem;opacity:.55;margin-top:24px;padding-top:18px;border-top:1px solid rgba(255,255,255,.1)}
 
-.reveal{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:90;display:flex;align-items:center;gap:9px;background:var(--wa);color:#fff;font-weight:700;padding:12px 18px 12px 14px;border-radius:999px;box-shadow:0 12px 30px -10px rgba(18,161,80,.7)}
+.wa-float svg{width:22px;height:22px}
+
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
 .reveal.in{opacity:1;transform:none}
-.reveal[data-d="1"]{transition-delay:.08s}.reveal[data-d="2"]{transition-delay:.16s}.reveal[data-d="3"]{transition-delay:.24s}
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}html{scroll-behavior:auto}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}.reveal{opacity:1;transform:none}html{scroll-behavior:auto}}
 
-@media (max-width:1080px){
-  .svc-grid{grid-template-columns:repeat(3,1fr)}
-  .aud-grid,.steps{grid-template-columns:repeat(2,1fr)}
-  .step:nth-child(2n) .sn i{display:none}
-}
 @media (max-width:980px){
   .menu-toggle{display:flex}
-  nav{position:fixed;top:74px;left:0;right:0;background:#fff;flex-direction:column;align-items:stretch;padding:14px 20px 22px;gap:2px;border-bottom:1px solid var(--line);box-shadow:0 20px 40px -20px rgba(74,10,14,.3);transform:translateY(-12px);opacity:0;pointer-events:none;transition:.3s var(--ease)}
-  nav.open{transform:none;opacity:1;pointer-events:auto}
-  .nav-link{padding:12px 14px;text-align:left}
-  nav .btn{margin:10px 0 0;justify-content:center}
-  .hero-grid,.cmp,.path-grid,.why,.proof,.faq-wrap,.area,.foot-grid{grid-template-columns:1fr}
-  .hero{padding:40px 0 110px}
-  .eco{max-width:440px}
-  .stats{grid-template-columns:repeat(2,1fr)}
-  .stat:nth-child(2){border-right:0}
-  .stat:nth-child(-n+2){border-bottom:1px solid var(--line)}
-  .proof-photos{height:380px}
+  nav{position:fixed;top:68px;left:0;right:0;background:#fff;flex-direction:column;align-items:stretch;padding:12px 20px 20px;border-bottom:1px solid var(--line);box-shadow:0 20px 40px -20px rgba(74,10,14,.3);display:none}
+  nav.open{display:flex}
+  nav .btn{margin:8px 0 0}
+  .ask-grid{grid-template-columns:1fr 1fr}
+  .tier-grid{grid-template-columns:1fr;max-width:480px;margin-inline:auto}
+  .machines{grid-template-columns:1fr}
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .why,.ask2{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr}
 }
 @media (max-width:640px){
-  .sec{padding:72px 0}
-  .brand .bt span{display:none}
-  .hero-center .eyebrow{font-size:.68rem;letter-spacing:.05em}
-  .hero::before,.hero::after{display:none}
-  .brand img{height:36px}
-  .svc-grid{grid-template-columns:1fr;gap:10px}
-  .svc{padding:16px 18px;display:grid;grid-template-columns:44px 1fr;column-gap:14px;align-items:start}
-  .svc .ic{width:44px;height:44px;margin:0;grid-row:span 3}
-  .svc .stage{display:none}
-  .svc p{font-size:.86rem}
-  .svc .go{margin-top:8px}
-  .svc.count{display:flex}
-  .svc.dim{display:none}
-  .aud-grid,.steps,.models,.concepts{grid-template-columns:1fr}
-  .step .sn i{display:none}
-  .stat{padding:20px 18px}
-  .eco-node{width:34%;padding:10px 6px}
-  .n2{left:82%}.n4{left:18%}
-  .eco-node b{font-size:.8rem}
-  .eco-node small{display:none}
-  .eco-node .ic{width:34px;height:34px}
-  .path{padding:26px 22px}
-  .cmp-card{padding:26px 22px}
-  .foot-links{grid-template-columns:1fr 1fr}
-  .band{padding:44px 22px}
-  .proof-photos{height:300px}
+  .sec{padding:56px 0}
+  .hero{padding:40px 0 44px}
+  .brand span{display:none}
+  .ask-grid{gap:10px}
+  .ask-card{padding:14px 12px}
+  .ask-card small{display:none}
+  .svc-grid{grid-template-columns:1fr}
+  .contact{grid-template-columns:1fr}
   .wa-float span{display:none}
   .wa-float{padding:14px}
-  .svc-tabs{width:100%}
-  .svc-tabs button{flex:1;padding:9px 8px;font-size:.82rem}
+  .trust{gap:6px 16px;font-size:.84rem}
 }
 </style>
 </head>
 <body>
 
-<header id="header">
+<header>
   <div class="wrap hdr">
-    <a class="brand" href="#top" onclick="go('top');return false;">
-      <img src="assets/logo-sml.png" alt="SML Group">
-      <div class="bt"><b>SML Group</b><span>Teman Tumbuh Laundrymu</span></div>
-    </a>
+    <a class="brand" href="#top"><img src="assets/logo-sml.png" alt="SML Group"><div><b>SML Group</b><span>Teman Tumbuh Laundrymu</span></div></a>
     <button class="menu-toggle" id="menuToggle" aria-label="Menu"><span></span><span></span><span></span></button>
     <nav id="nav">
-      <a class="nav-link" data-v="keunggulan" href="#keunggulan">Keunggulan</a>
-      <a class="nav-link" data-v="modal" href="#modal">Paket</a>
+      <a class="nav-link" data-v="paket" href="#paket">Paket</a>
       <a class="nav-link" data-v="layanan" href="#layanan">Layanan</a>
-      <a class="nav-link" data-v="mesin" href="#mesin">Mesin</a>
-      <a class="nav-link" data-v="cara" href="#cara">Cara Mulai</a>
-      <a class="nav-link ww" href="kemitraan/">Kemitraan Wish Wash</a>
-      <a class="btn solid" href="#konsultasi">Konsultasi Gratis</a>
+      <a class="nav-link" data-v="kenapa" href="#kenapa">Kenapa SML</a>
+      <a class="nav-link" data-v="tanya" href="#tanya">Tanya Jawab</a>
+      <a class="nav-link" href="kemitraan/" style="color:var(--red)">Kemitraan Wish Wash</a>
+      <a class="btn solid" href="#tanya">Konsultasi Gratis</a>
     </nav>
   </div>
 </header>
 
 <main>
-<!-- HERO -->
-<section class="view" id="top">
-  <div class="hero">
-    <div class="wrap hero-grid">
-      <div class="hero-center">
-        <div class="eyebrow">Ekosistem Solusi Bisnis Laundry · Sejak 2013</div>
-        <h1>Teman tumbuh <span class="hl">laundrymu.</span></h1>
-        <p class="lede">Mau buka laundry, tambah mesin, atau bikin outlet yang sudah ada lebih lancar? SML Group menemani Anda <b>memulai, menjalankan, merawat, sampai mengembangkan</b> bisnis laundry. Mesin, bahan baku, teknisi, dan pelatihan cukup lewat satu pintu.</p>
-        <div class="cta-row">
-          <a class="btn solid" href="#konsultasi">Konsultasi Gratis <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2"/></svg></a>
-          <a class="btn ghost" href="#modal">Lihat Pilihan Paket</a>
-        </div>
-        <div class="checks">
-          <span><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="currentColor" opacity=".12"/><path d="M7.5 12.5l3 3 6-6.5" stroke="currentColor" stroke-width="2"/></svg>Berpengalaman di lapangan</span>
-          <span><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="currentColor" opacity=".12"/><path d="M7.5 12.5l3 3 6-6.5" stroke="currentColor" stroke-width="2"/></svg>Solusi disesuaikan kebutuhan</span>
-          <span><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="currentColor" opacity=".12"/><path d="M7.5 12.5l3 3 6-6.5" stroke="currentColor" stroke-width="2"/></svg>Konsultasi tanpa biaya</span>
-        </div>
+<!-- 1. HERO + PILIH KEBUTUHAN -->
+<section class="hero view" id="top">
+  <div class="wrap">
+    <div class="eyebrow">SML Group · Laundry sejak 2013</div>
+    <h1>Teman tumbuh <span class="hl">laundrymu.</span></h1>
+    <p class="sub">Mau buka usaha laundry atau mengembangkan yang sudah ada? <b>Kami bantu dari awal sampai jalan</b>: pilih paket, mesin, pemasangan, pelatihan, sampai perawatan.</p>
+
+    <div class="ask">
+      <div class="ask-q">Apa yang Anda butuhkan sekarang?</div>
+      <div class="ask-grid">
+        <a class="ask-card" href="#paket">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M5 19c2-6 6-11 14-14-1 8-6 12-12 14M5 19l5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+          <b>Saya mau buka laundry</b><small>Lihat pilihan paket dari yang kecil sampai besar</small><span class="go">Lihat paket →</span>
+        </a>
+        <a class="ask-card" href="#layanan">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M14.5 6.5a4 4 0 00-5.3 5.3L4 17l3 3 5.2-5.2a4 4 0 005.3-5.3l-2.6 2.6-2.4-.6-.6-2.4z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></div>
+          <b>Laundry saya butuh bantuan</b><small>Mesin, sparepart, teknisi, deterjen, pelatihan</small><span class="go">Lihat layanan →</span>
+        </a>
+        <a class="ask-card" href="kemitraan/">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 18l6-6 4 4 6-8M16 8h4v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+          <b>Saya mau investasi</b><small>Punya laundry, tapi dikelola tim kami</small><span class="go">Kemitraan Wish Wash →</span>
+        </a>
+        <a class="ask-card wa-card" onclick="openWA(MSG.umum)">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1012 2z"/></svg></div>
+          <b>Masih bingung, mau tanya dulu</b><small>Ngobrol gratis dengan tim kami</small><span class="go">Chat WhatsApp →</span>
+        </a>
       </div>
     </div>
-  </div>
-  <div class="wrap">
-    <div class="stats reveal">
-      <div class="stat"><div class="num">2013</div><div class="lbl">Awal perjalanan</div><div class="sub">Dimulai dari bisnis laundry sendiri</div></div>
-      <div class="stat"><div class="num"><span data-count="20">20</span>+</div><div class="lbl">Outlet laundry</div><div class="sub">Dimiliki &amp; dikelola langsung</div></div>
-      <div class="stat"><div class="num" data-count="11">11</div><div class="lbl">Layanan</div><div class="sub">Dalam satu ekosistem</div></div>
-      <div class="stat"><div class="num" data-count="2">2</div><div class="lbl">Business unit</div><div class="sub">Retail &amp; Laundry</div></div>
-    </div>
+    <div class="trust"><span><b>2013</b>mulai usaha laundry</span><span><b>20+</b>outlet kami kelola sendiri</span><span><b>11</b>layanan dalam satu tempat</span></div>
   </div>
 </section>
 
-<!-- MODAL / PAKET STRIP -->
-<section class="view sec" id="modal" style="padding-bottom:40px">
+<!-- 2. PAKET -->
+<section class="sec soft view" id="paket">
   <div class="wrap">
-    <div class="sec-head center reveal">
-      <div class="eyebrow">Pilih skala usaha</div>
-      <h2>Mulai dari mana pun, <span class="red">ada jalurnya.</span></h2>
-      <p>Mulai kecil lalu bertumbuh, atau langsung skala besar. Pilih yang paling sesuai dengan kondisi Anda, semua tetap didampingi SML Group.</p>
+    <div class="head reveal">
+      <div class="eyebrow">Pilih paket</div>
+      <h2>Mulai dari yang kecil, <span class="red">atau langsung besar.</span></h2>
+      <p>Setiap paket sudah termasuk mesin dan pendampingan. Klik "Lihat harga" untuk rincian lengkapnya.</p>
     </div>
-    <div class="tier-grid">
-      <div class="tier reveal">
-        <div class="tier-top"><span class="tier-k"><i>TAHAP 01</i>Mulai</span><span class="tier-who">Untuk pemula &amp; ruko kecil</span></div>
-        <ul class="tier-list">
-          <li><b>2 Set Beko</b> · 2 mesin cuci Beko 10 kg + 2 dryer Azalea 10,5 kg</li>
-          <li>Atau <b>1 Set Samsung Commercial</b> · 2 mesin</li>
-          <li>Sudah termasuk boiler, perlengkapan, dan bahan baku awal</li>
-        </ul>
-        <a class="btn solid tier-btn" href="makassar/">Lihat harga <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2"/></svg></a>
+    <div class="tier-grid reveal">
+      <div class="tier">
+        <small>PAKET KECIL</small><h3>Mulai</h3>
+        <div class="for">Cocok untuk pemula atau ruko kecil</div>
+        <ul><li>2 mesin cuci Beko + 2 pengering Azalea</li><li>Atau 1 set Samsung Commercial</li><li>Sudah termasuk boiler dan perlengkapan</li></ul>
+        <a class="btn solid" href="makassar/">Lihat harga</a>
       </div>
-      <div class="tier feat reveal" data-d="1">
-        <div class="tier-badge">Bertumbuh</div>
-        <div class="tier-top"><span class="tier-k"><i>TAHAP 02</i>Berkembang</span><span class="tier-who">Kapasitas menengah</span></div>
-        <ul class="tier-list">
-          <li><b>2–4 Set Samsung Commercial</b> · 4–8 mesin</li>
-          <li>Mesin cuci &amp; pengering bertumpuk, hemat tempat</li>
-          <li>Cocok untuk lokasi ramai atau menambah kapasitas</li>
-        </ul>
-        <a class="btn white tier-btn" href="makassar/">Lihat harga <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2"/></svg></a>
+      <div class="tier feat">
+        <small>PAKET MENENGAH</small><h3>Berkembang</h3>
+        <div class="for">Cocok untuk lokasi ramai</div>
+        <ul><li>2 sampai 4 set Samsung Commercial</li><li>Mesin cuci dan pengering ditumpuk, hemat tempat</li><li>Bisa untuk menambah kapasitas</li></ul>
+        <a class="btn white" href="makassar/">Lihat harga</a>
       </div>
-      <div class="tier reveal" data-d="2">
-        <div class="tier-top"><span class="tier-k"><i>TAHAP 03</i>Skala Besar</span><span class="tier-who">Investor &amp; pemilik modal</span></div>
-        <ul class="tier-list">
-          <li><b>Prime · Gold · Platinum</b> · 5–15 stack (10–30 mesin)</li>
-          <li>Tersedia untuk Jabodetabek dan Kemitraan Wish Wash</li>
-          <li>Bisa dikelola SML (Managed Laundry)</li>
-        </ul>
-        <a class="btn solid tier-btn" href="kemitraan/">Lihat harga <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2"/></svg></a>
-        <a class="tier-alt" href="jabodetabek/">Area Jabodetabek? Lihat paketnya di sini</a>
+      <div class="tier">
+        <small>PAKET BESAR</small><h3>Skala Besar</h3>
+        <div class="for">Cocok untuk investor</div>
+        <ul><li>Paket Prime, Gold, Platinum (10–30 mesin)</li><li>Bisa dikelola oleh tim SML</li><li>Tersedia untuk Wish Wash dan Jabodetabek</li></ul>
+        <a class="btn solid" href="kemitraan/">Lihat harga</a>
+        <a class="alt" href="jabodetabek/">Di Jabodetabek? Lihat di sini</a>
       </div>
     </div>
-    <p class="tier-note reveal">Rincian isi paket dan harga ada di halaman masing-masing. Belum yakin skala yang pas? <a href="#konsultasi">Konsultasikan gratis</a>.</p>
+    <div class="machines reveal">
+      <div class="ml">Mesin yang kami pakai</div>
+      <div class="mc"><img src="assets/mesin-beko-washer.webp" alt="Mesin cuci Beko" loading="lazy"><div><b>Beko</b><small>Mesin cuci 10 kg</small></div></div>
+      <div class="mc"><img src="assets/mesin-azalea.webp" alt="Pengering Azalea" loading="lazy"><div><b>Azalea</b><small>Pengering 10,5 kg</small></div></div>
+      <div class="mc dark"><img src="assets/mesin-samsung.webp" alt="Samsung Commercial" loading="lazy"><div><b>Samsung Commercial</b><small>Cuci + kering, ditumpuk</small></div></div>
+    </div>
+    <p class="note">Mau pakai nama usaha sendiri? Bisa. Mau pakai nama Wish Wash? Pilih <a href="kemitraan/">Kemitraan</a>.</p>
   </div>
 </section>
 
-<!-- KEUNGGULAN -->
-<section class="view sec soft" id="keunggulan">
+<!-- 3. LAYANAN -->
+<section class="sec view" id="layanan">
   <div class="wrap">
-    <div class="sec-head reveal">
-      <div class="eyebrow">Keunggulan SML Group</div>
-      <h2>Lima hal yang membuat SML Group <span class="red">berbeda.</span></h2>
-      <p>Kami tidak hanya menjual mesin atau paket. Kami pernah, dan masih, berada di posisi Anda: menjalankan laundry setiap hari.</p>
+    <div class="head reveal">
+      <div class="eyebrow">Layanan</div>
+      <h2>Semua kebutuhan laundry, <span class="red">cukup satu kontak.</span></h2>
+      <p>Klik layanan yang Anda butuhkan, tim kami langsung membalas lewat WhatsApp.</p>
     </div>
-    <div class="bento">
-      <div class="bx bx-a reveal">
-        <span class="bn">01</span>
-        <div class="bbig">2013</div>
-        <h4>Pengalaman operasional nyata</h4>
-        <p>Menjalankan bisnis laundry sejak 2013, berawal dari satu usaha laundry dan tumbuh dari pengalaman lapangan.</p>
-      </div>
-      <div class="bx bx-b reveal" data-d="1">
-        <span class="bn">02</span>
-        <div class="bbig">20+</div>
-        <h4>Pengalaman multi-outlet</h4>
-        <p>Memiliki dan mengelola lebih dari 20 outlet laundry, self-service maupun layanan umum.</p>
-      </div>
-      <div class="bx bx-c reveal" data-d="2">
-        <span class="bn">03</span>
-        <h4>Solusi yang terintegrasi</h4>
-        <p>Produk, layanan, dan pendampingan dalam satu ekosistem.</p>
-        <div class="mini-chips"><span>Paket</span><span>Mesin</span><span>Chemical</span><span>Sparepart</span><span>Teknisi</span><span>Instalasi</span><span>Furniture</span><span>Training</span><span>Konsultasi</span><span>Distribusi</span><span>Kemitraan</span></div>
-      </div>
-      <div class="bx bx-d reveal">
-        <span class="bn">04</span>
-        <h4>Dukungan menyeluruh</h4>
-        <p>Dari produk, instalasi, dan training hingga maintenance.</p>
-        <div class="flow"><span>Produk</span><i></i><span>Instalasi</span><i></i><span>Training</span><i></i><span>Maintenance</span></div>
-      </div>
-      <div class="bx bx-e reveal" data-d="1">
-        <span class="bn">05</span>
-        <h4>Fokus Indonesia Timur</h4>
-        <p>Berbasis di Makassar dan memahami kebutuhan investor serta pengusaha laundry di kawasan ini.</p>
-        <div class="loc"><span class="pd"></span>Makassar · Kantor Pusat</div>
-      </div>
-    </div>
+    <div class="svc-grid reveal" id="svcGrid"></div>
   </div>
 </section>
 
-<!-- LAYANAN -->
-<section class="view sec" id="layanan">
-  <div class="wrap">
-    <div class="sec-head center reveal">
-      <div class="eyebrow">11 Layanan dalam 4 Tahap</div>
-      <h2>Di tahap mana bisnis laundry Anda <span class="red">sekarang?</span></h2>
-      <p>Setiap tahap punya kebutuhan yang berbeda. Temukan tahap Anda, lalu klik layanan yang ingin ditanyakan untuk langsung terhubung dengan tim kami.</p>
-    </div>
-    <div class="stage-nav reveal">
-      <a href="#tahap-1"><b>01</b>Memulai</a><a href="#tahap-2"><b>02</b>Menjalankan</a><a href="#tahap-3"><b>03</b>Merawat</a><a href="#tahap-4"><b>04</b>Mengembangkan</a>
-    </div>
-
-    <div class="row reveal" id="tahap-1">
-      <div class="row-txt">
-        <div class="row-k">Tahap 01 · Memulai</div>
-        <h3>Belum punya laundry? Mulai dengan rencana yang jelas.</h3>
-        <p>Sebelum membeli apa pun, kami bantu memetakan tujuan, lokasi, dan modal Anda. Setelah itu baru ditentukan jalurnya: memakai brand sendiri atau bergabung dengan Wish Wash.</p>
-        <div class="schips"><button class="schip" onclick="svcWA('Konsultasi Bisnis Laundry')">Konsultasi Bisnis Laundry</button><button class="schip" onclick="svcWA('Paket Bisnis Laundry')">Paket Bisnis Laundry</button><button class="schip" onclick="svcWA('Paket Kemitraan Laundry')">Paket Kemitraan Laundry</button></div>
-        <a class="row-go" href="#jalur">Bandingkan dua jalur paket <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2"/></svg></a>
-      </div>
-      <div class="mock">
-        <div class="mk-card">
-          <div class="mk-head"><b>Rencana Usaha Laundry</b><span class="mk-tag">Konsultasi</span></div>
-          <div class="mk-list">
-            <div class="done"><i><svg viewBox="0 0 24 24" fill="none"><path d="M6 12.5l4 4 8-9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></i>Tujuan &amp; target pelanggan</div>
-            <div class="done"><i><svg viewBox="0 0 24 24" fill="none"><path d="M6 12.5l4 4 8-9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></i>Survei potensi lokasi</div>
-            <div class="done"><i><svg viewBox="0 0 24 24" fill="none"><path d="M6 12.5l4 4 8-9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></i>Perkiraan modal &amp; kapasitas</div>
-            <div><i></i>Pilih jalur paket</div>
-          </div>
-          <div class="mk-toggle"><span class="on">Brand sendiri</span><span>Wish Wash</span></div>
-          <div class="mk-bar"><span style="width:75%"></span></div>
-          <small class="mk-cap">3 dari 4 langkah perencanaan</small>
-        </div>
-        <div class="mk-float"><b>Paket Bisnis</b><small>atau Kemitraan</small></div>
-      </div>
-    </div>
-
-    <div class="row rev reveal" id="tahap-2">
-      <div class="row-txt">
-        <div class="row-k">Tahap 02 · Menjalankan</div>
-        <h3>Outlet siap jalan, tim siap melayani.</h3>
-        <p>Mesin dipilih sesuai kapasitas, dipasang oleh tim kami, dan ruang outlet dilengkapi furniture yang pas. Tim Anda dilatih sebelum pelanggan pertama datang, dan bahan baku tersedia untuk operasional harian.</p>
-        <div class="schips"><button class="schip" onclick="svcWA('Mesin Laundry')">Mesin Laundry</button><button class="schip" onclick="svcWA('Instalasi')">Instalasi</button><button class="schip" onclick="svcWA('Furniture & Fabrication')">Furniture & Fabrication</button><button class="schip" onclick="svcWA('Training Operasional')">Training Operasional</button><button class="schip" onclick="svcWA('Chemical & Bahan Baku')">Chemical & Bahan Baku</button><button class="schip" onclick="svcWA('Distributor Produk Laundry')">Distributor Produk Laundry</button></div>
-      </div>
-      <div class="mock">
-        <div class="mk-card">
-          <div class="mk-head"><b>Persiapan Outlet</b><span class="mk-tag ok">Siap buka</span></div>
-          <div class="mk-machines"><span></span><span></span><span></span><span></span><span></span><span></span></div>
-          <div class="mk-steps">
-            <div class="done"><i><svg viewBox="0 0 24 24" fill="none"><path d="M6 12.5l4 4 8-9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></i>Mesin terpasang</div>
-            <div class="done"><i><svg viewBox="0 0 24 24" fill="none"><path d="M6 12.5l4 4 8-9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></i>Furniture outlet</div>
-            <div class="done"><i><svg viewBox="0 0 24 24" fill="none"><path d="M6 12.5l4 4 8-9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></i>Training tim</div>
-            <div class="done"><i><svg viewBox="0 0 24 24" fill="none"><path d="M6 12.5l4 4 8-9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></i>Stok bahan baku</div>
-          </div>
-        </div>
-        <div class="mk-float"><b>Opening</b><small>sesuai rencana</small></div>
-      </div>
-    </div>
-
-    <div class="row reveal" id="tahap-3">
-      <div class="row-txt">
-        <div class="row-k">Tahap 03 · Merawat</div>
-        <h3>Mesin terawat, outlet tidak berhenti.</h3>
-        <p>Mesin yang jarang dirawat cepat rusak dan pelanggan bisa pindah ke tempat lain. Teknisi kami membantu perawatan dan penanganan kendala, dengan sparepart yang tersedia di satu tempat.</p>
-        <div class="schips"><button class="schip" onclick="svcWA('Teknisi & Maintenance')">Teknisi & Maintenance</button><button class="schip" onclick="svcWA('Sparepart')">Sparepart</button></div>
-      </div>
-      <div class="mock">
-        <div class="mk-card">
-          <div class="mk-head"><b>Catatan Perawatan Mesin</b><span class="mk-tag">Aftersales</span></div>
-          <div class="mk-table">
-            <div class="th"><span>Kegiatan</span><span>Status</span></div>
-            <div><span>Pengecekan berkala</span><em class="g">Rutin</em></div>
-            <div><span>Pembersihan filter</span><em class="g">Rutin</em></div>
-            <div><span>Kendala mesin</span><em class="r">Lapor teknisi</em></div>
-            <div><span>Penggantian sparepart</span><em class="y">Bila perlu</em></div>
-          </div>
-        </div>
-        <div class="mk-float"><b>Satu kontak</b><small>teknisi &amp; sparepart</small></div>
-      </div>
-    </div>
-
-    <div class="row rev reveal" id="tahap-4">
-      <div class="row-txt">
-        <div class="row-k">Tahap 04 · Mengembangkan</div>
-        <h3>Sudah berjalan? Saatnya tumbuh.</h3>
-        <p>Untuk pemilik laundry yang ingin menambah mesin, meningkatkan kapasitas, atau membuka outlet berikutnya. Kami bantu mengevaluasi kondisi usaha dan menyiapkan langkah pertumbuhan berikutnya.</p>
-        <div class="schips"><button class="schip" onclick="svcWA('Konsultasi Bisnis Laundry')">Konsultasi Bisnis Laundry</button><button class="schip" onclick="svcWA('Mesin Laundry')">Mesin Laundry</button><button class="schip" onclick="svcWA('Paket Bisnis Laundry')">Paket Bisnis Laundry</button><button class="schip" onclick="svcWA('Paket Kemitraan Laundry')">Paket Kemitraan Laundry</button></div>
-      </div>
-      <div class="mock">
-        <div class="mk-card">
-          <div class="mk-head"><b>Langkah Pertumbuhan</b><span class="mk-tag">Pengembangan</span></div>
-          <div class="mk-grow"><div style="height:34%"><span>Evaluasi</span></div><div style="height:56%"><span>Tambah mesin</span></div><div style="height:78%"><span>Tambah kapasitas</span></div><div class="hl" style="height:100%"><span>Outlet baru</span></div></div>
-        </div>
-        <div class="mk-float"><b>Tumbuh</b><small>bertahap &amp; terukur</small></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- BANDINGKAN -->
-<section class="view sec soft" id="kenapa-satu-pintu">
-  <div class="wrap">
-    <div class="sec-head center reveal">
-      <div class="eyebrow">Kenapa satu ekosistem?</div>
-      <h2>Bayangkan kalau semuanya <span class="red">harus diurus sendiri.</span></h2>
-      <p>Banyak pemilik laundry kehabisan waktu bukan karena mencuci, tapi karena mengurus banyak pihak yang berbeda. Ini bedanya.</p>
-    </div>
-    <div class="cmp">
-      <div class="cmp-card bad reveal">
-        <h3>Urus sendiri satu per satu</h3>
-        <div class="cs">Waktu dan tenaga habis untuk koordinasi</div>
-        <div class="cmp-list">
-          <div><span class="mk">✕</span>Cari dan bandingkan mesin dari beberapa penjual</div>
-          <div><span class="mk">✕</span>Teknisi, sparepart, dan bahan baku dari tempat yang berbeda</div>
-          <div><span class="mk">✕</span>Belajar operasional dengan coba-coba</div>
-          <div><span class="mk">✕</span>Saat ada kendala, bingung harus menghubungi siapa</div>
-          <div><span class="mk">✕</span>Layout dan furniture outlet dirancang tanpa acuan</div>
-        </div>
-      </div>
-      <div class="cmp-card good reveal" data-d="1">
-        <h3>Bersama SML Group</h3>
-        <div class="cs">Satu teman untuk seluruh perjalanan bisnis</div>
-        <div class="cmp-list">
-          <div><span class="mk">✓</span>Kebutuhan dihitung dulu lewat konsultasi, baru dipilih mesinnya</div>
-          <div><span class="mk">✓</span>Mesin, bahan baku, sparepart, dan teknisi dalam satu ekosistem</div>
-          <div><span class="mk">✓</span>Training operasional untuk tim Anda sebelum outlet berjalan</div>
-          <div><span class="mk">✓</span>Satu kontak untuk aftersales, maintenance, dan supply</div>
-          <div><span class="mk">✓</span>Instalasi, furniture, dan persiapan outlet ditangani tim kami</div>
-        </div>
-      </div>
-    </div>
-    <p class="cmp-note reveal">Cakupan dukungan disesuaikan dengan kebutuhan Anda dan skema paket yang dipilih.</p>
-  </div>
-</section>
-
-<!-- JALUR / PAKET -->
-<section class="view sec" id="jalur">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <div class="eyebrow">Dua jalur memulai</div>
-      <h2>Mau pakai <span class="red">brand sendiri</span> atau bergabung dengan <span class="red">Wish Wash?</span></h2>
-      <p>Keduanya didampingi SML Group. Bedanya ada di nama outlet dan siapa yang menjalankan operasional sehari-hari.</p>
-    </div>
-    <div class="path-grid">
-      <div class="path reveal">
-        <div class="pt">Jalur 01</div>
-        <h3>Paket Bisnis Laundry</h3>
-        <p>Untuk Anda yang ingin memiliki dan menjalankan laundry dengan <b>brand milik sendiri</b>. Brand, konsep, dan identitas outlet sepenuhnya milik Anda.</p>
-        <div class="q">Cocok untuk</div>
-        <ul>
-          <li>Calon pengusaha yang ingin membuka laundry dengan identitas sendiri</li>
-          <li>Pemilik laundry yang ingin menambah outlet, mesin, atau kapasitas</li>
-          <li>Pengusaha yang ingin menambah bisnis laundry ke portofolionya</li>
-        </ul>
-        <div class="q">Lingkup bisa disesuaikan</div>
-        <div class="chips"><span>Konsultasi</span><span>Mesin &amp; equipment</span><span>Chemical</span><span>Sparepart</span><span>Instalasi</span><span>Furniture</span><span>Training</span><span>Teknisi</span></div>
-        <div class="acts">
-          <a class="btn solid" href="makassar/">Paket Indonesia Timur</a>
-          <a class="btn ghost" href="jabodetabek/">Paket Jabodetabek</a>
-        </div>
-      </div>
-      <div class="path reveal" data-d="1">
-        <div class="pt">Jalur 02</div>
-        <h3>Paket Kemitraan Laundry</h3>
-        <div><span class="ww-logo"><img src="assets/logo-wishwash.png" alt="Wish Wash"></span></div>
-        <p>Untuk investor atau pemilik modal yang ingin membuka laundry dengan <b>brand dan sistem Wish Wash</b> dari SML Group. Ada dua model kerja sama:</p>
-        <div class="models" style="margin-top:16px">
-          <div class="model"><small>MODEL 01</small><b>Managed Laundry</b><p>Anda menyediakan investasi atau aset, operasional outlet dikelola SML sesuai perjanjian.</p></div>
-          <div class="model"><small>MODEL 02</small><b>Branded Partnership</b><p>Anda menjalankan sendiri outlet berbrand Wish Wash dengan sistem dan standar SML.</p></div>
-        </div>
-        <div class="note">Seluruh Paket Kemitraan memakai brand Wish Wash. Ingin brand sendiri? Pilih Paket Bisnis Laundry.</div>
-        <div class="acts">
-          <a class="btn solid" href="kemitraan/">Lihat Kemitraan Wish Wash</a>
-          <a class="btn ghost" onclick="openWA(MSG.kemitraan)">Tanya via WhatsApp</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- KENALI MESIN -->
-<section class="view sec soft" id="mesin">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <div class="eyebrow">Kenali mesinnya</div>
-      <h2>Mesin yang tepat, <span class="red">operasional yang lancar.</span></h2>
-      <p>Memilih mesin bukan soal paling besar atau paling mahal, tapi soal yang paling pas dengan jumlah cucian, luas ruang, dan rencana usaha Anda.</p>
-    </div>
-    <div class="mc-grid">
-      <div class="mc-learn reveal">
-        <div class="mc-tabs" id="mcTabs">
-          <button class="cur" data-t="0">Mesin Cuci</button><button data-t="1">Pengering</button><button data-t="2">Boiler</button>
-        </div>
-        <div class="mc-panel cur" data-p="0">
-          <h4>Jantung outlet laundry</h4>
-          <p>Mesin cuci komersial dibuat untuk dipakai berkali-kali dalam sehari. Kapasitasnya sebaiknya dihitung dari perkiraan jumlah cucian per hari, bukan sekadar memilih yang paling besar.</p>
-          <div class="mc-tags"><span>Beko 10 kg</span><span>Samsung Commercial</span></div>
-        </div>
-        <div class="mc-panel" data-p="1">
-          <h4>Pakaian siap dilipat di hari yang sama</h4>
-          <p>Pengering mempercepat proses sehingga cucian tidak menumpuk. Di paket SML, jumlah pengering disamakan dengan jumlah mesin cuci agar alur kerja seimbang.</p>
-          <div class="mc-tags"><span>Dryer Azalea 10,5 kg</span><span>Stack Samsung Commercial</span></div>
-        </div>
-        <div class="mc-panel" data-p="2">
-          <h4>Uap untuk hasil setrika lebih rapi</h4>
-          <p>Boiler menghasilkan uap untuk setrika uap. Setiap paket Indonesia Timur sudah termasuk boiler Titan, dengan kapasitas yang menyesuaikan jumlah mesin.</p>
-          <div class="mc-tags"><span>Titan 10L</span><span>Titan 15L</span><span>Titan 25L</span></div>
-        </div>
-        <div class="mc-tip"><b>Tips memilih mesin</b>Hitung perkiraan cucian per hari, ukur luas ruang, dan cek daya listrik. Tim SML membantu menghitungnya saat konsultasi.</div>
-      </div>
-      <div class="mc-brand light reveal" data-d="1">
-        <div class="mc-img"><img src="assets/mesin-beko-washer.webp" alt="Mesin cuci Beko di Paket Bisnis SML Group" loading="lazy"></div>
-        <div class="mc-body">
-          <div class="mc-role">Mesin Cuci</div>
-          <div class="mc-name">Beko</div>
-          <p>Mesin cuci 10 kg untuk paket awal. Pilihan efisien untuk mulai usaha laundry.</p>
-          <a href="makassar/">Lihat paket Beko <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2"/></svg></a>
-        </div>
-      </div>
-      <div class="mc-brand light reveal" data-d="1">
-        <div class="mc-img"><img src="assets/mesin-azalea.webp" alt="Dryer Azalea Smart Dryer 10,5 kg di Paket Bisnis SML Group" loading="lazy"></div>
-        <div class="mc-body">
-          <div class="mc-role">Pengering</div>
-          <div class="mc-name">Azalea</div>
-          <p>Smart Dryer 10,5 kg, pasangan mesin cuci Beko di paket awal. Cucian kering dan siap dilipat di hari yang sama.</p>
-          <a href="makassar/">Lihat paket Beko + Azalea <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2"/></svg></a>
-        </div>
-      </div>
-      <div class="mc-brand dark reveal" data-d="2">
-        <div class="mc-img"><img src="assets/mesin-samsung.webp" alt="Mesin Samsung Commercial stack di Paket Bisnis SML Group" loading="lazy"></div>
-        <div class="mc-body">
-          <div class="mc-role">Mesin Cuci + Pengering</div>
-          <div class="mc-name">Samsung Commercial</div>
-          <p>Mesin cuci dan pengering bertumpuk dalam satu stack, hemat tempat. Tersedia 1 sampai 4 set.</p>
-          <a href="makassar/">Lihat paket Samsung <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2"/></svg></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SIAPA -->
-<section class="view sec soft" id="siapa">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <div class="eyebrow">Untuk siapa</div>
-      <h2>Kami membantu pemilik modal dan pelaku usaha yang <span class="red">serius membangun bisnis laundry.</span></h2>
-    </div>
-    <div class="aud-grid" id="audGrid"></div>
-  </div>
-</section>
-
-<!-- TENTANG -->
-<section class="view sec" id="tentang">
+<!-- 4. KENAPA SML -->
+<section class="sec soft view" id="kenapa">
   <div class="wrap why">
     <div class="reveal">
-      <div class="eyebrow">Tentang SML Group</div>
-      <h2>Tumbuh dari operator laundry, <span class="red">menjadi teman bagi pemilik laundry.</span></h2>
-      <p class="lead">SML Group adalah ekosistem solusi bisnis laundry di bawah PT Sahabat Mandiri Laundry. Pengalaman menjalankan laundry sendiri itulah yang sekarang kami bagikan kepada investor, calon pengusaha, dan pemilik laundry.</p>
-      <div class="vision">
-        <small>Visi</small>
-        <p>Menjadi ekosistem bisnis laundry terbesar dan terpercaya di Indonesia Timur.</p>
-        <span>Arah jangka panjang SML Group.</span>
+      <div class="eyebrow">Kenapa SML Group</div>
+      <h2>Kami juga pemilik laundry, <span class="red">bukan cuma penjual mesin.</span></h2>
+      <p class="lead">Sejak 2013 kami menjalankan laundry sendiri. Jadi saran yang kami berikan berasal dari pengalaman sehari-hari, bukan sekadar teori.</p>
+      <div class="why-pts">
+        <div class="pt"><b>2013</b><span>Sudah lama di laundry</span><small>Berawal dari satu usaha laundry</small></div>
+        <div class="pt"><b>20+</b><span>Outlet kami kelola</span><small>Self-service dan laundry biasa</small></div>
+        <div class="pt"><b>1</b><span>Kontak untuk semua</span><small>Mesin, teknisi, sparepart, deterjen</small></div>
+        <div class="pt"><b>4</b><span>Tahap didampingi</span><small>Dari rencana sampai berkembang</small></div>
       </div>
     </div>
-    <div class="reveal" data-d="1">
-      <div class="tl">
-        <div class="tl-item"><b>2013</b><h4>Awal perjalanan</h4><p>SML memulai langkah pertama melalui bisnis Laundry 88 dalam bentuk UMKM.</p></div>
-        <div class="tl-item"><b>2025</b><h4>Menjadi badan hukum</h4><p>Bisnis resmi berjalan di bawah PT Sahabat Mandiri Laundry.</p></div>
-        <div class="tl-item now"><b>Kini</b><h4>SML Group</h4><p>Beroperasi melalui Business Unit Retail dan Business Unit Laundry.</p></div>
-      </div>
-      <div class="tagline-card">
-        <small>Tagline</small>
-        <b>Teman Tumbuh Laundrymu</b>
-        <div class="tg"><div><span>Teman</span>Hadir mendampingi, bukan sekadar bertransaksi.</div><div><span>Tumbuh</span>Mendukung sejak memulai hingga mengembangkan.</div><div><span>Laundrymu</span>Fokus dan personal bagi pemilik bisnis laundry.</div></div>
-      </div>
+    <div class="why-photo reveal">
+      <img src="assets/interior-1.jpg" alt="Outlet laundry self-service yang dikelola SML Group" loading="lazy">
+      <div class="tag"><b>Outlet yang kami jalankan sendiri</b><div class="brands"><i>BOZMAN</i><i>WISH WASH</i><i>KILAT</i><i>MELATI</i></div></div>
     </div>
   </div>
 </section>
 
-<!-- BUKTI: BU LAUNDRY -->
-<section class="view sec soft" id="bukti">
-  <div class="wrap proof">
-    <div class="proof-photos reveal">
-      <div class="ph"><img src="assets/interior-1.jpg" alt="Outlet laundry self-service yang dikelola SML Group" loading="lazy"><span class="cap">Laundry self-service</span></div>
-      <div class="ph"><img src="assets/outlet-51b.jpg" alt="Outlet laundry SML Group di Makassar" loading="lazy"></div>
-      <div class="ph"><img src="assets/interior-2.jpg" alt="Area mesin outlet laundry self-service" loading="lazy"></div>
-    </div>
-    <div class="reveal" data-d="1">
-      <div class="eyebrow">Business Unit Laundry</div>
-      <h2>Kami juga menjalankan laundry <span class="red">setiap hari.</span></h2>
-      <p class="lead">Saran yang kami berikan tidak hanya teori. Pengalaman mengelola outlet sendiri memperkuat konsultasi, training, teknisi, dan paket yang kami tawarkan.</p>
-      <div class="big-n"><b>20+</b><span>Outlet laundry<small>Dimiliki dan dikelola langsung oleh SML Group</small></span></div>
-      <div class="concepts">
-        <div class="concept"><b>Laundry Self-Service</b><small>Outlet dengan konsep layanan mandiri</small></div>
-        <div class="concept"><b>Laundry Layanan Umum</b><small>Outlet dengan layanan cuci konvensional</small></div>
-      </div>
-      <div class="brands"><span>Bozman</span><span>Wish Wash</span><span>Kilat</span><span>Melati</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- CARA MULAI -->
-<section class="view sec" id="cara">
+<!-- 5. CARA MULAI -->
+<section class="sec view" id="cara">
   <div class="wrap">
-    <div class="sec-head center reveal">
+    <div class="head reveal">
       <div class="eyebrow">Cara mulai</div>
-      <h2>Didampingi dari <span class="red">obrolan pertama</span> sampai bisnis berkembang.</h2>
-      <p>Tidak perlu paham semuanya dari awal. Ini tahapan yang biasanya kami jalani bersama Anda.</p>
+      <h2>Empat langkah, <span class="red">kami temani semuanya.</span></h2>
     </div>
-    <div class="steps reveal" data-d="1" id="stepGrid"></div>
-    <p class="steps-note reveal">Cakupan dukungan disesuaikan dengan kebutuhan Anda serta skema paket yang dipilih.</p>
-  </div>
-</section>
-
-<!-- FORM KONSULTASI -->
-<section class="view sec soft" id="konsultasi">
-  <div class="wrap form-wrap">
-    <div class="reveal">
-      <div class="eyebrow">Konsultasi gratis</div>
-      <h2>Ceritakan kondisi Anda, <span class="red">kami bantu arahkan.</span></h2>
-      <p class="lead">Isi beberapa pertanyaan singkat. Jawaban Anda langsung tersusun rapi di WhatsApp, jadi tim kami bisa memberi saran yang tepat sejak pesan pertama.</p>
-      <div class="form-points">
-        <div><i>1</i>Isi form singkat (±1 menit)</div>
-        <div><i>2</i>Pesan terkirim ke WhatsApp tim wilayah Anda</div>
-        <div><i>3</i>Tim SML menghubungi dan memberi rekomendasi</div>
-      </div>
-    </div>
-    <div class="fcard reveal" data-d="1">
-      <div class="frow">
-        <div class="field"><label for="f-nama">Nama</label><input id="f-nama" placeholder="Nama Anda"></div>
-        <div class="field"><label for="f-kota">Kota rencana / lokasi outlet</label><input id="f-kota" placeholder="mis. Makassar, Kendari, Bekasi"></div>
-      </div>
-      <div class="field"><label>Wilayah</label>
-        <div class="seg" id="f-wil"><button class="cur" data-v="itm">Indonesia Timur</button><button data-v="jkt">Jabodetabek</button><button data-v="lain">Wilayah lain</button></div>
-      </div>
-      <div class="field"><label>Kondisi saat ini</label>
-        <div class="seg wrapseg" id="f-kond"><button data-v="Belum punya laundry, ingin mulai">Belum punya laundry</button><button data-v="Sudah punya laundry">Sudah punya laundry</button><button data-v="Investor / pemilik modal">Investor / pemilik modal</button></div>
-      </div>
-      <div class="field"><label for="f-butuh">Kebutuhan utama</label>
-        <select id="f-butuh"><option>Belum tahu, minta rekomendasi</option></select>
-      </div>
-      <div class="field"><label for="f-cat">Catatan (opsional)</label><textarea id="f-cat" placeholder="mis. sudah ada ruko 5x15 m, ingin buka 3 bulan lagi"></textarea></div>
-      <button class="btn solid" style="width:100%;justify-content:center" onclick="sendForm()">Kirim ke WhatsApp <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2"/></svg></button>
-      <small class="fnote">Data hanya dipakai untuk menghubungi Anda terkait konsultasi.</small>
+    <div class="steps reveal">
+      <div class="step"><div class="n">1</div><b>Ngobrol dulu</b><small>Ceritakan rencana, lokasi, dan modal Anda. Gratis.</small></div>
+      <div class="step"><div class="n">2</div><b>Pilih paket</b><small>Kami bantu hitung mesin yang pas untuk lokasi Anda.</small></div>
+      <div class="step"><div class="n">3</div><b>Pasang &amp; belajar</b><small>Mesin dipasang, Anda dan tim dilatih sampai siap.</small></div>
+      <div class="step"><div class="n">4</div><b>Buka &amp; dirawat</b><small>Outlet buka, teknisi dan supply tetap kami bantu.</small></div>
     </div>
   </div>
 </section>
 
-<!-- FAQ -->
-<section class="view sec" id="faq">
-  <div class="wrap faq-wrap">
-    <div class="reveal">
-      <div class="eyebrow">Pertanyaan umum</div>
-      <h2>Masih ragu? <span class="red">Wajar.</span> Ini yang paling sering ditanyakan.</h2>
-      <p class="lead">Tidak menemukan jawabannya? Tanyakan langsung, tim kami siap menjelaskan dengan bahasa yang mudah.</p>
-      <a class="btn solid" style="margin-top:24px" href="#konsultasi">Isi Form Konsultasi</a>
-    </div>
-    <div class="faq reveal" data-d="1" id="faqList"></div>
-  </div>
-</section>
-
-<!-- AREA & KONTAK -->
-<section class="view sec" id="kontak">
+<!-- 6. TANYA JAWAB + FORM + KONTAK -->
+<section class="sec soft view" id="tanya">
   <div class="wrap">
-    <div class="area">
-      <div class="area-map reveal">
-        <div class="eyebrow on-dark">Fokus wilayah</div>
-        <h3>Berbasis di Makassar, bertumbuh untuk Indonesia Timur.</h3>
-        <p>Kantor pusat kami di Makassar, dengan kantor cabang di Jakarta untuk melayani area Jabodetabek.</p>
-        <div class="pins">
-          <div class="pin-chip main"><span class="pd"></span><div><b>Makassar</b><small>Kantor Pusat · Indonesia Timur</small></div></div>
-          <div class="pin-chip"><span class="pd"></span><div><b>Jakarta</b><small>Kantor Cabang · Jabodetabek</small></div></div>
+    <div class="head reveal">
+      <div class="eyebrow">Tanya jawab</div>
+      <h2>Pertanyaan yang <span class="red">paling sering ditanyakan.</span></h2>
+    </div>
+    <div class="ask2">
+      <div class="faq reveal" id="faqList"></div>
+      <div class="fcard reveal">
+        <h3>Konsultasi gratis</h3>
+        <p>Isi 3 hal ini, lalu pesan Anda langsung terkirim ke WhatsApp tim kami.</p>
+        <div class="field"><label for="f-nama">Nama</label><input id="f-nama" placeholder="Nama Anda"></div>
+        <div class="field"><label for="f-kota">Kota</label><input id="f-kota" placeholder="mis. Makassar, Kendari, Bekasi"></div>
+        <div class="field"><label>Saya ingin…</label>
+          <div class="seg" id="f-mau"><button class="cur" data-v="buka usaha laundry baru">Buka laundry</button><button data-v="bantuan untuk laundry yang sudah ada">Laundry saya</button><button data-v="investasi laundry">Investasi</button></div>
         </div>
-      </div>
-      <div class="offices reveal" data-d="1">
-        <div class="office">
-          <div class="ol">Kantor Pusat</div>
-          <div class="ov">Makassar</div>
-          <div class="oa">Jl. Pengayoman No. 41, Makassar<br><b>CS: 0821-8863-3388</b></div>
-          <div class="oacts">
-            <a onclick="openWA(MSG.umum)"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1012 2z"/></svg>WhatsApp CS Makassar</a>
-            <a href="https://www.google.com/maps/search/?api=1&query=Jl.%20Pengayoman%20No.%2041%2C%20Makassar" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7v8" stroke="currentColor" stroke-width="2"/></svg>Google Maps</a>
-          </div>
-        </div>
-        <div class="office">
-          <div class="ol">Kantor Cabang</div>
-          <div class="ov">Jakarta</div>
-          <div class="oa">Jl. H. Batong Raya No. 33, Cilandak Barat, Jakarta<br><b>CS: 0811-801-197</b></div>
-          <div class="oacts">
-            <a onclick="openWA(MSG.umum,WA_JKT)"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1012 2z"/></svg>WhatsApp CS Jakarta</a>
-            <a href="https://www.google.com/maps/search/?api=1&query=Jl.%20H.%20Batong%20Raya%20No.%2033%2C%20Cilandak%20Barat%2C%20Jakarta" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7v8" stroke="currentColor" stroke-width="2"/></svg>Google Maps</a>
-          </div>
-        </div>
-        <div class="office">
-          <div class="ol">Kanal resmi</div>
-          <div class="oa" style="margin:8px 0 10px">supermarketlaundrymakassar@gmail.com<br>Instagram @smlgroup.official</div>
-          <div class="oacts">
-            <a href="mailto:supermarketlaundrymakassar@gmail.com">Kirim Email</a>
-            <a href="https://www.instagram.com/smlgroup.official/" target="_blank" rel="noopener">Buka Instagram</a>
-          </div>
-        </div>
+        <button class="btn wa" onclick="sendForm()"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1012 2z"/></svg>Kirim ke WhatsApp</button>
       </div>
     </div>
-
-    <div class="band reveal" style="margin-top:72px">
-      <div class="eyebrow on-dark">Mulai dari obrolan</div>
-      <h2>Mulai dan tumbuhkan bisnis laundry Anda bersama SML.</h2>
-      <p>Ceritakan rencana atau kendala laundry Anda. Konsultasi awal gratis, tanpa kewajiban membeli.</p>
-      <div class="cta-row">
-        <a class="btn white" onclick="openWA(MSG.umum)">Konsultasi Indonesia Timur</a>
-        <a class="btn outline-w" onclick="openWA(MSG.umum,WA_JKT)">Konsultasi Jabodetabek</a>
+    <div class="contact reveal">
+      <div class="office">
+        <div><small>KANTOR PUSAT</small><b>Makassar · CS 0821-8863-3388</b><span>Jl. Pengayoman No. 41, Makassar</span></div>
+        <div class="acts">
+          <a class="w" onclick="openWA(MSG.umum,WA_MKS)" aria-label="WhatsApp CS Makassar"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1012 2z"/></svg></a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Jl.%20Pengayoman%20No.%2041%2C%20Makassar" target="_blank" rel="noopener" aria-label="Peta kantor Makassar"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6 7-11a7 7 0 10-14 0c0 5 7 11 7 11z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="2.4" stroke="currentColor" stroke-width="1.8"/></svg></a>
+        </div>
+      </div>
+      <div class="office">
+        <div><small>KANTOR CABANG</small><b>Jakarta · CS 0811-801-197</b><span>Jl. H. Batong Raya No. 33, Cilandak Barat</span></div>
+        <div class="acts">
+          <a class="w" onclick="openWA(MSG.umum,WA_JKT)" aria-label="WhatsApp CS Jakarta"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1012 2z"/></svg></a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Jl.%20H.%20Batong%20Raya%20No.%2033%2C%20Cilandak%20Barat%2C%20Jakarta" target="_blank" rel="noopener" aria-label="Peta kantor Jakarta"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6 7-11a7 7 0 10-14 0c0 5 7 11 7 11z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="2.4" stroke="currentColor" stroke-width="1.8"/></svg></a>
+        </div>
       </div>
     </div>
   </div>
@@ -1131,194 +407,94 @@ footer{background:#1B1718;color:#D9D0D0;padding:64px 0 28px;margin-top:96px}
 
 <footer>
   <div class="wrap">
-    <div class="foot-grid">
-      <div class="foot-brand">
-        <div class="sml"><img src="assets/logo-sml.png" alt="SML Group"></div>
-        <div class="tag">Teman Tumbuh Laundrymu</div>
-        <p>SML Group · PT Sahabat Mandiri Laundry. Ekosistem solusi bisnis laundry sejak 2013, berbasis di Makassar.</p>
-      </div>
+    <div class="foot">
+      <div class="fb"><div class="logo"><img src="assets/logo-sml.png" alt="SML Group"></div><div><b>SML Group · Teman Tumbuh Laundrymu</b><span>PT Sahabat Mandiri Laundry · Makassar</span></div></div>
       <div class="foot-links">
-        <div class="foot-col">
-          <h5>Jelajahi</h5>
-          <a href="#keunggulan">Keunggulan</a>
-          <a href="#layanan">Layanan</a>
-          <a href="#modal">Paket</a>
-          <a href="#mesin">Mesin</a>
-          <a href="#tentang">Tentang</a>
-          <a href="#cara">Cara Mulai</a>
-          <a href="#konsultasi">Konsultasi</a>
-          <a href="#faq">FAQ</a>
-        </div>
-        <div class="foot-col">
-          <h5>Paket</h5>
-          <a href="makassar/">Paket Bisnis Indonesia Timur</a>
-          <a href="jabodetabek/">Paket Bisnis Jabodetabek</a>
-          <a href="kemitraan/">Kemitraan Wish Wash</a>
-        </div>
-        <div class="foot-col">
-          <h5>Kontak</h5>
-          <span>Jl. Pengayoman No. 41, Makassar</span>
-          <a onclick="openWA(MSG.umum)">CS Makassar: 0821-8863-3388</a>
-          <a onclick="openWA(MSG.umum,WA_JKT)">CS Jakarta: 0811-801-197</a>
-          <a href="mailto:supermarketlaundrymakassar@gmail.com">Email</a>
-          <a href="https://www.instagram.com/smlgroup.official/" target="_blank" rel="noopener">@smlgroup.official</a>
-        </div>
+        <a href="makassar/">Paket Indonesia Timur</a><a href="jabodetabek/">Paket Jabodetabek</a><a href="kemitraan/">Kemitraan Wish Wash</a>
+        <a href="https://www.instagram.com/smlgroup.official/" target="_blank" rel="noopener">Instagram @smlgroup.official</a>
+        <a href="mailto:supermarketlaundrymakassar@gmail.com">Email</a>
       </div>
     </div>
-    <div class="foot-bottom">
-      <span>© 2026 SML Group · PT Sahabat Mandiri Laundry</span>
-      <span>Fokus pengembangan di Indonesia Timur</span>
-    </div>
+    <div class="foot-bottom">© 2026 SML Group · PT Sahabat Mandiri Laundry</div>
   </div>
 </footer>
 
 <a class="wa-float" onclick="openWA(MSG.umum)" aria-label="Chat WhatsApp">
   <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1012 2zm0 18a8 8 0 01-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1112 20zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.5 6.5 0 01-3.2-2.8c-.1-.2 0-.4.1-.5l.4-.5c.1-.2.1-.3 0-.5l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5a1 1 0 00-.7.3c-.2.3-.9.9-.9 2.1s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1z"/></svg>
-  <span>Konsultasi Gratis</span>
+  <span>Tanya via WhatsApp</span>
 </a>
 
 <script>
-/* ---------- KONTAK (ubah di sini) ---------- */
-/* CS Makassar / Kantor Pusat dan CS Jakarta / Kantor Cabang */
-const WA_ITM=["6282188633388"];
-const WA_JKT="62811801197";
-function waItm(){
-  let n=null;
-  try{n=localStorage.getItem('sml_wa');}catch(e){}
-  if(!n||WA_ITM.indexOf(n)<0){n=WA_ITM[Math.floor(Math.random()*WA_ITM.length)];try{localStorage.setItem('sml_wa',n);}catch(e){}}
-  return n;
-}
-const MSG={
-  umum:'Halo SML Group, saya ingin konsultasi soal bisnis laundry.',
-  kemitraan:'Halo SML Group, saya ingin tahu tentang Paket Kemitraan Laundry Wish Wash.'
-};
-function openWA(text,num){window.open('https://wa.me/'+(num||waItm())+'?text='+encodeURIComponent(text),'_blank');}
+/* ---------- KONTAK ---------- */
+const WA_MKS="6282188633388";   /* CS Makassar / Kantor Pusat */
+const WA_JKT="62811801197";     /* CS Jakarta / Kantor Cabang */
+const MSG={umum:'Halo SML Group, saya ingin konsultasi soal usaha laundry.'};
+function openWA(text,num){window.open('https://wa.me/'+(num||WA_MKS)+'?text='+encodeURIComponent(text),'_blank');}
 
-/* ---------- DATA (dari Company Profile SML Group) ---------- */
-const I={
+/* ---------- LAYANAN (11 layanan resmi, bahasa sederhana) ---------- */
+const IC={
   paket:'<rect x="3" y="7" width="18" height="13" rx="2.5" stroke="currentColor" stroke-width="1.8"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2M3 12h18" stroke="currentColor" stroke-width="1.8"/>',
   mitra:'<path d="M8 11l-3 3a2 2 0 000 3l1 1a2 2 0 003 0l1-1M16 13l3-3a2 2 0 000-3l-1-1a2 2 0 00-3 0l-1 1M9 15l6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>',
-  konsul:'<path d="M4 5h16v11H9l-5 4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 9h8M8 12h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>',
-  mesin:'<rect x="4" y="3" width="16" height="18" rx="2.5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="13" r="4.2" stroke="currentColor" stroke-width="1.8"/><path d="M7 6.5h2M15 6.5h2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>',
-  instal:'<path d="M3 21h18M5 21V10l7-6 7 6v11" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M10 21v-5h4v5" stroke="currentColor" stroke-width="1.8"/>',
+  konsul:'<path d="M4 5h16v11H9l-5 4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>',
+  mesin:'<rect x="4" y="3" width="16" height="18" rx="2.5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="13" r="4.2" stroke="currentColor" stroke-width="1.8"/>',
+  instal:'<path d="M3 21h18M5 21V10l7-6 7 6v11" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>',
   furni:'<path d="M4 11V8a2 2 0 012-2h12a2 2 0 012 2v3M3 11h18v5H3zM5 16v3M19 16v3" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>',
-  chem:'<path d="M9 3h6M10 3v5L5 18a2 2 0 001.8 3h10.4a2 2 0 001.8-3L14 8V3" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M7.5 14h9" stroke="currentColor" stroke-width="1.8"/>',
-  train:'<path d="M3 8l9-4 9 4-9 4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M7 10v5c0 1.5 2.2 3 5 3s5-1.5 5-3v-5M21 8v5" stroke="currentColor" stroke-width="1.8"/>',
+  chem:'<path d="M9 3h6M10 3v5L5 18a2 2 0 001.8 3h10.4a2 2 0 001.8-3L14 8V3" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>',
+  train:'<path d="M3 8l9-4 9 4-9 4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M7 10v5c0 1.5 2.2 3 5 3s5-1.5 5-3v-5" stroke="currentColor" stroke-width="1.8"/>',
   dist:'<path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="7" cy="18" r="1.8" stroke="currentColor" stroke-width="1.8"/><circle cx="17" cy="18" r="1.8" stroke="currentColor" stroke-width="1.8"/>',
   tekn:'<path d="M14.5 6.5a4 4 0 00-5.3 5.3L4 17l3 3 5.2-5.2a4 4 0 005.3-5.3l-2.6 2.6-2.4-.6-.6-2.4z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>',
   spare:'<circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M18.7 5.3l-2.1 2.1M7.4 16.6l-2.1 2.1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>'
 };
 const SERVICES=[
-  {n:'Paket Bisnis Laundry',s:'Memulai',i:'paket',d:'Paket usaha lengkap untuk membuka laundry dengan brand Anda sendiri.',act:'#jalur',cta:'Lihat jalur paket'},
-  {n:'Paket Kemitraan Laundry',s:'Memulai',i:'mitra',d:'Buka laundry dengan brand dan sistem Wish Wash, bisa dikelola SML atau dijalankan sendiri.',act:'kemitraan/',cta:'Lihat kemitraan'},
-  {n:'Konsultasi Bisnis Laundry',s:'Memulai',i:'konsul',d:'Diskusi tujuan, lokasi, dan kondisi usaha agar langkah Anda tepat sejak awal.'},
-  {n:'Mesin Laundry',s:'Menjalankan',i:'mesin',d:'Mesin cuci dan pengering sesuai kapasitas serta konsep outlet Anda.'},
-  {n:'Instalasi',s:'Menjalankan',i:'instal',d:'Pemasangan mesin dan persiapan outlet sampai siap beroperasi.'},
-  {n:'Furniture & Fabrication',s:'Menjalankan',i:'furni',d:'Meja lipat, rak, dan perabot outlet yang dibuat sesuai ukuran ruang.'},
-  {n:'Chemical & Bahan Baku',s:'Menjalankan',i:'chem',d:'Deterjen, pewangi, dan bahan baku untuk operasional harian.'},
-  {n:'Training Operasional',s:'Menjalankan',i:'train',d:'Pelatihan alur kerja dan penggunaan mesin untuk Anda dan tim.'},
-  {n:'Distributor Produk Laundry',s:'Menjalankan',i:'dist',d:'Distribusi produk kebutuhan laundry untuk menjaga stok tetap aman.'},
-  {n:'Teknisi & Maintenance',s:'Merawat',i:'tekn',d:'Perawatan berkala dan penanganan kendala mesin agar outlet tidak berhenti.'},
-  {n:'Sparepart',s:'Merawat',i:'spare',d:'Suku cadang mesin laundry untuk perbaikan dan penggantian.'}
+  ['Paket Bisnis Laundry','paket','Buka laundry dengan nama usaha sendiri','#paket'],
+  ['Paket Kemitraan Laundry','mitra','Buka laundry dengan nama Wish Wash','kemitraan/'],
+  ['Konsultasi Bisnis Laundry','konsul','Tanya apa saja soal usaha laundry'],
+  ['Mesin Laundry','mesin','Mesin cuci dan pengering'],
+  ['Instalasi','instal','Pemasangan mesin sampai siap pakai'],
+  ['Furniture & Fabrication','furni','Meja lipat, rak, dan perabot outlet'],
+  ['Chemical & Bahan Baku','chem','Deterjen, pewangi, dan bahan lainnya'],
+  ['Training Operasional','train','Belajar cara menjalankan laundry'],
+  ['Distributor Produk Laundry','dist','Kirim produk kebutuhan laundry'],
+  ['Teknisi & Maintenance','tekn','Servis dan perawatan mesin'],
+  ['Sparepart','spare','Suku cadang mesin laundry']
 ];
-const AUD=[
-  ['Investor & Pemilik Modal','Mencari peluang investasi di bisnis laundry, termasuk model yang dapat dikelola SML melalui brand Wish Wash.','Lihat Kemitraan','kemitraan/'],
-  ['Calon Pengusaha Laundry','Ingin membuka usaha laundry dengan brand sendiri dan membutuhkan paket, mesin, instalasi, training, serta konsultasi.','Lihat Paket Bisnis','#jalur'],
-  ['Pemilik Laundry Existing','Membutuhkan mesin, chemical, sparepart, maintenance, peningkatan kapasitas, atau pengembangan outlet.','Lihat Layanan','#layanan'],
-  ['Pengusaha yang Berdiversifikasi','Ingin menambah bisnis laundry sebagai sumber pendapatan atau portofolio usaha baru.','Konsultasi Dulu','wa']
-];
-const WHY=[
-  ['Pengalaman operasional nyata','Menjalankan bisnis laundry sejak 2013.'],
-  ['Pengalaman multi-outlet','Memiliki dan mengelola lebih dari 20 outlet laundry.'],
-  ['Solusi yang terintegrasi','Produk, layanan, dan pendampingan dalam satu ekosistem.'],
-  ['Dukungan menyeluruh','Dari produk, instalasi, dan training hingga maintenance.'],
-  ['Fokus Indonesia Timur','Memahami kebutuhan investor dan pengusaha laundry di kawasan ini.']
-];
-const STEPS=[
-  ['Konsultasi Kebutuhan','Memahami tujuan, model bisnis, dan kondisi usaha Anda.'],
-  ['Perancangan Solusi','Menentukan skema dan kebutuhan yang paling sesuai.'],
-  ['Penyediaan Kebutuhan','Mesin, produk, dan perlengkapan operasional disiapkan.'],
-  ['Instalasi & Persiapan','Instalasi, furniture, dan persiapan outlet.'],
-  ['Training Operasional','Membekali Anda dan tim sebelum outlet berjalan.'],
-  ['Opening & Implementasi','Outlet mulai berjalan sesuai rencana.'],
-  ['Aftersales & Teknisi','Dukungan maintenance dan supply operasional.'],
-  ['Pengembangan Bisnis','Menyiapkan langkah pertumbuhan berikutnya.']
-];
-const FAQS=[
-  ['Saya belum punya pengalaman di bisnis laundry. Bisa mulai?','Bisa. Justru di situlah peran kami: mulai dari konsultasi kebutuhan, perancangan solusi, sampai training operasional sebelum outlet berjalan. Anda tidak harus paham semuanya dari awal.'],
-  ['Apa bedanya Paket Bisnis Laundry dan Paket Kemitraan?','Paket Bisnis Laundry memakai brand Anda sendiri, jadi brand dan identitas outlet sepenuhnya milik Anda. Paket Kemitraan memakai brand dan sistem Wish Wash, dengan dua pilihan: dikelola SML (Managed Laundry) atau dijalankan sendiri (Branded Partnership).'],
-  ['Berapa modal yang dibutuhkan?','Tergantung skala outlet, jumlah mesin, dan jalur yang dipilih. Gambaran paket dan harganya bisa dilihat di halaman <a href="makassar/">Paket Indonesia Timur</a>, <a href="jabodetabek/">Paket Jabodetabek</a>, atau <a href="kemitraan/">Kemitraan Wish Wash</a>. Untuk hitungan yang pas dengan kondisi Anda, konsultasikan langsung dengan tim kami.'],
-  ['Saya sudah punya laundry. Bisa beli mesin, chemical, atau sparepart saja?','Bisa. Selain paket usaha, kami menyediakan mesin, chemical dan bahan baku, sparepart, teknisi dan maintenance, hingga furniture. Lingkup dukungan disesuaikan dengan kebutuhan outlet Anda.'],
-  ['Kalau mesin bermasalah setelah outlet buka, bagaimana?','Kami memiliki layanan teknisi dan maintenance serta penyediaan sparepart. Hubungi tim kami dan sampaikan kendalanya agar bisa segera ditangani.'],
-  ['Apakah SML Group melayani di luar Makassar?','Kantor pusat kami di Makassar dengan fokus pengembangan di Indonesia Timur, dan kami memiliki kantor cabang di Jakarta. Untuk lokasi lain, sampaikan rencana Anda saat konsultasi.']
-];
+function svcGo(i){const s=SERVICES[i];if(s[3]){location.href=s[3];}else openWA('Halo SML Group, saya ingin tanya soal '+s[0]+'.');}
+document.getElementById('svcGrid').innerHTML=SERVICES.map((s,i)=>`
+  <button class="svc" onclick="svcGo(${i})"><span class="ic"><svg viewBox="0 0 24 24" fill="none">${IC[s[1]]}</svg></span><span><b>${s[0]}</b><small>${s[2]}</small></span></button>`).join('')+
+  `<button class="svc more" onclick="openWA(MSG.umum)"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1012 2z"/></svg></span><span><b>Belum tahu butuh apa?</b><small>Tanya saja, kami bantu pilihkan</small></span></button>`;
 
-/* ---------- RENDER ---------- */
-const ARROW='<svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2"/></svg>';
-function svcWA(n){openWA('Halo SML Group, saya ingin tanya tentang layanan '+n+'.');}
-function fillNeeds(){
-  const sel=document.getElementById('f-butuh');
-  SERVICES.forEach(x=>{const o=document.createElement('option');o.textContent=x.n;sel.appendChild(o);});
-}
-function segInit(id){document.getElementById(id).addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;
-  b.parentElement.querySelectorAll('button').forEach(x=>x.classList.toggle('cur',x===b));});}
-function segVal(id){const b=document.querySelector('#'+id+' button.cur');return b?b.dataset.v:'';}
-function sendForm(){
-  const v=id=>document.getElementById(id).value.trim();
-  const wil=segVal('f-wil');
-  const wilTxt={itm:'Indonesia Timur',jkt:'Jabodetabek',lain:'Wilayah lain'}[wil];
-  const msg='Halo SML Group, saya ingin konsultasi bisnis laundry.\n'+
-    'Nama: '+(v('f-nama')||'-')+'\nKota/lokasi: '+(v('f-kota')||'-')+' ('+wilTxt+')'+
-    '\nKondisi: '+(segVal('f-kond')||'-')+'\nKebutuhan: '+v('f-butuh')+
-    (v('f-cat')?'\nCatatan: '+v('f-cat'):'');
-  openWA(msg,wil==='jkt'?WA_JKT:null);
-}
-function renderAud(){
-  document.getElementById('audGrid').innerHTML=AUD.map((a,i)=>`
-    <div class="aud reveal" data-d="${i}"><div class="n">0${i+1}</div><h4>${a[0]}</h4><p>${a[1]}</p>
-    <a class="tip" ${a[3]==='wa'?'onclick="openWA(MSG.umum)"':`href="${a[3]}"`}>${a[2]} ${ARROW}</a></div>`).join('');
-}
-function renderSteps(){
-  document.getElementById('stepGrid').innerHTML=STEPS.map((s,i)=>`
-    <div class="step"><div class="sn"><b>${String(i+1).padStart(2,'0')}</b><i></i></div><h4>${s[0]}</h4><p>${s[1]}</p></div>`).join('');
-}
-function renderFaq(){
-  document.getElementById('faqList').innerHTML=FAQS.map(f=>`
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">${f[0]}<span class="qi">+</span></button>
-    <div class="faq-a"><p>${f[1]}</p></div></div>`).join('');
-}
+/* ---------- FAQ ---------- */
+const FAQS=[
+  ['Saya belum pernah punya usaha laundry. Bisa?','Bisa. Kami bantu dari awal: memilih paket, memasang mesin, sampai melatih Anda dan tim sebelum outlet buka.'],
+  ['Berapa modal yang dibutuhkan?','Tergantung besar outlet dan jumlah mesin. Rincian harga bisa dilihat di <a href="makassar/">Paket Indonesia Timur</a>, <a href="jabodetabek/">Paket Jabodetabek</a>, atau <a href="kemitraan/">Kemitraan Wish Wash</a>. Atau tanya langsung, kami bantu hitungkan.'],
+  ['Bisa pakai nama usaha sendiri?','Bisa, pilih Paket Bisnis Laundry. Kalau ingin memakai nama dan sistem Wish Wash, pilih Paket Kemitraan.'],
+  ['Saya sudah punya laundry. Bisa beli mesin atau sparepart saja?','Bisa. Mesin, sparepart, deterjen, teknisi, dan furniture bisa dipesan sesuai kebutuhan.'],
+  ['Kalau mesin rusak setelah buka?','Hubungi tim kami. Kami punya teknisi dan sparepart untuk membantu perbaikan dan perawatan mesin.'],
+  ['Melayani di luar Makassar?','Kantor pusat kami di Makassar dan kantor cabang di Jakarta. Untuk kota lain, sampaikan lokasi Anda saat konsultasi.']
+];
+document.getElementById('faqList').innerHTML=FAQS.map(f=>`
+  <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">${f[0]}<span class="qi">+</span></button><div class="faq-a"><p>${f[1]}</p></div></div>`).join('');
 function toggleFaq(b){const it=b.parentElement;it.classList.toggle('open');const a=b.nextElementSibling;a.style.maxHeight=it.classList.contains('open')?a.scrollHeight+'px':0;}
 
-
-
-/* ---------- NAV & EFFECTS ---------- */
-function go(id){const t=document.getElementById(id);if(t)t.scrollIntoView({behavior:'smooth',block:'start'});closeMenu();}
-function closeMenu(){document.getElementById('nav').classList.remove('open');document.getElementById('menuToggle').classList.remove('open');}
-document.getElementById('menuToggle').addEventListener('click',()=>{document.getElementById('nav').classList.toggle('open');document.getElementById('menuToggle').classList.toggle('open');});
-document.querySelectorAll('#nav a').forEach(a=>a.addEventListener('click',closeMenu));
-window.addEventListener('scroll',()=>{document.getElementById('header').classList.toggle('scrolled',window.scrollY>10);},{passive:true});
-function initSpy(){
-  const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){const id=e.target.id;
-    document.querySelectorAll('.nav-link[data-v]').forEach(b=>b.classList.toggle('active',b.dataset.v===id));}});},{rootMargin:'-45% 0px -50% 0px'});
-  document.querySelectorAll('.view').forEach(s=>obs.observe(s));
+/* ---------- FORM ---------- */
+document.getElementById('f-mau').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;
+  b.parentElement.querySelectorAll('button').forEach(x=>x.classList.toggle('cur',x===b));});
+const JKT_WORDS=['jakarta','bogor','depok','tangerang','bekasi','jabodetabek','cilandak'];
+function sendForm(){
+  const nama=document.getElementById('f-nama').value.trim()||'-';
+  const kota=document.getElementById('f-kota').value.trim()||'-';
+  const mau=document.querySelector('#f-mau button.cur').dataset.v;
+  const isJkt=JKT_WORDS.some(w=>kota.toLowerCase().includes(w));
+  openWA('Halo SML Group, saya '+nama+' dari '+kota+'. Saya ingin '+mau+'. Mohon infonya.',isJkt?WA_JKT:WA_MKS);
 }
-function initReveals(){
-  if(!('IntersectionObserver' in window)){document.querySelectorAll('.reveal').forEach(e=>e.classList.add('in'));return;}
-  const o=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');o.unobserve(e.target);}});},{threshold:.1});
-  document.querySelectorAll('.reveal').forEach(e=>o.observe(e));
-}
-function initCounters(){
-  const o=new IntersectionObserver(es=>{es.forEach(en=>{if(!en.isIntersecting)return;o.unobserve(en.target);
-    const el=en.target,t=+el.dataset.count,st=performance.now();
-    (function tick(n){const p=Math.min((n-st)/1200,1);el.textContent=Math.round(t*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(tick);})(st);});});
-  document.querySelectorAll('[data-count]').forEach(e=>o.observe(e));
-}
-renderAud();renderSteps();renderFaq();fillNeeds();segInit('f-wil');segInit('f-kond');
 
-document.getElementById('mcTabs').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;
-  document.querySelectorAll('#mcTabs button').forEach(x=>x.classList.toggle('cur',x===b));
-  document.querySelectorAll('.mc-panel').forEach(p=>p.classList.toggle('cur',p.dataset.p===b.dataset.t));});
-initSpy();initReveals();initCounters();
+/* ---------- NAV ---------- */
+document.getElementById('menuToggle').addEventListener('click',()=>document.getElementById('nav').classList.toggle('open'));
+document.querySelectorAll('#nav a').forEach(a=>a.addEventListener('click',()=>document.getElementById('nav').classList.remove('open')));
+const spy=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)document.querySelectorAll('.nav-link[data-v]').forEach(b=>b.classList.toggle('active',b.dataset.v===e.target.id));}),{rootMargin:'-45% 0px -50% 0px'});
+document.querySelectorAll('.view').forEach(s=>spy.observe(s));
+const rv=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');rv.unobserve(e.target);}}),{threshold:.08});
+document.querySelectorAll('.reveal').forEach(e=>rv.observe(e));
 </script>
 </body>
 </html>
